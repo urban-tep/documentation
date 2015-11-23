@@ -8,8 +8,7 @@ User Profile
 	:width: 30%
 	:figclass: img-container-border
 
-
-Find out how to sign-in using **EO-SSO**, access your **Cloud** account by providing a valid **certificate** and prove your identity, or even link your profile with your **Github** account.
+Find out how to sign-in using **EO-SSO**, access your profile information, and even link it to your **Github** account.
 
 
 Sign in
@@ -111,34 +110,6 @@ As it is link to your cloud account, *Terradue Support Team* needs to perform ma
 2. A message appear on the certificate view, confirming the request is under process.
 3. Wait until you receive an email from *Terradue Support Team* telling you the certificate has been succesfully removed.
 4. You can now upload a new certificate (see `Upload your certificate`_).
-
-Access the Cloud Dashboard
---------------------------
-
-To access the Cloud dashboard, you will need to have a valid certificate stored on the platform, as well as an account on the Cloud Controller.
-
-
-1. You don't have a valid certificate stored on the platform ? See `Upload your certificate`_.
-
-.. figure:: ../includes/cloud_certificate_missing.png
-	:figclass: img-border img-max-width
-	:scale: 80%
-
-2. You don't have an account on the Cloud Controller ? Create one by clicking on **Create**.
-
-.. figure:: ../includes/cloud_account_missing.png
-	:figclass: img-border img-max-width
-	:scale: 80%
-
-3. You can see the cloud logo |sunstone_logo.png| ? Congratulations, all is correctly set up.
-
-.. figure:: ../includes/cloud_dashboard_ok.png
-	:figclass: img-border img-max-width
-	:scale: 80%
-
-Just click on it to be redirected to the Cloud Dashboard (powered by OpenNebula, see :doc:`Cloud Dashboard <cloud/dashboard>`).
-
-.. |sunstone_logo.png| image:: ../includes/sunstone_logo-small.png
 
 Link your Github account
 ------------------------
