@@ -3,11 +3,12 @@ Menu bar
 
 The menu bar is always visible, apart from the geobrowser page. It contains the following links:
 
-- `Home`_,
-- `Observations & Measurements`_,
-- `Information Processing`_,
-- `Community`_,
-- `EO sector Collaboration`_
+- `Background`_,
+- `Use Scenarios`_,
+- `Data & Services`_,
+- `Activities`_,
+- `Community`_
+- `Enter Platform`_
 
 .. figure:: ../../includes/home_menubar.png
 	:figclass: img-border img-max-width
@@ -17,27 +18,32 @@ Home
 
 A simple way to go back to the home page of the portal.
 
-Observations & Measurements
----------------------------
+Background
+----------
 
-A quick access to
-	- Satellite Acquisitions (list of EO missions providing data contributions to the CEOS Seismic Hazards and Volcano Pilots),
-	- EO based Measurements (definition of EO base measurements),
-	- Other Data (definition of Other Data),
-	- Featured Products (definition of Featured Products),
-	- Publications (definition of Publications)
+A page describing the Tep Urban concept and Tep Urban Era.
 
-Information Processing
-----------------------
+Use Scenarios
+-------------
 
-Information about the processing on the platform.
+Some example of uses scenarios of the Tep Urban platform.
+
+Data & Services
+---------------
+
+Page describing data and services that the platform provides.
+
+Activities
+----------
+
+Last and incoming activities around the urban community.
 
 Community
 ---------
 
-Definition of the role of the satellite EO and geohazards user community.
+Description of partners and actors of the Urban community.
 
-EO sector Collaboration
------------------------
+Enter Platform
+--------------
 
-Description of partners and actors of the Geohazards initiative.
+Enter the platform and access the geobrowser.
