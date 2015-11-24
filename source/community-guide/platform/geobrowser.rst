@@ -46,17 +46,18 @@ Data Results layer
 
 Display the results (orange polygons) of the current search or context.
 
-Disaster charter layer
-**********************
+City population layer
+*********************
 
-Add disaster events on the map (list of events comes from https://www.disasterscharter.org).
-For a better visibility, events are grouped by location, accordingly to the zoom level. If you zoom in, grouped events will split into smaller groups or unique events:
+Display a circle over most populated cities. The circle size is related to the population of the city.
 
--  |geobrowser_disaster_big_group.png| group of more than 10 events
--  |geobrowser_disaster_small_group.png| group of less than 10 events
--  |geobrowser_disaster_event.png| unique event
+.. figure:: ../../includes/geobrowser_cities.png
+	:figclass: img-border
 
-You can click on a unique event and get related data or access the webpage related to this event.
+You can click on a city and get the city footprint on the map.
+
+.. figure:: ../../includes/geobrowser_cities_footprint.png
+	:figclass: img-border
 
 
 Density map layer

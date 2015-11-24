@@ -13,6 +13,4 @@ Contents:
    Visualisation <visualisation>
    Reproducibility <reproducibility>
    Sharing <sharing>
-   Cloud Resources <cloud/index>
-
 
