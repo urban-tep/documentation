@@ -36,7 +36,7 @@ Page describing data and services that the platform provides.
 Activities
 ----------
 
-Last and incoming activities around the urban community.
+Passed and incoming activities around the Urban community.
 
 Community
 ---------

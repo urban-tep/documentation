@@ -9,12 +9,12 @@ Directly on the homepage, the user can find:
 	:figclass: img-border
 	:width: 600px
 
-- a list of the most recent feeds from selected twitter accounts (with associated keywords to really focus the results on the geohazards)
+- a list of the most recent feeds from selected twitter accounts (with associated keywords to really focus the results on the urban activities)
 
 .. figure:: ../../includes/news_tweets.png
 	:figclass: img-border
 
-- a list of the most recent posts from the tep geohazards `Tumblr blog <http://geohazards-tep.tumblr.com>`_.
+- a list of the most recent posts from the tep urban `Tumblr blog <http://urban-tep.tumblr.com>`_.
 
 .. figure:: ../../includes/news_tumblr.png
 	:figclass: img-border

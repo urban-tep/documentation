@@ -1,5 +1,5 @@
-Geohazards thematic exploitation platform guide
-===============================================
+Urban thematic exploitation platform guide
+==========================================
 
 Contents:
 
