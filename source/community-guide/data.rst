@@ -12,6 +12,11 @@ You can search for specific data by creating a query to a catalogue, look for sp
 
 Put data in your basket and save it for later, or simply drag and drop data as a parameter of a process.
 
+.. req:: TS-FUN-130
+	:show:
+
+	This section describe how to perform dataset search and view query result in widget
+
 Discover data
 -------------
 
@@ -33,6 +38,9 @@ Data discovery is made through the map. To get specific data:
 	:align: center
 	:scale: 75%
 	:figclass: img-border
+
+
+
 
 Discover contextualized data
 ----------------------------

@@ -15,6 +15,7 @@ Contents:
    Community Portal User Guide <community-guide/index>
    Community Portal Administrator Guide <admin-guide/index>
    Thematic Applications <apps/index>
+   Requirement Traceability <requirement/index>
 
 Indices and tables
 ==================
