@@ -32,6 +32,12 @@ Some buttons maybe used to interact with the map:
 -  |geobrowser_button_fullscreen.png| Put the map in full screen
 -  |geobrowser_button_layers.png| Change the background of the map | Select layers to be displayed.
 
+.. req:: TS-FUN-280
+	:show:
+
+	This section describe the area of interest definition by geometry.
+
+
 It is also possible to directly select on the map the temporal parameter of the search by moving the temporal bar.
 
 .. figure:: ../../includes/geobrowser_timebar.png
@@ -54,10 +60,22 @@ Display a circle over most populated cities. The circle size is related to the p
 .. figure:: ../../includes/geobrowser_cities.png
 	:figclass: img-border
 
+.. req:: TS-FUN-240
+	:show:
+
+	This section describe the main cities map layer.
+
 You can click on a city and get the city footprint on the map.
 
 .. figure:: ../../includes/geobrowser_cities_footprint.png
 	:figclass: img-border
+
+.. req:: TS-FUN-290
+	:show:
+
+	This section describe the area of interest definition by urban feature.
+
+
 
 
 Density map layer
@@ -90,7 +108,12 @@ Results
 The result tab is divided in two parts:
 
 - On the left, the **Results Table** showing the list of current results displayed on the map. Results are paginatd, only 20 items are displayed, select another page to discover more products.
-- On the right, the **Features Basket** showing all data in the current basket.
+- On the right, the **Features Basket** showing all data in the current basket as well as the data package view, showing all available data packages for the current user with the possibility to load it / use as search.
+
+.. req:: TS-FUN-270
+	:show:
+
+	This section describe the data package web widget.
 
 Results can be dragged fron the left table to the basket. Then the basket can be saved as a new data package and shared with other users.
 Saved Data packages can then be loaded into the basket. (see :doc:`data <../data>` for more details)
