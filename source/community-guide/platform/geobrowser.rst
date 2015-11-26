@@ -125,7 +125,7 @@ The result tab is divided in two parts:
 .. req:: TS-FUN-270
 	:show:
 
-	This section describe the data package web widget.
+	This section describes the data package web widget.
 
 Results can be dragged fron the left table to the basket. Then the basket can be saved as a new data package and shared with other users.
 Saved Data packages can then be loaded into the basket. (see :doc:`data <../data>` for more details)
@@ -140,12 +140,17 @@ It is composed of two sub tabs.
 Processing services tab
 ~~~~~~~~~~~~~~~~~~~~~~~
 
-This tab contains the list of available Processing Services. Usually, only 20 Processing services are displayed. If you are looking for a specific one, you can filter the results using the **Filter services** input.
+This tab contains the list of available Processing Services. Usually, only 20 Processing services are displayed. If you are looking for a specific one, you can filter the results using the **Filter services** input. Each Processing Service can be opened to display more information such as: name, service description, publisher name, classification, output description but also the list of parameters to fill in order to create a new job associated to this service.
 
 .. req:: TS-FUN-250
 	:show:
 
-	This section describe the processing service discovery web widget.
+	This section describes the processing service discovery web widget.
+
+.. req:: TS-ICD-030
+	:show:
+
+	This section describes the processing service discovery web widget.
 
 Jobs tab
 ~~~~~~~~
@@ -155,6 +160,11 @@ Details on jobs can be accessed by clicking on the title of the job.
 
 .. figure:: ../../includes/geobrowser_jobs.png
 	:figclass: img-border
+
+.. req:: TS-ICD-030
+	:show:
+
+	This section describes how to access information on a succesful job.
 
 
 .. |geobrowser_button_query.png| image:: ../../includes/geobrowser_button_query.png

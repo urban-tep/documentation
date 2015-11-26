@@ -30,6 +30,15 @@ To visualize results on the map:
 
 1. Access the job once it is finished (see `Discover existing jobs`_).
 2. If a layer is detected, you can display it on the map from the **Results** part of the job description.
+
+.. NOTE::
+	The visualization capabilities depends on the offerings presented in the OWS Context document representing the results.
+	The Geobrowser will be able to display:
+	-	Footprint of a dataset on the map
+	-	WMS/WMS-T raster display in the extent defined
+	-	Projected Image raster overlay (png, jpeg, gif) with a defined extent
+	-	Popup with information given in the abstract of the dataset or a de-fault popup with default information (title, id, dates)
+
 3. Click on **Show results on map**.
 4. The layer is displayed on the map.
 
