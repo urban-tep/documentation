@@ -10,6 +10,12 @@ Manage Data Collections
 | To add a group, click on |plus| in front of the group's name in the *All Groups* panel.
 | To remove a group, click on |minus| in front of the group's name in the *Allowed Groups* panel.
 
+.. req:: TS-FUN-380
+	:show:
+
+	This section describes how a group can have access to a data collection.
+
+
 .. |manage| image:: ../includes/groups_manage.png
 .. |plus| image:: ../includes/plus.png
 .. |minus| image:: ../includes/minus.png

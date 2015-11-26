@@ -32,16 +32,28 @@ Some buttons maybe used to interact with the map:
 -  |geobrowser_button_fullscreen.png| Put the map in full screen
 -  |geobrowser_button_layers.png| Change the background of the map | Select layers to be displayed.
 
+Search area
+***********
+From the geobrowser, a search area can be accessed by clicking on the |geobrowser_button_search.png| button. This expands a view containing all search parameters associated to the current catalogue on which the search will be performed.
+Some parameters are just free text, others can be chosen from a list, and some parameters can be filled from the geobrowser. This is the case of:
+
+- the temporal parameter which can be filled by moving the temporal bar present on the geobrowser.
+
+.. figure:: ../../includes/geobrowser_timebar.png
+	:figclass: img-border img-max-width
+
+- the geographical area which can be filled either from the bbox drawn on the map using |geobrowser_button_polygon.png| or |geobrowser_button_recbox.png|, either by uploading a shapefile or a geojson file, using the import button.
+
 .. req:: TS-FUN-280
 	:show:
 
 	This section describe the area of interest definition by geometry.
 
+.. req:: TS-FUN-300
+	:show:
 
-It is also possible to directly select on the map the temporal parameter of the search by moving the temporal bar.
+	This section describe the area of interest definition by uploading a vector based file.
 
-.. figure:: ../../includes/geobrowser_timebar.png
-	:figclass: img-border img-max-width
 
 .. tip:: in the *Search Term* field supported wildcards are '*', which matches any character sequence (including the empty one), and '?', which matches any single character.
 
@@ -129,6 +141,11 @@ Processing services tab
 ~~~~~~~~~~~~~~~~~~~~~~~
 
 This tab contains the list of available Processing Services. Usually, only 20 Processing services are displayed. If you are looking for a specific one, you can filter the results using the **Filter services** input.
+
+.. req:: TS-FUN-250
+	:show:
+
+	This section describe the processing service discovery web widget.
 
 Jobs tab
 ~~~~~~~~

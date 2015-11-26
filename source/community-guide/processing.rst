@@ -24,12 +24,22 @@ Create a new job
 To create a new job:
 
 1. Select the service you want to use (see `Discover existing WPS`_).
-2. Fill in the different parameters needed by the service.
-
-.. tip:: Data can be direclty dragged from the Result tab or from the basket and dropped into the parameter input
-
+2. Fill in the different parameters needed by the service (see `Fill in parameters`_).
 3. Click on **Run Job**
 4. To visualize the result of the job, see :doc:`Visualisation <visualisation>`
+
+Fill in parameters
+------------------
+
+A processing service takes as input a list of parameters, which are defined in the DescribeProcess function of the WPS service.
+Parameters can be free text or can be selected from a list of possible values. When a default value is described in the DescribeProcess, it is automatically set in the parameter field and can of course be changed by the user if he wants to.
+Besides, some specific parameters can be filled directly from the geobrowser:
+
+- data input or files can be directly dragged from the Result tab or from the basket and dropped into the parameter input,
+- geographic input (bounding box) value can be taken from the bbox selected on the map by clicking on the |get_param_from_map_button.png| button,
+- temporal input (start date, end date) can be taken from the time bar selection by clicking on the |get_param_from_map_button.png| button,
+
+.. |get_param_from_map_button.png| image:: ../../includes/get_param_from_map_button.png
 
 Access my jobs
 --------------

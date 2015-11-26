@@ -7,6 +7,12 @@ Groups management
 | To add a user in the group, click on |plus| in front of the user's name in the *All Users* panel.
 | To remove a user from the group, click on |minus| in front of the user's name in the *Members* panel.
 
+.. req:: TS-FUN-380
+	:show:
+
+	This section describes how users are added to a group.
+
+
 .. |manage| image:: ../includes/groups_manage.png
 .. |plus| image:: ../includes/plus.png
 .. |minus| image:: ../includes/minus.png

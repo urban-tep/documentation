@@ -41,6 +41,11 @@ To share a process you just created and executed:
 
 5. Other users will now be able to access this job just by clicking on the link you will have share with them, see the result and even reprocess it (see :doc:`Reprocess existing job <processing>`).
 
+.. req:: TS-ICD-050
+	:show:
+
+	This section describes how a user can share a job.
+
 Share a Processing Service
 --------------------------
 
@@ -54,6 +59,11 @@ To share your favorite Processing Service:
 	 If you share the link with someone not from one of the groups allowed to see this Processing Service, he will not be able to access it
 
 4. Other users will now be able to access this Processing Service just by clicking on the link you will have share with them. The Processing Service will also appear in their list of available Processing Services.
+
+.. req:: TS-ICD-050
+	:show:
+
+	This section describes how a user can share a processing service.
 
 Share a Data Package
 --------------------
@@ -70,6 +80,16 @@ To share a Data package you just created:
 	 If you share the link with someone not from one of the groups allowed to see this data package, he will not be able to access it
 
 6. Other users will now be able to access this data package just by clicking on the link you will have share with them. The data package will also appear in the list of available data packages to be loaded.
+
+.. req:: TS-SEC-010
+	:show:
+
+	This section describes how a user can share a data package.
+
+.. req:: TS-ICD-050
+	:show:
+
+	This section describes how a user can share a data package.
 
 Share a Data Search
 -------------------

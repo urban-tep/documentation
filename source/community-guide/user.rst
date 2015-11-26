@@ -43,11 +43,16 @@ Edit your profile
 	
 Fill in your profile:
 
-1. Edit information such as first and last names, email, ... (username can not be modified though).
+1. Edit information such as first and last names, email, ... (username can not be modified though) by filling the input fields.
 2. Once you are done, just click on **Submit** to save your changes.
 
 .. NOTE::
 		Direct access to your EO-SSO account is provided by clicking on *EO-SSO account*.
+
+.. req:: TS-FUN-510
+	:show:
+
+	This section describes how a user can update profile information.
 
 Change your password
 --------------------
@@ -126,6 +131,11 @@ To link your Github account:
 
 1. Fill in your github name and validate by clicking on |user_github_edit.png|.
 2. You should add your ssh public key to your github account. If you don't have a Terradue certificate, you will need to add it manually. Finally click on **Add your public key** and accept the request on your Github account.
+
+.. req:: TS-FUN-510
+	:show:
+
+	This section describes how a user can update github information.
 
 .. |user_github_edit.png| image:: ../includes/user_github_edit.png
 
