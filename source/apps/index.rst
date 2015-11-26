@@ -6,5 +6,6 @@ Contents:
 .. toctree::
    :maxdepth: 2
    
-   Overview <thematic>
+   Thematic applications <thematic_app>
+   Management application <thematic_app>
    
