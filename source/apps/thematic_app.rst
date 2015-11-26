@@ -13,6 +13,8 @@ A list of pre-defined thematic apps can be accessed from the *Thematics* page.
 
 The pre-defined thematics are:
 
+
+
 User's apps
 -----------
 

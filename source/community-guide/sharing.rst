@@ -70,8 +70,10 @@ Share a Data Package
 
 To share a Data package you just created:
 
-1. Access the :doc:`Features basket <platform/geobrowser>` and select the *Data Package* tab.
-2. Choose one data package from the list.
+1. Access the Data package in one of the following ways:
+	1.1. Access the :doc:`Features basket <platform/geobrowser>` and select the *Data Package* tab
+	1.2. Through the :doc: `Management application <../apps/management_app>` and select the *Data Package* tab,
+2. Choose the data package from the list.
 3. Click on |manage| to edit groups (see :doc:`Share with groups`).
 3. Click on **Share** |share| to get the share link.
 5. Copy the link in your clipboard and share it to members of the groups
