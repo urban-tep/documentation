@@ -122,7 +122,7 @@ The result tab is divided in two parts:
 - On the left, the **Results Table** showing the list of current results displayed on the map. Results are paginatd, only 20 items are displayed, select another page to discover more products.
 - On the right, the **Features Basket** showing all data in the current basket as well as the data package view, showing all available data packages for the current user with the possibility to load it / use as search.
 
-.. req:: TS-FUN-270
+.. req:: TS-ICD-110
 	:show:
 
 	This section describes the data package web widget.
