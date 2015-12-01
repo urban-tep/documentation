@@ -8,6 +8,11 @@ Reporting
 .. figure:: ../includes/report.png
 	:figclass: img-border img-max-width
 
+.. req:: TS-ICD-060
+    :show:
+
+    This section shows that the platform has an analytics web widget.
+
 Create a new report
 -------------------
 
