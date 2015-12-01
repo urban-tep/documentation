@@ -30,6 +30,8 @@ To visualize results on the map:
 
 1. Access the job once it is finished (see `Discover existing jobs`_).
 2. If a layer is detected, you can display it on the map from the **Results** part of the job description.
+3. Click on **Show results on map**.
+4. The layer is displayed on the map.
 
 .. NOTE::
 	The visualization capabilities depends on the offerings presented in the OWS Context document representing the results.
@@ -39,8 +41,10 @@ To visualize results on the map:
 	-	Projected Image raster overlay (png, jpeg, gif) with a defined extent
 	-	Popup with information given in the abstract of the dataset or a de-fault popup with default information (title, id, dates)
 
-3. Click on **Show results on map**.
-4. The layer is displayed on the map.
-
 .. WARNING::
   You may need to be connected to the GEP Virtual Private Network (see :ref:`laboratory`), in order to download the results. 
+
+.. req:: TS-ICD-130
+	:show:
+
+	This section describes how to visualise data .
