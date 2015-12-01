@@ -150,3 +150,8 @@ See your usage
 
 To find out how you are using the platform, just go to the **Usage** tab on your profile page.
 You will see what is your level for each type of usage of the platform.
+
+.. req:: TS-ICD-060
+    :show:
+
+    This section shows that the platform has an analytics web widget.
