@@ -42,8 +42,3 @@ Community
 ---------
 
 Description of partners and actors of the Urban community.
-
-Enter Platform
---------------
-
-Enter the platform and access the geobrowser.
