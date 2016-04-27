@@ -108,7 +108,7 @@ If you don't have yet an account on the Terradue Cloud Platform
 3. A new account will be created on https://www.terradue.com using your EO-SSO email/username
 
 .. figure:: ../includes/t2_password_rules.png
-	:figclass: img-border img-max-width
+	:figclass: img-border
 	:scale: 80%
 
 .. NOTE::

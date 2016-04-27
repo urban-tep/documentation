@@ -13,7 +13,26 @@ A list of pre-defined thematic apps can be accessed from the *Thematics* page.
 
 The pre-defined thematics are:
 
+	- Urban global thematic application
+	- Global Urban Footprint
 
+Urban global thematic application
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ../includes/thematic_apps_global.png
+	:figclass: img-border img-max-width
+	:scale: 80%
+
+This is the general Urban thematic application for demonstration purpose, containing all main functionalities of the geobrowser.
+
+Global Urban Footprint
+~~~~~~~~~~~~~~~~~~~~~~
+
+.. figure:: ../includes/thematic_apps_guf.png
+	:figclass: img-border img-max-width
+	:scale: 80%
+
+Global Urban Footprint application. It allows subsetting and analysis of the GUF dataset with PUMA.
 
 User's apps
 -----------
