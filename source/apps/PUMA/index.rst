@@ -47,19 +47,24 @@ It is possible to import the data into the PUMA using the UrbanTEP portal. It is
 Steps necessary to use Guf subsetting with integration of PUMA.
 
 1) After getting to the portal to allow you visualization of the Global Urban Footprint. 
-.. image:: AvailableServices.png 
+
+.. figure:: AvailableServices.png 
 
 2) Select the service to import the data into the PUMA
-.. image:: analyse.png
+
+.. figure:: analyse.png
 
 3) Results of the analysis with the button, which will take you into the PUMA
-.. image:: resultOfAnalysis.png
+
+.. figure:: resultOfAnalysis.png
 
 4) Initial state of the Puma after taking you inside. The place will depend on which area you wanted to analyse.
-.. image:: initialStateOfPumaAfterMovementThere.png
+
+.. figure:: initialStateOfPumaAfterMovementThere.png
 
 5) PUMA after some playing in it
-.. image:: withStatistics.png
+
+.. figure:: withStatistics.png
 
 .. req:: TS-FUN-020
   :show:
