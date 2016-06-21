@@ -52,7 +52,7 @@ Steps necessary to use Guf subsetting with integration of PUMA.
 
 2) Select the service to import the data into the PUMA
 
-.. figure:: analyse.png
+.. figure:: analyze.png
 
 3) Results of the analysis with the button, which will take you into the PUMA
 
