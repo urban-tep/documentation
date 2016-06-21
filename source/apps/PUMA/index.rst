@@ -32,13 +32,34 @@ Further documentation
 """""""""""""""""""""
 
 It is possible to find further documentation on what is possible and how to use it is available at
-https://puma.worldbank.org/help/ or http://185.8.164.70/help/
+https://puma.worldbank.org/help/ or http://urban-tep.gisat.cz/help/
 
 PUMA UI - Expert user
 ---------------------
 
 As an expert user it is possible to specify new visualization, which will be available to other users. It is also possible to specify other analysis, which will show the combination of the data received via TEP Urban processing and portal with other types of data already in PUMA. It also supports adding the data via other means than just TEP Urban processing centers.
 
+Usage of PUMA UI from the portal in images
+------------------------------------------
+
+It is possible to import the data into the PUMA using the UrbanTEP portal. It is also then possible to see the data, which were jsut uploaded in the PUMA.
+
+Steps necessary to use Guf subsetting with integration of PUMA.
+
+1) After getting to the portal to allow you visualization of the Global Urban Footprint. 
+..image:: AvailableServices.png 
+
+2) Select the service to import the data into the PUMA
+..image:: analyse.png
+
+3) Results of the analysis with the button, which will take you into the PUMA
+..image:: resultOfAnalysis.png
+
+4) Initial state of the Puma after taking you inside. The place will depend on which area you wanted to analyse.
+..image:: initialStateOfPumaAfterMovementThere.png
+
+5) PUMA after some playing in it
+..image:: withStatistics.png
 
 .. req:: TS-FUN-020
   :show:
