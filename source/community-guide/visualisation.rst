@@ -33,10 +33,6 @@ To visualize results on the map:
 3. Click on **Show results on map**.
 4. The layer is displayed on the map.
 
-.. figure:: ../includes/job_results_visu.png
-	:figclass: img-border
-	:scale: 80 %
-
 .. NOTE::
 	The visualization capabilities depends on the offerings presented in the OWS Context document representing the results.
 	The Geobrowser will be able to display:
