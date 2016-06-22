@@ -1,8 +1,6 @@
 Urban thematic exploitation platform administrator guide
 ========================================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
    

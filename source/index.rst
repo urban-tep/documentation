@@ -6,8 +6,6 @@
 Welcome to Urban Thematic Exploitation Platform's documentation!
 ====================================================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
 
