@@ -48,12 +48,16 @@ from docutils.parsers.rst import directives
 from sphinx.locale import _
 from sphinx.application import Sphinx
 from pprint import pprint
+from docutils.utils import escape2null, unescape
 
 def find_parent_section_name(node):
     if isinstance(node, section):
-        pprint(node[node.first_child_matching_class(title)][0].astext())
-        return node[node.first_child_matching_class(title)][0].astext()
-    return find_parent_section_name(node.parent)
+        #pprint(node[node.first_child_matching_class(title)][0].astext())
+        return node
+    if node.parent:
+        return find_parent_section_name(node.parent)
+    else:
+        return
 
   
 
@@ -80,10 +84,32 @@ class ReqDirective(Directive):
 
         targetid = "req-%d" % env.new_serialno('req')
         targetnode = nodes.target('', '', ids=[targetid])
+        sectionnode = find_parent_section_name(self.state)
+        includead = True
 
-        ad = make_admonition(req, self.name, [_('Requirement coverage')], self.options,
-                             self.content, self.lineno, self.content_offset,
+        ads = []
+        ad = None
+
+        if sectionnode : 
+            ads = sectionnode.traverse(nodes.Admonition)
+        
+        if len(ads) > 0 :
+            ad = ads[0] 
+            #pprint(ad)
+            para = ad.traverse(nodes.paragraph, descend=True)
+            para[0] += nodes.Text(', ' + self.content[0])   
+#            pprint(para[0])
+            includead = False
+        else :
+            #pprint(self.content)
+            text = nodes.paragraph()
+            text += nodes.Text("This section covers ")
+            text += nodes.Text(self.content[0])
+            ad = make_admonition(req, self.name, [_('Requirement coverage')], self.options,
+                             text, self.lineno, self.content_offset,
                              self.block_text, self.state, self.state_machine)
+            #pprint(ad)
+
 
         if not hasattr(env, 'req_all_reqs'):
             env.req_all_reqs = []
@@ -93,15 +119,19 @@ class ReqDirective(Directive):
         env.req_all_reqs.append({
             'docname': env.docname,
             'evidence': '\n'.join(self.content[-1:]),
-            'section_name' : find_parent_section_name(self.state),
+            'section' : sectionnode,
             'reqid' : self.content[0],
             'req': ad[0].deepcopy(),
             'target': targetnode,
         })
 
-        if not self.options.has_key('show'):
+        if not includead:
             return [targetnode]
 
+        if not 'show' in self.options:
+            return [targetnode]
+
+        #pprint("return all")
         return [targetnode] + ad
 
 
@@ -120,10 +150,18 @@ def append_row(tbody, cells):
         entry = nodes.entry()
         row += entry
   
-        if isinstance(cell, basestring):
-            node = nodes.paragraph(text=cell)
-        else:
-            node = cell
+        try:
+            if isinstance(cell, basestring):
+                node = nodes.paragraph(text=cell)
+            else:
+                node = cell
+
+        except NameError:
+            if isinstance(cell, str):
+                node = nodes.paragraph(text=cell)
+            else:
+                node = cell
+
   
         entry += node
 
@@ -161,22 +199,33 @@ def process_req_nodes(app, doctree, fromdocname):
         tbody = nodes.tbody()
         tgroup += tbody
 
-        for req_info in env.req_all_reqs:
+        sorted_req = sorted(env.req_all_reqs, key=lambda req: req['reqid'])
+
+        for req_info in sorted_req:
 
             refpara = nodes.paragraph()
-            refpara += nodes.Text("","")
+            refpara += nodes.Text('','')
 
             # Create a reference
-            newnode = nodes.reference('', '')
-            pprint(req_info['section_name'])
-            innernode = nodes.emphasis(req_info['section_name'],req_info['section_name'])
-            newnode['refdocname'] = req_info['docname']
-            newnode['refuri'] = app.builder.get_relative_uri(
-                fromdocname, req_info['docname'])
-            newnode['refuri'] += '#' + req_info['target']['refid']
-            newnode.append(innernode)
-            refpara += newnode
-            refpara += nodes.Text('', '')
+            try:
+                newnode = nodes.reference('', '')
+                section = req_info['section']
+                section_name = ''
+                pprint(section)
+                if section.get('secnumber'):
+                    section_name += (('%s' + self.secnumber_suffix) %
+                             '.'.join(map(str, node['secnumber'])))
+                section_name += section[section.first_child_matching_class(title)][0].astext()
+                innernode = nodes.emphasis(section_name,section_name)
+                newnode['refdocname'] = req_info['docname']
+                newnode['refuri'] = app.builder.get_relative_uri(
+                    fromdocname, req_info['docname'])
+                newnode['refuri'] += '#' + req_info['target']['refid']
+                newnode.append(innernode)
+                refpara += newnode
+                refpara += nodes.Text('', '')
+            except:
+                continue
 
             append_row(tbody,
                [req_info['reqid'],
