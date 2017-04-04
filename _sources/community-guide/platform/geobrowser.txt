@@ -30,6 +30,8 @@ Some buttons maybe used to interact with the map:
 -  |geobrowser_button_recbox.png| Edit the search bbox by drawing a rectangle on the map
 -  |geobrowser_button_dynamicsearch.png| Enable/Disable dynamic search (the search bbox is the current view on the map)
 -  |geobrowser_button_fullscreen.png| Put the map in full screen
+-  |geobrowser_button_wkt.png| Allow to enter a WKT to be displayed on the map as bounding box
+-  |geobrowser_button_meter.png| Measure an area
 -  |geobrowser_button_layers.png| Change the background of the map | Select layers to be displayed.
 
 Search area
@@ -42,7 +44,7 @@ Some parameters are just free text, others can be chosen from a list, and some p
 .. figure:: ../../includes/geobrowser_timebar.png
 	:figclass: img-border img-max-width
 
-- the geographical area which can be filled either from the bbox drawn on the map using |geobrowser_button_polygon.png| or |geobrowser_button_recbox.png|, either by uploading a shapefile or a geojson file, using the import button.
+- the geographical area which can be filled either from the bbox drawn on the map using |geobrowser_button_polygon.png|, |geobrowser_button_recbox.png| or |geobrowser_button_wkt.png|, either by uploading a shapefile or a geojson file, using the import button.
 
 .. req:: TS-FUN-280
 	:show:
@@ -63,6 +65,9 @@ Data Results layer
 ******************
 
 Display the results (orange polygons) of the current search or context.
+
+.. figure:: ../../includes/geobrowser_results_layer.png
+	:figclass: img-border
 
 City population layer
 *********************

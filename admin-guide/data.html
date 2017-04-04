@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Data collections management &mdash; Urban Thematic Exploitation Platform 0.1 documentation</title>
+    <title>Data collections management &mdash; Urban Thematic Exploitation Platform 1.1 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.1',
+        VERSION:     '1.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Urban Thematic Exploitation Platform 0.1 documentation" href="../index.html" />
+    <link rel="top" title="Urban Thematic Exploitation Platform 1.1 documentation" href="../index.html" />
     <link rel="up" title="Urban thematic exploitation platform administrator guide" href="index.html" />
     <link rel="next" title="WPS providers management" href="wps_provider.html" />
     <link rel="prev" title="Control Panel" href="control_panel.html" />
@@ -70,7 +70,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>0.1</b><b class="caret"></b>
+        <b>1.1</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -93,6 +93,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../urbantep-dev/index.html">Processor Development Environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 </ul>
@@ -134,7 +135,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/urban-tep/documentation/blob/master/source/admin-guide/data.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/admin-guide/data.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -161,26 +162,31 @@
 <li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Community Portal Administrator Guide</a><ul class="current">
 <li class="toctree-l2"><a class="reference internal" href="control_panel.html">Control Panel</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="">Data Collection management</a><ul>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Data Collection management</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#manage-data-collections">Manage Data Collections</a></li>
 <li class="toctree-l3"><a class="reference internal" href="#publish-or-update-an-ows-context-document">Publish or update an OWS context document</a></li>
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="wps_provider.html">Wps Providers management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="wps_service.html">Wps Services management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wps_job.html">Wps Jobs management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="data_package.html">Data Packages management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="group.html">Groups management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="user.html">Users management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="news.html">News management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="feature.html">Web stories banners management</a></li>
 <li class="toctree-l2"><a class="reference internal" href="report.html">Reporting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html">Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="authorization.html">Authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accounting.html">Accounting</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../urbantep-dev/index.html">Processor Development Environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/urban-tep/documentation/blob/master/source/admin-guide/data.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/admin-guide/data.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../search.html" method="get">
  <div class="form-group">
@@ -208,8 +214,8 @@
 </div>
 <div class="admonition-requirement-coverage admonition" id="req-0">
 <p class="first admonition-title">Requirement coverage</p>
-<p>TS-FUN-380</p>
-<p class="last">This section describes how a group can have access to a data collection.</p>
+<p class="last">This section covers 
+TS-FUN-380</p>
 </div>
 </div>
 <div class="section" id="publish-or-update-an-ows-context-document">
@@ -220,7 +226,7 @@ The following example describes step by step how to publish a user result in the
 <ol class="arabic simple">
 <li>Generate the OWS document based on the following template:</li>
 </ol>
-<div class="highlight-xml"><div class="highlight"><pre><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
+<div class="highlight-xml"><div class="highlight"><pre><span></span><span class="cp">&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;</span>
 <span class="nt">&lt;feed</span> <span class="na">xmlns=</span><span class="s">&quot;http://www.w3.org/2005/Atom&quot;</span><span class="nt">&gt;</span>
   <span class="nt">&lt;id&gt;</span>urn:uuid:607ba1aa-7f43-4b85-9d75-adab715dc9c5<span class="nt">&lt;/id&gt;</span>
   <span class="nt">&lt;entry&gt;</span>
@@ -283,7 +289,7 @@ The following example describes step by step how to publish a user result in the
 <ol class="arabic simple" start="2">
 <li>via a curl command or with any other REST client, POST the document to the right collection:</li>
 </ol>
-<div class="highlight-curl"><div class="highlight"><pre>curl &#39;http://data.terradue.int/gs/catalogue/tepqwsr/gtfeature&#39; -H &#39;Pragma: no-cache&#39; -H &#39;Content-Type: application/atom+xml&#39; -H &#39;Accept: application/xml&#39; -H &#39;Cache-Control: no-cache&#39; -d @file.atom
+<div class="highlight-curl"><div class="highlight"><pre><span></span>curl &#39;http://data.terradue.int/gs/catalogue/tepqwsr/gtfeature&#39; -H &#39;Pragma: no-cache&#39; -H &#39;Content-Type: application/atom+xml&#39; -H &#39;Accept: application/xml&#39; -H &#39;Cache-Control: no-cache&#39; -d @file.atom
 </pre></div>
 </div>
 <p>The collections to post to are:</p>

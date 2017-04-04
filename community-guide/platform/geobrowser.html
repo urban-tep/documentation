@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>GeoBrowser area for data and Cloud processing services &mdash; Urban Thematic Exploitation Platform 0.1 documentation</title>
+    <title>GeoBrowser area for data and Cloud processing services &mdash; Urban Thematic Exploitation Platform 1.1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.1',
+        VERSION:     '1.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Urban Thematic Exploitation Platform 0.1 documentation" href="../../index.html" />
+    <link rel="top" title="Urban Thematic Exploitation Platform 1.1 documentation" href="../../index.html" />
     <link rel="up" title="Getting Started Guide" href="index.html" />
     <link rel="next" title="Thematic applications area" href="thematic.html" />
     <link rel="prev" title="Information areas (Blog, News, ...)" href="information-areas.html" />
@@ -70,7 +70,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>0.1</b><b class="caret"></b>
+        <b>1.1</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -93,6 +93,7 @@
 <li class="toctree-l1 current"><a class="reference internal" href="../index.html">Community Portal User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../urbantep-dev/index.html">Processor Development Environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 </ul>
@@ -149,7 +150,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/urban-tep/documentation/blob/master/source/community-guide/platform/geobrowser.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/community-guide/platform/geobrowser.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -177,7 +178,7 @@
 <li class="toctree-l2 current"><a class="reference internal" href="index.html">Platform overview</a><ul class="current">
 <li class="toctree-l3"><a class="reference internal" href="menu-bar.html">Menu bar</a></li>
 <li class="toctree-l3"><a class="reference internal" href="information-areas.html">Information areas (Blog, News, ...)</a></li>
-<li class="toctree-l3 current"><a class="current reference internal" href="">GeoBrowser area for data and Cloud processing services</a><ul>
+<li class="toctree-l3 current"><a class="current reference internal" href="#">GeoBrowser area for data and Cloud processing services</a><ul>
 <li class="toctree-l4"><a class="reference internal" href="#geobrowser">GeoBrowser</a></li>
 <li class="toctree-l4"><a class="reference internal" href="#cloud-processing">Cloud Processing</a></li>
 </ul>
@@ -186,6 +187,8 @@
 </ul>
 </li>
 <li class="toctree-l2"><a class="reference internal" href="../user.html">User Profile</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../apps.html">Thematic Applications</a></li>
+<li class="toctree-l2"><a class="reference internal" href="../community.html">Communities</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../data.html">Data</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../processing.html">Processing</a></li>
 <li class="toctree-l2"><a class="reference internal" href="../visualisation.html">Visualisation</a></li>
@@ -196,10 +199,11 @@
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../urbantep-dev/index.html">Processor Development Environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/urban-tep/documentation/blob/master/source/community-guide/platform/geobrowser.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/community-guide/platform/geobrowser.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../../search.html" method="get">
  <div class="form-group">
@@ -242,6 +246,8 @@
 <li><img alt="geobrowser_button_recbox.png" src="../../_images/geobrowser_button_recbox.png" /> Edit the search bbox by drawing a rectangle on the map</li>
 <li><img alt="geobrowser_button_dynamicsearch.png" src="../../_images/geobrowser_button_dynamicsearch.png" /> Enable/Disable dynamic search (the search bbox is the current view on the map)</li>
 <li><img alt="geobrowser_button_fullscreen.png" src="../../_images/geobrowser_button_fullscreen.png" /> Put the map in full screen</li>
+<li><a href="#id1"><span class="problematic" id="id2">|geobrowser_button_wkt.png|</span></a> Allow to enter a WKT to be displayed on the map as bounding box</li>
+<li><a href="#id3"><span class="problematic" id="id4">|geobrowser_button_meter.png|</span></a> Measure an area</li>
 <li><img alt="geobrowser_button_layers.png" src="../../_images/geobrowser_button_layers.png" /> Change the background of the map | Select layers to be displayed.</li>
 </ul>
 <div class="section" id="search-area">
@@ -255,19 +261,14 @@ Some parameters are just free text, others can be chosen from a list, and some p
 <img alt="../../_images/geobrowser_timebar.png" src="../../_images/geobrowser_timebar.png" />
 </div>
 <ul class="simple">
-<li>the geographical area which can be filled either from the bbox drawn on the map using <img alt="geobrowser_button_polygon.png" src="../../_images/geobrowser_button_polygon.png" /> or <img alt="geobrowser_button_recbox.png" src="../../_images/geobrowser_button_recbox.png" />, either by uploading a shapefile or a geojson file, using the import button.</li>
+<li>the geographical area which can be filled either from the bbox drawn on the map using <img alt="geobrowser_button_polygon.png" src="../../_images/geobrowser_button_polygon.png" />, <img alt="geobrowser_button_recbox.png" src="../../_images/geobrowser_button_recbox.png" /> or <a href="#id5"><span class="problematic" id="id6">|geobrowser_button_wkt.png|</span></a>, either by uploading a shapefile or a geojson file, using the import button.</li>
 </ul>
 <div class="admonition-requirement-coverage admonition" id="req-0">
 <p class="first admonition-title">Requirement coverage</p>
-<p>TS-FUN-280</p>
-<p class="last">This section describe the area of interest definition by geometry.</p>
+<p class="last">This section covers 
+TS-FUN-280, TS-FUN-300</p>
 </div>
-<div class="admonition-requirement-coverage admonition" id="req-1">
-<p class="first admonition-title">Requirement coverage</p>
-<p>TS-FUN-300</p>
-<p class="last">This section describe the area of interest definition by uploading a vector based file.</p>
-</div>
-<div class="admonition tip">
+<div class="admonition tip" id="req-1">
 <p class="first admonition-title">Tip</p>
 <p class="last">in the <em>Search Term</em> field supported wildcards are &#8216;*&#8217;, which matches any character sequence (including the empty one), and &#8216;?&#8217;, which matches any single character.</p>
 </div>
@@ -276,6 +277,9 @@ Some parameters are just free text, others can be chosen from a list, and some p
 <div class="section" id="data-results-layer">
 <h4>Data Results layer<a class="headerlink" href="#data-results-layer" title="Permalink to this headline">¶</a></h4>
 <p>Display the results (orange polygons) of the current search or context.</p>
+<div class="img-border figure">
+<img alt="../../_images/geobrowser_results_layer.png" src="../../_images/geobrowser_results_layer.png" />
+</div>
 </div>
 <div class="section" id="city-population-layer">
 <h4>City population layer<a class="headerlink" href="#city-population-layer" title="Permalink to this headline">¶</a></h4>
@@ -285,21 +289,16 @@ Some parameters are just free text, others can be chosen from a list, and some p
 </div>
 <div class="admonition-requirement-coverage admonition" id="req-2">
 <p class="first admonition-title">Requirement coverage</p>
-<p>TS-FUN-240</p>
-<p class="last">This section describe the main cities map layer.</p>
+<p class="last">This section covers 
+TS-FUN-240, TS-FUN-290</p>
 </div>
 <p>You can click on a city and get the city footprint on the map.</p>
 <div class="img-border figure">
 <img alt="../../_images/geobrowser_cities_footprint.png" src="../../_images/geobrowser_cities_footprint.png" />
 </div>
-<div class="admonition-requirement-coverage admonition" id="req-3">
-<p class="first admonition-title">Requirement coverage</p>
-<p>TS-FUN-290</p>
-<p class="last">This section describe the area of interest definition by urban feature.</p>
-</div>
 </div>
 <div class="section" id="density-map-layer">
-<h4>Density map layer<a class="headerlink" href="#density-map-layer" title="Permalink to this headline">¶</a></h4>
+<span id="req-3"></span><h4>Density map layer<a class="headerlink" href="#density-map-layer" title="Permalink to this headline">¶</a></h4>
 <p>Currently disactivated.</p>
 </div>
 </div>
@@ -330,8 +329,8 @@ The existing pre-defined contexts are:</p>
 </ul>
 <div class="admonition-requirement-coverage admonition" id="req-4">
 <p class="first admonition-title">Requirement coverage</p>
-<p>TS-ICD-110</p>
-<p class="last">This section describes the data package web widget.</p>
+<p class="last">This section covers 
+TS-ICD-110</p>
 </div>
 <p>Results can be dragged fron the left table to the basket. Then the basket can be saved as a new data package and shared with other users.
 Saved Data packages can then be loaded into the basket. (see <a class="reference internal" href="../data.html"><span class="doc">data</span></a> for more details)</p>
@@ -346,17 +345,12 @@ It is composed of two sub tabs.</p>
 <p>This tab contains the list of available Processing Services. Usually, only 20 Processing services are displayed. If you are looking for a specific one, you can filter the results using the <strong>Filter services</strong> input. Each Processing Service can be opened to display more information such as: name, service description, publisher name, classification, output description but also the list of parameters to fill in order to create a new job associated to this service.</p>
 <div class="admonition-requirement-coverage admonition" id="req-5">
 <p class="first admonition-title">Requirement coverage</p>
-<p>TS-FUN-250</p>
-<p class="last">This section describes the processing service discovery web widget.</p>
-</div>
-<div class="admonition-requirement-coverage admonition" id="req-6">
-<p class="first admonition-title">Requirement coverage</p>
-<p>TS-ICD-030</p>
-<p class="last">This section describes the processing service discovery web widget.</p>
+<p class="last">This section covers 
+TS-FUN-250, TS-ICD-030</p>
 </div>
 </div>
 <div class="section" id="jobs-tab">
-<h3>Jobs tab<a class="headerlink" href="#jobs-tab" title="Permalink to this headline">¶</a></h3>
+<span id="req-6"></span><h3>Jobs tab<a class="headerlink" href="#jobs-tab" title="Permalink to this headline">¶</a></h3>
 <p>This tab contains the list of available jobs associated to your user.
 Details on jobs can be accessed by clicking on the title of the job.</p>
 <div class="img-border figure">
@@ -364,8 +358,8 @@ Details on jobs can be accessed by clicking on the title of the job.</p>
 </div>
 <div class="admonition-requirement-coverage admonition" id="req-7">
 <p class="first admonition-title">Requirement coverage</p>
-<p>TS-ICD-030</p>
-<p class="last">This section describes how to access information on a succesful job.</p>
+<p class="last">This section covers 
+TS-ICD-030</p>
 </div>
 </div>
 </div>

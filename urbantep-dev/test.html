@@ -1,0 +1,287 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Local processor test &mdash; Urban Thematic Exploitation Platform 1.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Urban Thematic Exploitation Platform 1.1 documentation" href="../index.html" />
+    <link rel="up" title="Urban TEP Processor Development Environment" href="index.html" />
+    <link rel="next" title="Packaging and upload" href="upload.html" />
+    <link rel="prev" title="Example processor" href="example.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_urban_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>1.1</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Processor Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Local processor test</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="example.html" title="Previous Chapter: Example processor"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Example proce...</span>
+    </a>
+  </li>
+  <li>
+    <a href="upload.html" title="Next Chapter: Packaging and upload"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Packaging and... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-dev/test.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Processor Development Environment</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="processor.html">Processor concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vm.html">Obtaining and starting the VM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">Test data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html">Installed applications and tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example.html">Example processor</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Local processor test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload.html">Packaging and upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userprocessor.html">Building your own processor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-dev/test.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="local-processor-test">
+<h1>Local processor test<a class="headerlink" href="#local-processor-test" title="Permalink to this headline">¶</a></h1>
+<p>The example processor can be tested locally - first without docker container as it is able to run in CentOS. There is a README file in the urbanuser&#8217;s home directory with all steps to be performed. This may be used as copy-paste template when performing the steps in a terminal.</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>urbanuser@urbandev:~ $ cat ~/urbantep-dev.readme
+VM login
+========
+
+ o user urbanuser, password urbanuser
+ o either via desktop (start terminal)
+ o or via ssh
+ o urbantep software pre-installed in /urbantep/
+
+Example setup
+=============
+
+cd ~
+rm -r example
+/urbantep/software/urbantep-dev/bin/setup-example.sh
+cd example
+ls -l $(find . -type f)
+
+Local processor test (without Docker)
+=====================================
+
+cd ~/example
+mkdir -p wd
+rm -r wd/*
+cd wd
+../fmask-3.2/fmask-and-merge.sh /urbantep/eodata/LC8/v1/2014/07/03/LC81940272014184LGN00.tar.gz
+
+Local processor test (with Docker)
+==================================
+
+cd ~/example
+mkdir -p wd
+rm -rf wd/*
+cd wd
+mkdir fmask-package-info
+cp ../Dockerfile fmask-package-info/
+echo &quot;threshold=0.5&quot; &gt; parameters
+cp /urbantep/eodata/LC8/v1/2014/07/03/LC81940272014184LGN00.tar.gz .
+docker build -t urbancentos fmask-package-info
+docker run --rm=true -v /urbantep/software/snap-3.0.1:/urbantep/software/snap-3.0.1 -v /urbantep/software/mcr_root-v81:/urbantep/software/mcr_root-v81 -v /home/urbanuser/example/wd:/wd -v /home/urbanuser/example/fmask-3.2:/urbantep-fmask-3.2 -w /wd urbancentos /urbantep-fmask-3.2/fmask-and-merge.sh /wd/LC81940272014184LGN00.tar.gz /wd/parameters
+
+Packaging and upload to processing centre
+=========================================
+
+cd ~/example
+/urbantep/software/urbantep-dev/bin/package-bc.sh descriptor.xml
+/urbantep/software/urbantep-dev/bin/upload-bc.sh descriptor.xml
+/urbantep/software/urbantep-dev/bin/describeProcess-bc.sh descriptor.xml
+
+Cleaning up
+===========
+
+cd ~
+rm -r example
+</pre></div>
+</div>
+<p>The follwing figure shows the call of the processor with one of the provided inputs and its execution.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/urbantep-dev-test-local.png"><img alt="../_images/urbantep-dev-test-local.png" src="../_images/urbantep-dev-test-local.png" style="width: 499.85px; height: 390.0px;" /></a>
+<p class="caption"><span class="caption-text">Running the processor with local test data</span></p>
+</div>
+<p>The result can be inspected using the installed SNAP. Open the result NetCDF product in the working directory, view an RGB, open the fmask band, and split horizontally.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/urbantep-dev-snap-fmask.png"><img alt="../_images/urbantep-dev-snap-fmask.png" src="../_images/urbantep-dev-snap-fmask.png" style="width: 676.0px; height: 551.2px;" /></a>
+<p class="caption"><span class="caption-text">Opening and inspecting the processing result with SNAP</span></p>
+</div>
+<p>Next, the processor can be tested running it in a Docker container. There are two steps, docker build and docker run.</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/urbantep-dev-test-dockerbuild.png"><img alt="../_images/urbantep-dev-test-dockerbuild.png" src="../_images/urbantep-dev-test-dockerbuild.png" style="width: 495.95px; height: 264.55px;" /></a>
+<p class="caption"><span class="caption-text">Building the Docker image</span></p>
+</div>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/urbantep-dev-test-dockerrun.png"><img alt="../_images/urbantep-dev-test-dockerrun.png" src="../_images/urbantep-dev-test-dockerrun.png" style="width: 498.55px; height: 385.45px;" /></a>
+<p class="caption"><span class="caption-text">Running the processor in the Docker image</span></p>
+</div>
+<div class="figure align-center" id="id5">
+<a class="reference internal image-reference" href="../_images/urbantep-dev-test-result.png"><img alt="../_images/urbantep-dev-test-result.png" src="../_images/urbantep-dev-test-result.png" style="width: 676.0px; height: 551.2px;" /></a>
+<p class="caption"><span class="caption-text">Inspecting the result in the working directory</span></p>
+</div>
+<p>We get the same NetCDF result as before. The Docker container makes sure that this is reproducible in any of the processing centres that may have different native operating system environments.</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

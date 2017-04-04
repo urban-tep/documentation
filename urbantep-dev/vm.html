@@ -1,0 +1,250 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Obtaining and starting the VM &mdash; Urban Thematic Exploitation Platform 1.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Urban Thematic Exploitation Platform 1.1 documentation" href="../index.html" />
+    <link rel="up" title="Urban TEP Processor Development Environment" href="index.html" />
+    <link rel="next" title="Test data" href="data.html" />
+    <link rel="prev" title="Processor concepts" href="processor.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_urban_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>1.1</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Processor Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Obtaining and starting the VM</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="processor.html" title="Previous Chapter: Processor concepts"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Processor con...</span>
+    </a>
+  </li>
+  <li>
+    <a href="data.html" title="Next Chapter: Test data"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Test data &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-dev/vm.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Processor Development Environment</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="processor.html">Processor concepts</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Obtaining and starting the VM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">Test data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html">Installed applications and tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example.html">Example processor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Local processor test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload.html">Packaging and upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userprocessor.html">Building your own processor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-dev/vm.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="obtaining-and-starting-the-vm">
+<h1>Obtaining and starting the VM<a class="headerlink" href="#obtaining-and-starting-the-vm" title="Permalink to this headline">¶</a></h1>
+<p>The Urban TEP processor development environment is available as a virtual machine disk image in .vdi format from</p>
+<ul class="simple">
+<li>host ftp.brockmann-consult.de</li>
+<li>user urbantep</li>
+<li>dir software/urbantep-dev-1.0/</li>
+</ul>
+<p>for internal users. It will be made available to well-known external users via the portal after validation. Well-known external users are users that run through a particular registration process with the processing centre(s) they will use.</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/urbantep-dev-ftp-access.png"><img alt="../_images/urbantep-dev-ftp-access.png" src="../_images/urbantep-dev-ftp-access.png" style="width: 610.35px; height: 411.45px;" /></a>
+<p class="caption"><span class="caption-text">Downloading the Virtual Machine image from the BC FTP server</span></p>
+</div>
+<p>Copy the content of the virtual machine image directory to a local directory on your machine. Unless done, install Oracle Virtual Box on your machine. Later on also hosting a VM in a processing centre will be available.</p>
+<p>Start Virtual Box, configure the VM with 4 GB RAM, 2 cores, bridged network. Start the virtual machine.</p>
+<div class="figure align-center" id="id2">
+<a class="reference internal image-reference" href="../_images/urbantep-dev-virtualbox-start.png"><img alt="../_images/urbantep-dev-virtualbox-start.png" src="../_images/urbantep-dev-virtualbox-start.png" style="width: 510.9px; height: 373.1px;" /></a>
+<p class="caption"><span class="caption-text">Starting the VM in Virtual Box</span></p>
+</div>
+<p>Login to the VM</p>
+<div class="figure align-center" id="id3">
+<a class="reference internal image-reference" href="../_images/urbantep-dev-vm-login.png"><img alt="../_images/urbantep-dev-vm-login.png" src="../_images/urbantep-dev-vm-login.png" style="width: 528.5px; height: 435.0px;" /></a>
+<p class="caption"><span class="caption-text">Login into the Urban-TEP development VM</span></p>
+</div>
+<p>as</p>
+<ul class="simple">
+<li>user urbanuser</li>
+<li>initial password urbanuser</li>
+</ul>
+<p>You may change the password after first login with the passwd command in a terminal window.</p>
+<div class="figure align-center" id="id4">
+<a class="reference internal image-reference" href="../_images/urbantep-dev-desktop.png"><img alt="../_images/urbantep-dev-desktop.png" src="../_images/urbantep-dev-desktop.png" style="width: 687.05px; height: 565.5px;" /></a>
+<p class="caption"><span class="caption-text">Desktop environment of the Urban-TEP development VM</span></p>
+</div>
+<p>The desktop of the Urban-TEP VM shows some icons of pre-installed applications</p>
+<ul class="simple">
+<li>Terminal, used for local processor tests, packaging, upload</li>
+<li>Web browser</li>
+<li>Sentinel Toolbox SNAP</li>
+<li>README with tutorial instructions for an example processor</li>
+</ul>
+<p>Additional standard software can be searched for and installed with</p>
+<ul class="simple">
+<li>sudo yum search &lt;name&gt;</li>
+<li>sudo yum install &lt;name&gt;</li>
+</ul>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

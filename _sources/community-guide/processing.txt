@@ -25,8 +25,10 @@ To create a new job:
 
 1. Select the service you want to use (see `Discover existing WPS`_).
 2. Fill in the different parameters needed by the service (see `Fill in parameters`_).
-3. Click on **Run Job**
-4. To visualize the result of the job, see :doc:`Visualisation <visualisation>`
+3. If the wps service has implemented the quotation mode, you must first click on **Calculate cost** to get an estimation of the wps job cost.
+4. If you have enough credits on your account, you will be able to see the **Submit job** button.
+5. Click on **Run Job**
+6. To visualize the result of the job, see :doc:`Visualisation <visualisation>`
 
 Fill in parameters
 ------------------
@@ -39,7 +41,7 @@ Besides, some specific parameters can be filled directly from the geobrowser:
 - geographic input (bounding box) value can be taken from the bbox selected on the map by clicking on the |get_param_from_map_button.png| button,
 - temporal input (start date, end date) can be taken from the time bar selection by clicking on the |get_param_from_map_button.png| button,
 
-.. |get_param_from_map_button.png| image:: ../../includes/get_param_from_map_button.png
+.. |get_param_from_map_button.png| image:: ../includes/get_param_from_map_button.png
 
 Access my jobs
 --------------
@@ -70,19 +72,19 @@ Make my jobs public
 To make my jobs public:
 
 1. Go to the detail view of the job (see `Access my jobs`_).
-2. See :doc:`Share a job` <sharing>`.
+2. See :doc:`Share a job <sharing>`.
 
 .. tip:: On the job list, jobs with the icon |public_jobs| are the jobs you made public.
 
 .. |public_jobs| image:: ../includes/public_jobs.png
 
-Access public jobs
-------------------
+Access community jobs
+---------------------
 
-To access my jobs:
+To access community jobs:
 
 1. Open the Processing Services tab by clicking on **Processing Services** on the right of the geobrowser's map.
-2. Click on **Public Jobs** on top of the Processing Services tab.
-3. The list of existing jobs (failed or success) is displayed.
+2. Click on **Community Jobs** on top of the Processing Services tab.
+3. The list of existing jobs publicly available from the community (failed or success) is displayed.
 4. Click on the job title.
 5. You can now see details about the job.

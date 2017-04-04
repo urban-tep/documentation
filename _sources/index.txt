@@ -6,8 +6,6 @@
 Welcome to Urban Thematic Exploitation Platform's documentation!
 ====================================================================
 
-Contents:
-
 .. toctree::
    :maxdepth: 2
 
@@ -15,6 +13,7 @@ Contents:
    Community Portal User Guide <community-guide/index>
    Community Portal Administrator Guide <admin-guide/index>
    Thematic Applications <apps/index>
+   Processor Development Environment <urbantep-dev/index>
    Requirement Traceability <requirement/index>
 
 Indices and tables

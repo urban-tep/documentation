@@ -1,0 +1,235 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Building your own processor package &mdash; Urban Thematic Exploitation Platform 1.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Urban Thematic Exploitation Platform 1.1 documentation" href="../index.html" />
+    <link rel="up" title="Urban TEP Processor Development Environment" href="index.html" />
+    <link rel="next" title="Requirement Traceability" href="../requirement/index.html" />
+    <link rel="prev" title="Packaging and upload" href="upload.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_urban_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>1.1</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Processor Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Building your own processor package</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="upload.html" title="Previous Chapter: Packaging and upload"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Packaging and...</span>
+    </a>
+  </li>
+  <li>
+    <a href="../requirement/index.html" title="Next Chapter: Requirement Traceability"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Requirement T... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-dev/userprocessor.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Processor Development Environment</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="processor.html">Processor concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vm.html">Obtaining and starting the VM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">Test data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html">Installed applications and tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example.html">Example processor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Local processor test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload.html">Packaging and upload</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Building your own processor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-dev/userprocessor.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="building-your-own-processor-package">
+<h1>Building your own processor package<a class="headerlink" href="#building-your-own-processor-package" title="Permalink to this headline">¶</a></h1>
+<p>For building you own processor package you may follow the example in structure and steps:</p>
+<ul class="simple">
+<li>Create an empty directory corresponing to ~/example . You may use your package name for it, but it does not matter.</li>
+<li>Create a subdirectory with the name &lt;package&gt;-&lt;version&gt; and place all your software and auxiliary data into it in a directory tree. This will be available at runtime in the same structure.</li>
+<li>Unless you have a script that calls the processor with a single input, add one to your software. This is the &#8220;processor&#8221;.</li>
+<li>Test your processor locally if it can be run in the CentOS VM. If you need to install additional software packages, note them down for the Dockerfile if they are required at runtime.</li>
+<li>Write a Dockerfile and test your processor using docker build and docker run.</li>
+<li>Write a descriptor.xml file.</li>
+</ul>
+<p>Processor parameters that users can select shall be described in the descriptor.xml file. This allows the portal to generate a form for users to specify values for these processor parameters. At runtime, the key-value pairs of the parameters filled by the user (submitter of the request) are provided to the processor in an additional parameter file. The processor will get called with the path to the product input as first command line argument and to a processor parameter file as second command line argument. This processor parameters file contains lines with key-value pairs separated by &#8216;=&#8217;. It can be source&#8217;d in the script to convert the parameters into environment variables, or forwarded to a Java application as property file.</p>
+<p>The parameter file may look like the following:</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">threshold</span><span class="o">=</span><span class="mf">0.2</span>
+<span class="n">someotherparameter</span><span class="o">=</span><span class="n">A</span>
+</pre></div>
+</div>
+<p>The processor may look like the following:</p>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>#!/bin/bash
+
+input=$1
+parameter_file=$2
+
+if [ &quot;$parameter_file&quot; != &quot;&quot; ]; then
+    . $parameter_file
+fi
+
+# from now on we have access to the parameters as shell variables $threshold and $someotherparameter ...
+...
+</pre></div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

@@ -1,0 +1,214 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Processor concepts &mdash; Urban Thematic Exploitation Platform 1.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Urban Thematic Exploitation Platform 1.1 documentation" href="../index.html" />
+    <link rel="up" title="Urban TEP Processor Development Environment" href="index.html" />
+    <link rel="next" title="Obtaining and starting the VM" href="vm.html" />
+    <link rel="prev" title="Urban TEP Processor Development Environment" href="index.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_urban_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>1.1</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Processor Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Processor concepts</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="index.html" title="Previous Chapter: Urban TEP Processor Development Environment"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Urban TEP Pro...</span>
+    </a>
+  </li>
+  <li>
+    <a href="vm.html" title="Next Chapter: Obtaining and starting the VM"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Obtaining and... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-dev/processor.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Processor Development Environment</a><ul class="current">
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Processor concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vm.html">Obtaining and starting the VM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">Test data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html">Installed applications and tools</a></li>
+<li class="toctree-l2"><a class="reference internal" href="example.html">Example processor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Local processor test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload.html">Packaging and upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userprocessor.html">Building your own processor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-dev/processor.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="processor-concepts">
+<h1>Processor concepts<a class="headerlink" href="#processor-concepts" title="Permalink to this headline">¶</a></h1>
+<p>There are three concepts that may need to be defined in order to avoid misuderstandings: Earth observation data product, Earth observation data product sets, and Earth observation data processors.</p>
+<ul class="simple">
+<li>An Earth observation data product - product for short - is a single file or a group of files that together form one observation, usually in raster format. One product can be one granule of an acquisition, e.g. 5 minutes of a swath, a full orbit, or a tile of a certain extent, or whatever granularity has been selected for the respective product type and mission. Note that in some communities &#8220;product&#8221; is used like &#8220;product type&#8221; in our definition.</li>
+<li>A product set is a collection of products. The collection may be identified by a name, or by enumerating the products, or by specifying criteria - often product type, time range, and spatial coverage. When requesting processing at a processing centre inputs are product sets, and the outputs of processing are product sets as well. The product set may contain a single product in particular cases.</li>
+<li>An Earth observation data processor - processor for short - in its simplest form is a software item that when applied to a single Earth observation product (file) generates a single output. This output usually is a higher level product. Processors are called, i.e. started, for each input by a &#8220;framework&#8221;. This differs from the approach where &#8220;processor&#8221; is a &#8220;service&#8221; that runs forever and from time to time gets requests to be processed.</li>
+</ul>
+<p>Processors in this definition are functional units that can be called for a single input and produce the output, using optionally auxiliary data that comes with the processor, but only write to the current working directory to store intermediate data and also the processing result. They do not else modify their environment, in particular not the software itself. They shall not write anything into the software installation directories or &#8220;databases&#8221; outside the allocated working directory. Make sure for your own processors that they follow this understanding.</p>
+<p>If you in addition obey the rule that the processor software shall be relocatable, i.e. does not depend on absolute paths, but rather use $(dirname $0) in scripts to find the installation location of the software and necessary auxiliary data, then it can easily be deployed in a processing centre and applied concurrently.</p>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

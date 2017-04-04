@@ -1,0 +1,330 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Example processor &mdash; Urban Thematic Exploitation Platform 1.1 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.1',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="top" title="Urban Thematic Exploitation Platform 1.1 documentation" href="../index.html" />
+    <link rel="up" title="Urban TEP Processor Development Environment" href="index.html" />
+    <link rel="next" title="Local processor test" href="test.html" />
+    <link rel="prev" title="Installed applications and tools" href="apps.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_urban_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>1.1</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Processor Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Example processor</a></li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="apps.html" title="Previous Chapter: Installed applications and tools"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Installed app...</span>
+    </a>
+  </li>
+  <li>
+    <a href="test.html" title="Next Chapter: Local processor test"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Local process... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-dev/example.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Processor Development Environment</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="processor.html">Processor concepts</a></li>
+<li class="toctree-l2"><a class="reference internal" href="vm.html">Obtaining and starting the VM</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">Test data</a></li>
+<li class="toctree-l2"><a class="reference internal" href="apps.html">Installed applications and tools</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Example processor</a></li>
+<li class="toctree-l2"><a class="reference internal" href="test.html">Local processor test</a></li>
+<li class="toctree-l2"><a class="reference internal" href="upload.html">Packaging and upload</a></li>
+<li class="toctree-l2"><a class="reference internal" href="userprocessor.html">Building your own processor</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-dev/example.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="example-processor">
+<h1>Example processor<a class="headerlink" href="#example-processor" title="Permalink to this headline">¶</a></h1>
+<p>The development environment contains one processor example as a template how local test, packaging and upload to a processing centre can be performed. You can copy this example into your home directory of the VM with</p>
+<blockquote>
+<div>/urbantep/software/urbantep-dev/bin/setup-example.sh</div></blockquote>
+<p>The result is a directory called example with the following content:</p>
+<div class="figure align-center" id="id1">
+<a class="reference internal image-reference" href="../_images/urbantep-dev-example-processor.png"><img alt="../_images/urbantep-dev-example-processor.png" src="../_images/urbantep-dev-example-processor.png" style="width: 495.95px; height: 176.8px;" /></a>
+<p class="caption"><span class="caption-text">Example processor Fmask with some wrapper scripts and package information</span></p>
+</div>
+<ul class="simple">
+<li>Fmask is the executable - It requires Matlab runtime</li>
+<li>run_fmask.sh is the wrapper script that comes with Fmask</li>
+<li>merge-graph.xml is the SNAP GPT graph that merges the output of Fmask as one band into the Landsat product</li>
+<li>fmask-and-merge.sh is the wrapper script that calls Fmask and SNAP in sequence</li>
+<li>Dockerfile declares Linux package dependencies of the processor</li>
+<li>descriptor.xml declares environment and parameterisation of the processor for deployment</li>
+</ul>
+<p>fmask-and-merge.sh is the processor that shall be applied to Landsat-8 inputs. It is shown here mainly for illustration. Your own processors may look different. The processor will be called with the path to the Landsat-8 input file as command line argument. The processor finally uses a tagged line in stdout (OUTPUT_PRODUCT) to inform about the filename of the result.</p>
+<div class="code bash highlight-default"><div class="highlight"><pre><span></span>urbanuser@urbandev:~ $ cat /urbantep/software/urbantep-dev/example/fmask-3.2/fmask-and-merge.sh
+#!/bin/bash
+set -e
+
+input=$(basename $1)
+id=${input%.tar.gz}
+id=${id%.tgz}
+metadatafile=${id}_MTL.txt
+mask=${id}_MTLFmask.hdr
+output=${id}-fmask.nc
+
+wd=$(pwd)
+SNAP_DIR=/urbantep/software/snap-3.0.1
+MCR_DIR=/urbantep/software/mcr_root-v81
+FMASK_DIR=$(cd $(dirname $0); pwd)
+
+if [ ! -e $wd/$metadatafile ]; then
+    echo &#39;unpacking tgz input ...&#39;
+    tar xf $1
+fi
+
+if [ ! -e $wd/$mask ]; then
+    echo &#39;masking with Fmask ...&#39;
+    export MCR_CACHE_ROOT=${wd}/mcrcache
+    mkdir -p ${MCR_CACHE_ROOT}
+    $FMASK_DIR/run_Fmask.sh $MCR_DIR
+fi
+
+if [ ! -e $wd/$output ]; then
+    echo &#39;merging mask into product ...&#39;
+    ${SNAP_DIR}/bin/gpt -c 4G $FMASK_DIR/merge-graph.xml -PmasterProduct=$wd/$metadatafile $wd/$mask -f NetCDF4-BEAM -t $wd/$output
+fi
+
+echo OUTPUT_PRODUCT $output
+</pre></div>
+</div>
+<p>Processors are usually packaged with Docker to allow for a constant environment of the processor even in different processing centres. The Dockerfile</p>
+<ul class="simple">
+<li>identifies the operating system and version. We recommend to stick to CentOS 7 for the moment if ever possible. There may be constraints on certain processing centres which OS are allowed.</li>
+<li>installs additional packages required by the processor, in this case in fact required by Matlab runtime. Note that Matlab runtime and SNAP are provided as software package that will be mounted into the Docker container. Do not install it in the Docker file.</li>
+</ul>
+<div class="code highlight-default"><div class="highlight"><pre><span></span>urbanuser@urbandev:~ $ cat /urbantep/software/urbantep-dev/example/Dockerfile
+FROM centos:7
+RUN yum install -y libXext.x86_64 libXt.x86_64 libXmu.x86_64
+</pre></div>
+</div>
+<p>The descriptor XML is a declaration that is independent of the target processing centre. It declares names and versions, the processor script to be started to run the processor, formal parameters, and dependencies.</p>
+<div class="code xml highlight-default"><div class="highlight"><pre><span></span>urbanuser@urbandev:~ $ cat /urbantep/software/urbantep-dev/example/descriptor.xml
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;utep:descriptor xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+                 xmlns:utep=&quot;http://urban-tep.eo.esa.int/schema/urban-tep-schema.xsd&quot;
+                 xsi:schemaLocation=&quot;http://urban-tep.eo.esa.int/schema/urban-tep-schema.xsd urban-tep-schema.xsd&quot;&gt;
+  &lt;utep:processor&gt;
+    &lt;utep:name&gt;Fmask8&lt;/utep:name&gt;
+    &lt;utep:executable&gt;fmask-and-merge.sh&lt;/utep:executable&gt;
+    &lt;utep:title&gt;Urban TEP Fmask for Landsat 8&lt;/utep:title&gt;
+    &lt;utep:description&gt;&lt;p&gt;Performs cloud detection for Landsat 8 L1 products.&lt;/p&gt;&lt;/utep:description&gt;
+    &lt;utep:inputTypes&gt;Landsat8&lt;/utep:inputTypes&gt;
+    &lt;utep:parameters&gt;
+      &lt;utep:parameter&gt;
+        &lt;utep:name&gt;threshold&lt;/utep:name&gt;
+        &lt;utep:type&gt;string&lt;/utep:type&gt;
+        &lt;utep:description&gt;cloud probability threshold&lt;/utep:description&gt;
+        &lt;utep:default&gt;0.2&lt;/utep:default&gt;
+      &lt;/utep:parameter&gt;
+    &lt;/utep:parameters&gt;
+    &lt;utep:packaging&gt;
+      &lt;utep:name&gt;fmask&lt;/utep:name&gt;
+      &lt;utep:version&gt;3.2&lt;/utep:version&gt;
+      &lt;utep:type&gt;Docker&lt;/utep:type&gt;
+      &lt;utep:dependencies&gt;
+        &lt;utep:dependency&gt;
+          &lt;utep:name&gt;snap&lt;/utep:name&gt;
+        &lt;/utep:dependency&gt;
+        &lt;utep:dependency&gt;
+          &lt;utep:name&gt;mcr_root&lt;/utep:name&gt;
+          &lt;utep:version&gt;v81&lt;/utep:version&gt;
+        &lt;/utep:dependency&gt;
+      &lt;/utep:dependencies&gt;
+      &lt;utep:resources&gt;
+        &lt;utep:resource&gt;
+          &lt;utep:name&gt;memory&lt;/utep:name&gt;
+          &lt;utep:value&gt;7000&lt;/utep:value&gt;
+        &lt;/utep:resource&gt;
+        &lt;utep:resource&gt;
+          &lt;utep:name&gt;timelimit&lt;/utep:name&gt;
+          &lt;utep:value&gt;3600&lt;/utep:value&gt;
+        &lt;/utep:resource&gt;
+      &lt;/utep:resources&gt;
+    &lt;/utep:packaging&gt;
+  &lt;/utep:processor&gt;
+&lt;/utep:descriptor&gt;
+</pre></div>
+</div>
+<p>The elements of this descriptor.xml file content are:</p>
+<ul class="simple">
+<li>name is the displayed name of the processor.</li>
+<li>executable is the script to be started to run the processor</li>
+<li>title and description are explanatory information for users of the processor</li>
+<li>inputTypes is a comma-separated list of product types, one or several of Landsat8, S2, MERIS</li>
+<li>the parameter structure with name, type, description and default declares parameters of the processor. The threshold parameter is provided here for illustration purposes. It is not an actual externally accessible parameter of Fmask. Always use string for all types of parameters for the moment.</li>
+<li>packaging name and version are the identifying information for the software package that contains the processor</li>
+<li>Docker for the moment is the package type supported by all processing centres. Other types (SNAP, BEAM) may be supported by particular processing centres.</li>
+<li>dependencies shall list the software packages that shall be mounted into the Docker container. The packages are those are made available in the development VM locally in /urbantep/software/&lt;package&gt;-&lt;version&gt;/ . Later versions of the development VM may come with additional packages. The same packages are available in the processing centres and will be made available to the Docker container at runtime.</li>
+<li>The resource &#8220;memory&#8221; for the processing of a single input product can be configured in MB. The default and upper limit is processing-centre dependent. It may be around 2024 MB. A high value restricts concurrency but may be required for certain processors.</li>
+<li>The resource &#8220;timelimit&#8221; for the processing of a single input product can be configured in seconds. The default and upper limit is processing-centre dependent. It may be around 600 seconds. Processors requiring more than this time may be aborted automatically. Too high values may use up a lot of resources in case the processor has no internal clock and limitation.</li>
+</ul>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

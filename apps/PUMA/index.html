@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>PUMA &mdash; Urban Thematic Exploitation Platform 0.1 documentation</title>
+    <title>PUMA &mdash; Urban Thematic Exploitation Platform 1.1 documentation</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.1',
+        VERSION:     '1.1',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Urban Thematic Exploitation Platform 0.1 documentation" href="../../index.html" />
+    <link rel="top" title="Urban Thematic Exploitation Platform 1.1 documentation" href="../../index.html" />
     <link rel="stylesheet" href="../../_static/terradue.css" type="text/css" />
     <script src="../../_static/affixTrick.js"></script>
   
@@ -67,7 +67,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>0.1</b><b class="caret"></b>
+        <b>1.1</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -90,6 +90,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../community-guide/index.html">Community Portal User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../urbantep-dev/index.html">Processor Development Environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 </ul>
@@ -104,7 +105,19 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">PUMA</a></li>
+<li><a class="reference internal" href="#">PUMA</a><ul>
+<li><a class="reference internal" href="#puma-ui-basic-user">PUMA UI - Basic user</a><ul>
+<li><a class="reference internal" href="#top-panel-dataset-selection">Top panel - dataset selection</a></li>
+<li><a class="reference internal" href="#map">Map</a></li>
+<li><a class="reference internal" href="#left-panel-area-and-map-layer-selection">Left panel - area and map layer selection</a></li>
+<li><a class="reference internal" href="#right-panel-attributes-visualizations">Right panel - attributes visualizations</a></li>
+<li><a class="reference internal" href="#further-documentation">Further documentation</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#puma-ui-expert-user">PUMA UI - Expert user</a></li>
+<li><a class="reference internal" href="#usage-of-puma-ui-from-the-portal-in-images">Usage of PUMA UI from the portal in images</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -119,7 +132,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/urban-tep/documentation/blob/master/source/apps/PUMA/index.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/apps/PUMA/index.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -146,10 +159,11 @@
 <li class="toctree-l1"><a class="reference internal" href="../../community-guide/index.html">Community Portal User Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../urbantep-dev/index.html">Processor Development Environment</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/urban-tep/documentation/blob/master/source/apps/PUMA/index.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/apps/PUMA/index.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../../search.html" method="get">
  <div class="form-group">
@@ -165,11 +179,75 @@
       
   <div class="section" id="puma">
 <h1>PUMA<a class="headerlink" href="#puma" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="puma-ui-basic-user">
+<h2>PUMA UI - Basic user<a class="headerlink" href="#puma-ui-basic-user" title="Permalink to this headline">¶</a></h2>
+<p>PUMA Exploration interface allows examination of various spatial data. Multiple map layers can be displayed, both static from local or remote sources and dynamically created choropleths from corresponding attributes. Aside from the map, attribute data can be also displayed in multiple graphs and/or tables, including optional normalization.</p>
+<div class="section" id="top-panel-dataset-selection">
+<h3>Top panel - dataset selection<a class="headerlink" href="#top-panel-dataset-selection" title="Permalink to this headline">¶</a></h3>
+<p>Using the top panel, the user chooses which data they want to view. Data can be selected for a place, year and theme. Visualizations determine which map layers and graphs will be displayed.</p>
+</div>
+<div class="section" id="map">
+<h3>Map<a class="headerlink" href="#map" title="Permalink to this headline">¶</a></h3>
+<p>On the map, PUMA can display various background layers (e.g. OpenStreetMap, Google Earth), raster and vector layers both uploaded into PUMA or from remote sources, and area layers - boundaries and selections.</p>
+</div>
+<div class="section" id="left-panel-area-and-map-layer-selection">
+<h3>Left panel - area and map layer selection<a class="headerlink" href="#left-panel-area-and-map-layer-selection" title="Permalink to this headline">¶</a></h3>
+<p>The left panel controls map layers and area selection. Under available layers, the user can select layers to display on the map. Under selected layers, they can configure the opacity and display additional information for each layer.
+The examination can be narrowed down by selecting areas of interest, either in the area list or using the selection tools. Selected areas are highlighted both on the map and in all graphs.</p>
+</div>
+<div class="section" id="right-panel-attributes-visualizations">
+<h3>Right panel - attributes visualizations<a class="headerlink" href="#right-panel-attributes-visualizations" title="Permalink to this headline">¶</a></h3>
+<p>The right panel contains all the configured tables or graphs. Any user can easily create their own, using any subset of available attributes. The attributes can be automatically normalized by area or other attributes.</p>
+</div>
+<div class="section" id="further-documentation">
+<h3>Further documentation<a class="headerlink" href="#further-documentation" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to find further documentation on what is possible and how to use it is available at
+<a class="reference external" href="https://puma.worldbank.org/help/">https://puma.worldbank.org/help/</a> or <a class="reference external" href="http://urban-tep.gisat.cz/help/">http://urban-tep.gisat.cz/help/</a></p>
+</div>
+</div>
+<div class="section" id="puma-ui-expert-user">
+<h2>PUMA UI - Expert user<a class="headerlink" href="#puma-ui-expert-user" title="Permalink to this headline">¶</a></h2>
+<p>As an expert user it is possible to specify new visualization, which will be available to other users. It is also possible to specify other analysis, which will show the combination of the data received via TEP Urban processing and portal with other types of data already in PUMA. It also supports adding the data via other means than just TEP Urban processing centers.</p>
+</div>
+<div class="section" id="usage-of-puma-ui-from-the-portal-in-images">
+<h2>Usage of PUMA UI from the portal in images<a class="headerlink" href="#usage-of-puma-ui-from-the-portal-in-images" title="Permalink to this headline">¶</a></h2>
+<p>It is possible to import the data into the PUMA using the UrbanTEP portal. It is also then possible to see the data, which were jsut uploaded in the PUMA.</p>
+<p>Steps necessary to use Guf subsetting with integration of PUMA.</p>
+<ol class="arabic simple">
+<li>After getting to the portal to allow you visualization of the Global Urban Footprint.</li>
+</ol>
+<div class="figure">
+<img alt="../../_images/AvailableServices.png" src="../../_images/AvailableServices.png" />
+</div>
+<ol class="arabic simple" start="2">
+<li>Select the service to import the data into the PUMA</li>
+</ol>
+<div class="figure">
+<img alt="../../_images/analyze.png" src="../../_images/analyze.png" />
+</div>
+<ol class="arabic simple" start="3">
+<li>Results of the analysis with the button, which will take you into the PUMA</li>
+</ol>
+<div class="figure">
+<img alt="../../_images/resultOfAnalysis.png" src="../../_images/resultOfAnalysis.png" />
+</div>
+<ol class="arabic simple" start="4">
+<li>Initial state of the Puma after taking you inside. The place will depend on which area you wanted to analyse.</li>
+</ol>
+<div class="figure">
+<img alt="../../_images/initialStateOfPumaAfterMovementThere.png" src="../../_images/initialStateOfPumaAfterMovementThere.png" />
+</div>
+<ol class="arabic simple" start="5">
+<li>PUMA after some playing in it</li>
+</ol>
+<div class="figure">
+<img alt="../../_images/withStatistics.png" src="../../_images/withStatistics.png" />
+</div>
 <div class="admonition-requirement-coverage admonition" id="req-0">
 <p class="first admonition-title">Requirement coverage</p>
-<p>TS-FUN-020</p>
-<p class="last">PUMA Thematic Application
-This section describes the PUMA thematic application.</p>
+<p class="last">This section covers 
+TS-FUN-020</p>
+</div>
 </div>
 </div>
 

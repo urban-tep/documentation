@@ -6,7 +6,6 @@ Overview
 
   This section lists and describes all the sponsorised thematic applications deployed on the platform.
 
-Contents:
 
 .. toctree::
    :maxdepth: 2
