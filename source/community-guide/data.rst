@@ -56,17 +56,20 @@ Currently existing contexts are:
 
 Once clicked on a context, data automatically appear on the map.
 
-Discover data related to a specific event
------------------------------------------
+Discover data related to another product
+----------------------------------------
 
-To access data related to a specific event:
+To access data related to another product:
 
-1. Access the geobrowser, by default, data related to a specific events (provided by the disaster charter) are displayed on the map.
-2. Focus on one event.
-3. Click on **Search data for event**.
-4. Data related to this event is automatically added to the result tab and displayed on the map.
+1. Select a product from the search result by clicking on the data directly on the map or on the list.
+2. A popup with the metadata is displayed.
+3. Click on **Both filters**.
+4. Data related to this product (spatial filter and time filter are set accordingly) is automatically added to the result tab and displayed on the map.
 
-.. figure:: ../includes/geobrowser_data_event.png
+.. NOTE::
+		You can also do the search only using the same time filter or the same spatial filter by clicking on the associated button.
+
+.. figure:: ../includes/geobrowser_data_related.png
 	:figclass: img-border
 
 Select data in your basket
