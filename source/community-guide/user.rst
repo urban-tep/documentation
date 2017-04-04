@@ -171,8 +171,8 @@ You will see what is your level for each type of usage of the platform.
 	:figclass: img-border
 	:scale: 80%
 
-To find out more precisely the number of data packages you loaded, the number of jobs you created, how many failed or were successful, ... Just go the **Analytics** page from the portal homepage.
-You will see:
+The table **Analytics** will display more precisely the number of data packages you loaded, the number of jobs you created, how many failed or were successful, ...
+It describes:
 
 - how many data collection you loaded
 - how many data packages and items you loaded
