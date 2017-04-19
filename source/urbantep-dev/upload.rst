@@ -31,3 +31,20 @@ Finally, depending on the processing centre and the user's status, it can be ver
 
    Verification of processor deployment at the BC processing centre
 
+   
+Packaging and upload - IT4I processing center
+^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+
+The overall process of packaging and uploading of the processor is exactly the same as described by Brockmann Consult processing center, apart from the last step - verification script. While the Brockmann is using fully automatic deployment process, the IT4I's deployment process requires manual preparation of the WPS service as the last step.
+
+**Packaging**
+The package is created with the package-it4i.sh tool. It generates a zip file for later upload to IT4I processing center.
+
+**Uploading**
+This package is uploaded with the upload-it4i.sh tool. This requires user name and password of a well-known user of the IT4I processing centre.
+Succesful upload automatically creates a new ticket in the U-TEP ticketing system with a request to set up new processor in the form of WPS service.
+
+.. figure:: ../includes/redmine_detail.png
+	:align: center
+	:scale: 50%
+	:figclass: img-container-border
