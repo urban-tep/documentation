@@ -178,10 +178,6 @@ It describes:
 - how many data packages and items you loaded
 - how many wps jobs you created and how many failed or succeeded
 
-.. figure:: ../includes/user_anaylytics.png
-	:figclass: img-border
-	:scale: 80%
-
 .. req:: TS-ICD-060
     :show:
 
