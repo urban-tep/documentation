@@ -8,9 +8,10 @@ GeoBrowser
 	:figclass: img-border img-max-width
 
 
-The GeoBrowser is composed of:
+The GeoBrowser differ from one thematic application to another. It can be composed of:
 
 	- a `Map`_, where the user can make search query and see results
+	- layers that can be displayed on the map
 	- `Contexts`_ links
 	- `Results`_ tab (initialy hidden)
 	- `Processing services tab`_ (initialy hidden)
@@ -68,38 +69,6 @@ Display the results (orange polygons) of the current search or context.
 
 .. figure:: ../../includes/geobrowser_results_layer.png
 	:figclass: img-border
-
-City population layer
-*********************
-
-Display a circle over most populated cities. The circle size is related to the population of the city.
-
-.. figure:: ../../includes/geobrowser_cities.png
-	:figclass: img-border
-
-.. req:: TS-FUN-240
-	:show:
-
-	This section describe the main cities map layer.
-
-You can click on a city and get the city footprint on the map.
-
-.. figure:: ../../includes/geobrowser_cities_footprint.png
-	:figclass: img-border
-
-.. req:: TS-FUN-290
-	:show:
-
-	This section describe the area of interest definition by urban feature.
-
-
-
-
-Density map layer
-*****************
-
-Currently disactivated.
-
 
 Contexts
 ~~~~~~~~

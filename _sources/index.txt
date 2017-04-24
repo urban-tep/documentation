@@ -14,6 +14,7 @@ Welcome to Urban Thematic Exploitation Platform's documentation!
    Community Portal Administrator Guide <admin-guide/index>
    Thematic Applications <apps/index>
    Processor Development Environment <urbantep-dev/index>
+   Operational Procedures <urbantep-oper/index>
    Requirement Traceability <requirement/index>
 
 Indices and tables

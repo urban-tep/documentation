@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Packaging and upload &mdash; Urban Thematic Exploitation Platform 1.1 documentation</title>
+    <title>Packaging and upload &mdash; Urban Thematic Exploitation Platform 0.2 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '1.1',
+        VERSION:     '0.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Urban Thematic Exploitation Platform 1.1 documentation" href="../index.html" />
+    <link rel="top" title="Urban Thematic Exploitation Platform 0.2 documentation" href="../index.html" />
     <link rel="up" title="Urban TEP Processor Development Environment" href="index.html" />
     <link rel="next" title="Building your own processor package" href="userprocessor.html" />
     <link rel="prev" title="Local processor test" href="test.html" />
@@ -70,7 +70,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>1.1</b><b class="caret"></b>
+        <b>0.2</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -94,6 +94,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Processor Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../urbantep-oper/index.html">Operational Procedures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 </ul>
@@ -108,7 +109,10 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Packaging and upload</a></li>
+<li><a class="reference internal" href="#">Packaging and upload</a><ul>
+<li><a class="reference internal" href="#packaging-and-upload-it4i-processing-center">Packaging and upload - IT4I processing center</a></li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -165,10 +169,14 @@
 <li class="toctree-l2"><a class="reference internal" href="apps.html">Installed applications and tools</a></li>
 <li class="toctree-l2"><a class="reference internal" href="example.html">Example processor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="test.html">Local processor test</a></li>
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Packaging and upload</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Packaging and upload</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#packaging-and-upload-it4i-processing-center">Packaging and upload - IT4I processing center</a></li>
+</ul>
+</li>
 <li class="toctree-l2"><a class="reference internal" href="userprocessor.html">Building your own processor</a></li>
 </ul>
 </li>
+<li class="toctree-l1"><a class="reference internal" href="../urbantep-oper/index.html">Operational Procedures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
@@ -205,6 +213,18 @@
 <div class="figure align-center" id="id3">
 <a class="reference internal image-reference" href="../_images/urbantep-dev-test-describe.png"><img alt="../_images/urbantep-dev-test-describe.png" src="../_images/urbantep-dev-test-describe.png" style="width: 521.3px; height: 306.15px;" /></a>
 <p class="caption"><span class="caption-text">Verification of processor deployment at the BC processing centre</span></p>
+</div>
+<div class="section" id="packaging-and-upload-it4i-processing-center">
+<h2>Packaging and upload - IT4I processing center<a class="headerlink" href="#packaging-and-upload-it4i-processing-center" title="Permalink to this headline">¶</a></h2>
+<p>The overall process of packaging and uploading of the processor is exactly the same as described by Brockmann Consult processing center, apart from the last step - verification script. While the Brockmann is using fully automatic deployment process, the IT4I&#8217;s deployment process requires manual preparation of the WPS service as the last step.</p>
+<p><strong>Packaging</strong>
+The package is created with the package-it4i.sh tool. It generates a zip file for later upload to IT4I processing center.</p>
+<p><strong>Uploading</strong>
+This package is uploaded with the upload-it4i.sh tool. This requires user name and password of a well-known user of the IT4I processing centre.
+Succesful upload automatically creates a new ticket in the U-TEP ticketing system with a request to set up new processor in the form of WPS service.</p>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/redmine_detail1.png"><img alt="../_images/redmine_detail1.png" src="../_images/redmine_detail1.png" style="width: 499.0px; height: 274.0px;" /></a>
+</div>
 </div>
 </div>
 

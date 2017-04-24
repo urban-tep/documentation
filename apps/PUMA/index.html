@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>PUMA &mdash; Urban Thematic Exploitation Platform 1.1 documentation</title>
+    <title>Visualization and analysis tool &mdash; Urban Thematic Exploitation Platform 0.2 documentation</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -17,7 +17,7 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '1.1',
+        VERSION:     '0.2',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
         HAS_SOURCE:  true
@@ -30,7 +30,7 @@
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Urban Thematic Exploitation Platform 1.1 documentation" href="../../index.html" />
+    <link rel="top" title="Urban Thematic Exploitation Platform 0.2 documentation" href="../../index.html" />
     <link rel="stylesheet" href="../../_static/terradue.css" type="text/css" />
     <script src="../../_static/affixTrick.js"></script>
   
@@ -67,7 +67,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>1.1</b><b class="caret"></b>
+        <b>0.2</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -91,6 +91,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Thematic Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../urbantep-dev/index.html">Processor Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../urbantep-oper/index.html">Operational Procedures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 </ul>
@@ -105,17 +106,40 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">PUMA</a><ul>
-<li><a class="reference internal" href="#puma-ui-basic-user">PUMA UI - Basic user</a><ul>
-<li><a class="reference internal" href="#top-panel-dataset-selection">Top panel - dataset selection</a></li>
-<li><a class="reference internal" href="#map">Map</a></li>
-<li><a class="reference internal" href="#left-panel-area-and-map-layer-selection">Left panel - area and map layer selection</a></li>
-<li><a class="reference internal" href="#right-panel-attributes-visualizations">Right panel - attributes visualizations</a></li>
-<li><a class="reference internal" href="#further-documentation">Further documentation</a></li>
+<li><a class="reference internal" href="#">Visualization and analysis tool</a><ul>
+<li><a class="reference internal" href="#ui-basic-user">UI - Basic user</a><ul>
+<li><a class="reference internal" href="#top-panel-data-selection">Top panel - data selection</a></li>
+<li><a class="reference internal" href="#map">Map</a><ul>
+<li><a class="reference internal" href="#thematic-maps-choropleth">Thematic maps (Choropleth)</a></li>
 </ul>
 </li>
-<li><a class="reference internal" href="#puma-ui-expert-user">PUMA UI - Expert user</a></li>
-<li><a class="reference internal" href="#usage-of-puma-ui-from-the-portal-in-images">Usage of PUMA UI from the portal in images</a></li>
+<li><a class="reference internal" href="#tools">Tools</a><ul>
+<li><a class="reference internal" href="#layer-selection">Layer selection</a></li>
+<li><a class="reference internal" href="#area-selection">Area selection</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#charts">Charts</a><ul>
+<li><a class="reference internal" href="#chart-types">Chart types</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#units">Units</a><ul>
+<li><a class="reference internal" href="#attribute-units-backoffice">Attribute units - BackOffice</a></li>
+<li><a class="reference internal" href="#analysis-units">Analysis units</a></li>
+<li><a class="reference internal" href="#attribute-units-frontoffice">Attribute Units - FrontOffice</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#simple-integration-of-the-data">Simple integration of the data.</a><ul>
+<li><a class="reference internal" href="#custom-wms">Custom WMS</a></li>
+<li><a class="reference internal" href="#vector-or-raster-layer">Vector or raster layer</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li><a class="reference internal" href="#ui-expert-user">UI - Expert user</a><ul>
+<li><a class="reference internal" href="#integration-of-the-analysis-back-to-the-portal">Integration of the analysis back to the portal</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#usage-of-ui-from-the-portal-in-images">Usage of UI from the portal in images</a></li>
 </ul>
 </li>
 </ul>
@@ -160,6 +184,7 @@
 <li class="toctree-l1"><a class="reference internal" href="../../admin-guide/index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../index.html">Thematic Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../urbantep-dev/index.html">Processor Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../../urbantep-oper/index.html">Operational Procedures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
@@ -177,40 +202,220 @@
 
     <div class="col-md-9">
       
-  <div class="section" id="puma">
-<h1>PUMA<a class="headerlink" href="#puma" title="Permalink to this headline">¶</a></h1>
-<div class="section" id="puma-ui-basic-user">
-<h2>PUMA UI - Basic user<a class="headerlink" href="#puma-ui-basic-user" title="Permalink to this headline">¶</a></h2>
-<p>PUMA Exploration interface allows examination of various spatial data. Multiple map layers can be displayed, both static from local or remote sources and dynamically created choropleths from corresponding attributes. Aside from the map, attribute data can be also displayed in multiple graphs and/or tables, including optional normalization.</p>
-<div class="section" id="top-panel-dataset-selection">
-<h3>Top panel - dataset selection<a class="headerlink" href="#top-panel-dataset-selection" title="Permalink to this headline">¶</a></h3>
-<p>Using the top panel, the user chooses which data they want to view. Data can be selected for a place, year and theme. Visualizations determine which map layers and graphs will be displayed.</p>
+  <div class="section" id="visualization-and-analysis-tool">
+<h1>Visualization and analysis tool<a class="headerlink" href="#visualization-and-analysis-tool" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="ui-basic-user">
+<h2>UI - Basic user<a class="headerlink" href="#ui-basic-user" title="Permalink to this headline">¶</a></h2>
+<p>PUMA Exploration interface allows examination of various spatial data. Multiple map layers can be displayed, both static from local or remote sources and dynamically created choropleths from corresponding attributes. Aside from the map, attribute data can be also displayed in multiple graphs and/or tables, including optional normalizations.</p>
+<div class="section" id="top-panel-data-selection">
+<h3>Top panel - data selection<a class="headerlink" href="#top-panel-data-selection" title="Permalink to this headline">¶</a></h3>
+<p>The layers and their attributes are organized in the Scopes. Scopes explain the size of the areas ready for the analysis. An example of such Scope is Global, which contains global products organized into the Places. The places represent an analytical units combined with the area they belong to. In Global Scope it is meaningful to organize the places alongside the country boundaries for example. The Scope is also organized around the concept of Themes. Theme represent certain subset of visualisations to show to the user. Visualisation is combination of the shown layers, the area which is shown on the map and the charts alongside.</p>
+<p>In the example in the image we chose Local Scope meaning that the data are focused on local areas such as cities. As a Place we selected Cebu City, thematically we are interested in data related to Land Cover and the charts and the layers shown belong to the visualisation of the structures.</p>
+<div class="figure">
+<img alt="../../_images/chooseTheDataToSee.png" src="../../_images/chooseTheDataToSee.png" />
+</div>
 </div>
 <div class="section" id="map">
 <h3>Map<a class="headerlink" href="#map" title="Permalink to this headline">¶</a></h3>
-<p>On the map, PUMA can display various background layers (e.g. OpenStreetMap, Google Earth), raster and vector layers both uploaded into PUMA or from remote sources, and area layers - boundaries and selections.</p>
+<p>The map is available as a 2D as well as 3D. Tha main purpose of the map is to display the data sets as image data on top of the map. The data sets are organized as explained in Top panel - data selection. They are also further structured in the layer groups in the panel.</p>
+<div class="figure">
+<img alt="../../_images/2dMap.png" src="../../_images/2dMap.png" />
 </div>
-<div class="section" id="left-panel-area-and-map-layer-selection">
-<h3>Left panel - area and map layer selection<a class="headerlink" href="#left-panel-area-and-map-layer-selection" title="Permalink to this headline">¶</a></h3>
-<p>The left panel controls map layers and area selection. Under available layers, the user can select layers to display on the map. Under selected layers, they can configure the opacity and display additional information for each layer.
-The examination can be narrowed down by selecting areas of interest, either in the area list or using the selection tools. Selected areas are highlighted both on the map and in all graphs.</p>
+<p>On the map, the tool can display various background layers (e.g. OpenStreetMap, Google Earth), raster and vector layers both uploaded into the tool or from remote sources (if exposed as WMS), and area layers - boundaries and selections.</p>
+<div class="figure">
+<img alt="../../_images/3dMap.png" src="../../_images/3dMap.png" />
 </div>
-<div class="section" id="right-panel-attributes-visualizations">
-<h3>Right panel - attributes visualizations<a class="headerlink" href="#right-panel-attributes-visualizations" title="Permalink to this headline">¶</a></h3>
-<p>The right panel contains all the configured tables or graphs. Any user can easily create their own, using any subset of available attributes. The attributes can be automatically normalized by area or other attributes.</p>
+<div class="section" id="thematic-maps-choropleth">
+<h4>Thematic maps (Choropleth)<a class="headerlink" href="#thematic-maps-choropleth" title="Permalink to this headline">¶</a></h4>
+<div class="figure">
+<img alt="../../_images/thematicMapsConfiguration.png" src="../../_images/thematicMapsConfiguration.png" />
 </div>
-<div class="section" id="further-documentation">
-<h3>Further documentation<a class="headerlink" href="#further-documentation" title="Permalink to this headline">¶</a></h3>
-<p>It is possible to find further documentation on what is possible and how to use it is available at
-<a class="reference external" href="https://puma.worldbank.org/help/">https://puma.worldbank.org/help/</a> or <a class="reference external" href="http://urban-tep.gisat.cz/help/">http://urban-tep.gisat.cz/help/</a></p>
+<div class="figure">
+<img alt="apps/PUMA/thematicMapsExample.png" src="apps/PUMA/thematicMapsExample.png" />
 </div>
 </div>
-<div class="section" id="puma-ui-expert-user">
-<h2>PUMA UI - Expert user<a class="headerlink" href="#puma-ui-expert-user" title="Permalink to this headline">¶</a></h2>
+</div>
+<div class="section" id="tools">
+<h3>Tools<a class="headerlink" href="#tools" title="Permalink to this headline">¶</a></h3>
+<p>In this part we explain the tools available under the top panel. All these tools can be shown floating or hidden in the
+panel.</p>
+<div class="section" id="layer-selection">
+<h4>Layer selection<a class="headerlink" href="#layer-selection" title="Permalink to this headline">¶</a></h4>
+<p>In the tool it is possible to see the available layers and select the ones to be visible in the map. For each layer it
+is possible to show the metadata information associated with the layer, show and hide a legend and specify the opacity
+of the layer.</p>
+<div class="figure">
+<img alt="../../_images/layersInformation.png" src="../../_images/layersInformation.png" />
+</div>
+<p>For selected layers it is possible to order them using tool depicted on the next image. The ordering happens by using
+drag and drop.</p>
+<div class="figure">
+<img alt="../../_images/selectedLayers2D.png" src="../../_images/selectedLayers2D.png" />
+</div>
+</div>
+<div class="section" id="area-selection">
+<h4>Area selection<a class="headerlink" href="#area-selection" title="Permalink to this headline">¶</a></h4>
+<p>The analytical units are grouped into the levels. This tool allows you to see the units associated with given area structured
+as a tree based on the levels.</p>
+<div class="figure">
+<img alt="../../_images/visibleAreas.png" src="../../_images/visibleAreas.png" />
+</div>
+</div>
+</div>
+<div class="section" id="charts">
+<h3>Charts<a class="headerlink" href="#charts" title="Permalink to this headline">¶</a></h3>
+<p>The layers contain attributes, which can be used as the source of the data for the charts displayed in the right part.
+There are 4 types of charts supported. Each chart can show one or more attributes. The exact display differs based on
+the type of the chart. It is also possible to specify the units which will be displayed in the chart and adapt them
+by using custom factor to multiply the values.</p>
+<div class="figure">
+<img alt="../../_images/addAttributesConfiguration.png" src="../../_images/addAttributesConfiguration.png" />
+</div>
+<div class="section" id="chart-types">
+<h4>Chart types<a class="headerlink" href="#chart-types" title="Permalink to this headline">¶</a></h4>
+<ul class="simple">
+<li>Table</li>
+<li>Column</li>
+<li>Pie</li>
+<li>Scatter</li>
+</ul>
+<div class="figure">
+<img alt="../../_images/table.png" src="../../_images/table.png" />
+</div>
+<div class="figure">
+<img alt="../../_images/columnChart.png" src="../../_images/columnChart.png" />
+</div>
+<div class="figure">
+<img alt="../../_images/pieChart.png" src="../../_images/pieChart.png" />
+</div>
+<div class="figure">
+<img alt="../../_images/scatterChart.png" src="../../_images/scatterChart.png" />
+</div>
+</div>
+</div>
+<div class="section" id="units">
+<h3>Units<a class="headerlink" href="#units" title="Permalink to this headline">¶</a></h3>
+<p>There are two places which are important with respect to units in BackOffice. First is setting the units of the attribute. These units represent in which units the attribute is represented in the data. These units are also shown without any normalization or update to units in the FrontOffice charts.</p>
+<div class="section" id="attribute-units-backoffice">
+<h4>Attribute units - BackOffice<a class="headerlink" href="#attribute-units-backoffice" title="Permalink to this headline">¶</a></h4>
+<p>When creating or updating the attribute it is possible to specify the units. There are two types of units. Standard units and custom units. It is always possible to set only either standard units or custom units. These units express what units the values in the data are. They are also by default shown in the charts.</p>
+<div class="figure">
+<img alt="../../_images/attributesStandardCustom.png" src="../../_images/attributesStandardCustom.png" />
+</div>
+</div>
+<div class="section" id="analysis-units">
+<h4>Analysis units<a class="headerlink" href="#analysis-units" title="Permalink to this headline">¶</a></h4>
+<p>It is important to take into account units for the spatial aggregation analysis. Depending on the exact type of the analysis there are multiple units, which can be taken into account.</p>
+<p><strong>No changes</strong></p>
+<p>In this case it either counts the amount of units in all more detailed units or sums all attributes in the given area. There is no change in the units and in the FrontOffice they are shown as explained in further section.</p>
+<div class="figure">
+<img alt="../../_images/countNoChangeInUnits.png" src="../../_images/countNoChangeInUnits.png" />
+</div>
+<p><strong>Normalization over area</strong></p>
+<p>Handling of this dependts on whether the units of target attribute are standard or custom. If the units are standard, then the result which is counted in m2 is transformed to the target unit by dividing it using appropriate number. If the units are nonstandard the data remains unchanged after the operation itself.</p>
+<div class="figure">
+<img alt="../../_images/areaOperations.png" src="../../_images/areaOperations.png" />
+</div>
+<p><strong>Attribute weighted by area</strong></p>
+<p>In this case there is one attribute, which is relevant for the operation and the resulting attribute. If both of these attributes are in standard units, it is possible to update resulting value by the fraction representing the relationship between all three units. One of them is source units, second is area which is always in m2 and third is resulting attribute. Basically the whole process goes as:</p>
+<ol class="arabic simple">
+<li>Get the factor between source unit and m2</li>
+<li>Get the factor between this first factor, which is counted such as if it was in m2 and the result attribute unit.</li>
+</ol>
+<p>If any of the attributes is non standard no operation happen on the result.</p>
+<div class="figure">
+<img alt="../../_images/attributeByArea.png" src="../../_images/attributeByArea.png" />
+</div>
+<p><strong>Attribute weighted by another attribute</strong></p>
+<p>This use case is very similar to the previous one, except that instead of the m2 unit of the area there is unit of the third attribute.</p>
+<div class="figure">
+<img alt="../../_images/attributeByAttribute.png" src="../../_images/attributeByAttribute.png" />
+</div>
+</div>
+<div class="section" id="attribute-units-frontoffice">
+<h4>Attribute Units - FrontOffice<a class="headerlink" href="#attribute-units-frontoffice" title="Permalink to this headline">¶</a></h4>
+<p>The source unit for an attribute is set in the BackOffice. This source unit says what unit is the representation of the data in.</p>
+<p>In the FrontOffice, it is possible to display the values stored under the attributes using different type of charts. There are multiple ways how the values could be adapted before the final display of the chart to the user. The simplest way is to simply show the values using table.</p>
+<p><strong>Show the values without changes</strong></p>
+<p>For this use case it is enough to open the configuration of the chart. Choose the correct type of the chart and select the attributes, which will be visualised. The units which will be shown in the legend are the same as in the BackOffice. For the reference they are also displayed in the table of atributes to display in the chart.</p>
+<p><em>Table</em></p>
+<div class="figure">
+<img alt="../../_images/simpleTableWithoutNormalization.png" src="../../_images/simpleTableWithoutNormalization.png" />
+</div>
+<p><em>Column</em></p>
+<div class="figure">
+<img alt="../../_images/simpleColumnChartWithoutNormalization.png" src="../../_images/simpleColumnChartWithoutNormalization.png" />
+</div>
+<p><strong>Show the values changed to different display unit.</strong></p>
+<p>This use case allows you to display the data in different units than the source one provided to the attribute in the BackOffice. First example will show how to update all shown attributes so that they are displayed in the km2 instead of the default units.</p>
+<p>There two important things that these settings does. The first one is changing the unit in the legend. This is done via the select Change Units. If you select some unit here, this is the unit which will be displayed in the legend. The second one is to update the values to a different one before showing the value to the user. This is handled via the Custom Factor field. This scenario has two options. First is that the source units are recognized by the system in which case the custom factor will be filled by the default factor. If the source units aren&#8217;t recognized by the system the factor will be filled by 1 by default. It is possible to use any factor as long as it is number. The value is simply multiplied by the factor before being returned for display.</p>
+<p><em>Table</em></p>
+<div class="figure">
+<img alt="../../_images/simpleTableChartWithCustomUnits.png" src="../../_images/simpleTableChartWithCustomUnits.png" />
+</div>
+<p><strong>Show the values normalized to the area</strong></p>
+<p>In this use case you have attribute in any units and want to show the statistical information based upon the area. This have again two possible ways to be displayed. First is that the units of the source attribute is standard supported by the system. Second is that the units of the source attribute are in nonstandard units such as inhabitants.</p>
+<p><em>Source units are standards</em></p>
+<p>In this case the default resulting unit is %. Unless you change the unit to one of the standard and/or update the custom factor, the value in the data will be divided by the area, adapted to difference in units and then multiplied by 100 and % is shown as the unit.</p>
+<div class="figure">
+<img alt="../../_images/simpleTableWithAreaNormalization.png" src="../../_images/simpleTableWithAreaNormalization.png" />
+</div>
+<p><em>Source units are nonstandard</em></p>
+<p>In this case there is one more setting to take into account. It is possible to select the units over which the default values will be normalized. If for example we have the source attribute in inhabitants as units, the default resulting unit will be inhabitants/m2. It is possible to specify other standard units changing the result for example to inhabitants/km2.</p>
+<div class="figure">
+<img alt="../../_images/simpleTableWithAreaNormalizationNonStandardUnits.png" src="../../_images/simpleTableWithAreaNormalizationNonStandardUnits.png" />
+</div>
+<p><strong>Show the values normalized to the attribute set</strong></p>
+<p>The normalization is happening against another attribute set. In order for this normalization to work it is necessary to use attribute set, which contain the same attribute. The result is then in the percentage and the value created by the division of values in two different attribute sets are multiplied by 100.</p>
+<div class="figure">
+<img alt="../../_images/simpleTableWithAttributeSetNormalization.png" src="../../_images/simpleTableWithAttributeSetNormalization.png" />
+</div>
+<p><strong>Show the values normalized to the attribute</strong></p>
+<p>It is a bit similar to previous choice in the fact that the values from the source attribute are divided by the result attribute. The main difference is that here you are choosing the exact attribute to be used in division. The value is then afterwards multiplied by 100 and shown in percentage, unless specified otherwise.</p>
+</div>
+</div>
+<div class="section" id="simple-integration-of-the-data">
+<h3>Simple integration of the data.<a class="headerlink" href="#simple-integration-of-the-data" title="Permalink to this headline">¶</a></h3>
+<p>Outside of the process explained in the documentation of the BackOffice it is also possible to integrate some simple data sources into the visualisation and analysis platform.</p>
+<div class="figure">
+<img alt="../../_images/addLayerInitial.png" src="../../_images/addLayerInitial.png" />
+</div>
+<div class="section" id="custom-wms">
+<h4>Custom WMS<a class="headerlink" href="#custom-wms" title="Permalink to this headline">¶</a></h4>
+<p>The FrontOffice contains the possibility to show the Custom WMS source alongside the data which are already part of the
+visualisation and analysis tool.</p>
+<div class="figure">
+<img alt="../../_images/addLayerWMS.png" src="../../_images/addLayerWMS.png" />
+</div>
+</div>
+<div class="section" id="vector-or-raster-layer">
+<h4>Vector or raster layer<a class="headerlink" href="#vector-or-raster-layer" title="Permalink to this headline">¶</a></h4>
+<p>This option for adding the layer will add the layer to current scope to be visualised using default style. It also prepares
+zonal analysis for the attributes associated to the layer and create averages and sums of the values in the attributes
+of the layer.</p>
+<div class="figure">
+<img alt="../../_images/addLayerFromFile.png" src="../../_images/addLayerFromFile.png" />
+</div>
+</div>
+</div>
+</div>
+<div class="section" id="ui-expert-user">
+<h2>UI - Expert user<a class="headerlink" href="#ui-expert-user" title="Permalink to this headline">¶</a></h2>
 <p>As an expert user it is possible to specify new visualization, which will be available to other users. It is also possible to specify other analysis, which will show the combination of the data received via TEP Urban processing and portal with other types of data already in PUMA. It also supports adding the data via other means than just TEP Urban processing centers.</p>
+<p>Further videos documenting how to do this, are available at <a class="reference external" href="https://urban-tep.eo.esa.int/puma/backoffice">https://urban-tep.eo.esa.int/puma/backoffice</a></p>
+<div class="section" id="integration-of-the-analysis-back-to-the-portal">
+<h3>Integration of the analysis back to the portal<a class="headerlink" href="#integration-of-the-analysis-back-to-the-portal" title="Permalink to this headline">¶</a></h3>
+<p>It is possible to integrate results prepared in the Visualisation and analysis tool to the portal for others to query
+them. It allows the users to publish results in a simple way to the portal via the visualisation and analysis tool.</p>
+<p>In order to get to the option click on the share sign on the right. It provides you with the link you can share directly
+and with the possibility to share into the portal.</p>
+<div class="figure">
+<img alt="../../_images/shareToPortal.png" src="../../_images/shareToPortal.png" />
 </div>
-<div class="section" id="usage-of-puma-ui-from-the-portal-in-images">
-<h2>Usage of PUMA UI from the portal in images<a class="headerlink" href="#usage-of-puma-ui-from-the-portal-in-images" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+<div class="section" id="usage-of-ui-from-the-portal-in-images">
+<h2>Usage of UI from the portal in images<a class="headerlink" href="#usage-of-ui-from-the-portal-in-images" title="Permalink to this headline">¶</a></h2>
 <p>It is possible to import the data into the PUMA using the UrbanTEP portal. It is also then possible to see the data, which were jsut uploaded in the PUMA.</p>
 <p>Steps necessary to use Guf subsetting with integration of PUMA.</p>
 <ol class="arabic simple">
@@ -243,11 +448,14 @@ The examination can be narrowed down by selecting areas of interest, either in t
 <div class="figure">
 <img alt="../../_images/withStatistics.png" src="../../_images/withStatistics.png" />
 </div>
-<div class="admonition-requirement-coverage admonition" id="req-0">
-<p class="first admonition-title">Requirement coverage</p>
-<p class="last">This section covers 
-TS-FUN-020</p>
-</div>
+<table class="docutils field-list" frame="void" rules="none">
+<col class="field-name" />
+<col class="field-body" />
+<tbody valign="top">
+<tr class="field-odd field"><th class="field-name">show:</th><td class="field-body"></td>
+</tr>
+</tbody>
+</table>
 </div>
 </div>
 
