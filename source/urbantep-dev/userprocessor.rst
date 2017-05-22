@@ -10,6 +10,12 @@ For building you own processor package you may follow the example in structure a
 - Write a Dockerfile and test your processor using docker build and docker run.
 - Write a descriptor.xml file. 
 
+Input datasets available in the processing centres comprise at least Sentinel-2 Africa+selected urban areas, Landsat, and MERIS Level 1. Other datasets available in the processing centres can be provided for processing on request. In the descriptor.xml file you refer to an input product type your processor is able to process. The product types that correspond to the datasets are:
+
+- S2_L1C
+- Landsat8_L1
+- MERIS_L1B
+
 Processor parameters that users can select shall be described in the descriptor.xml file. This allows the portal to generate a form for users to specify values for these processor parameters. At runtime, the key-value pairs of the parameters filled by the user (submitter of the request) are provided to the processor in an additional parameter file. The processor will get called with the path to the product input as first command line argument and to a processor parameter file as second command line argument. This processor parameters file contains lines with key-value pairs separated by '='. It can be source'd in the script to convert the parameters into environment variables, or forwarded to a Java application as property file.
 
 The parameter file may look like the following:
