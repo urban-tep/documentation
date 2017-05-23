@@ -40,13 +40,17 @@ After clicked the link received by email, you'll be able to see your profile pag
 By clicking on your username, you will access your profile page.
 The other icons give the following functionalities:
 
+- |user_signin_balance.png| Your current accounting balance (if greater than 0)
 - |user_signin_settings.png| Access to administration settings (for users with special privileges)
-- |user_signin_cloud.png| Access to the cloud dahsboard (for users with special privileges)
 - |user_signin_contactus.png| Link to contact the Urban Tep support team
+- |user_signin_documentation.png| Link to the Urban Tep documentation
+- |user_signin_support.png| Access support ticketing system (for users with special privileges)
 - |user_signin_logout.png| Log out from the portal
 
 .. |user_signin_settings.png| image:: ../includes/user_signin_settings.png
-.. |user_signin_cloud.png| image:: ../includes/user_signin_cloud.png
+.. |user_signin_documentation.png| image:: ../includes/user_signin_documentation.png
+.. |user_signin_support.png| image:: ../includes/user_signin_support.png
+.. |user_signin_balance.png| image:: ../includes/user_signin_balance.png
 .. |user_signin_contactus.png| image:: ../includes/user_signin_contactus.png
 .. |user_signin_logout.png| image:: ../includes/user_signin_logout.png
 
