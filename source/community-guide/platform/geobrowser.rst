@@ -45,7 +45,7 @@ Some parameters are just free text, others can be chosen from a list, and some p
 .. figure:: ../../includes/geobrowser_timebar.png
 	:figclass: img-border img-max-width
 
-- the geographical area which can be filled either from the bbox drawn on the map using |geobrowser_button_polygon.png|, |geobrowser_button_recbox.png| or |geobrowser_button_wkt.png|, either by uploading a shapefile or a geojson file, using the import button.
+- the geographical area which can be filled either from the bbox drawn on the map using |geobrowser_button_polygon.png|, |geobrowser_button_recbox.png|, |geobrowser_button_placemark.png| or by uploading a shapefile or a kml file, using the import button |geobrowser_button_wkt.png|.
 
 .. req:: TS-FUN-280
 	:show:
