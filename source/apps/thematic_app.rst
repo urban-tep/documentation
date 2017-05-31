@@ -71,6 +71,8 @@ In the application either choose S2 processing or Landsat processing, then fill 
 - The region bounding box
 - Optionally, you may select different index definitions instead of NDBI, NDVI and MNDWI for processing of S2
 
+From the input dataset all products that overlap with the region and that fall into the time period are processed. There is no selection of individual scenes to process. Rather, the complete mission is considered as one continuous acquisition where we use a subset of. In case of Landsat, even different missions can be combined as an extended input dataset. 
+
 Processing may take some minutes to hours. The result can be downloaded for local analysis.
 
 User's apps
