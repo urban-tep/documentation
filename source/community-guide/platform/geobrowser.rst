@@ -29,7 +29,6 @@ Some buttons maybe used to interact with the map:
 -  |geobrowser_button_query.png| Open query search tab
 -  |geobrowser_button_polygon.png| Edit the search bbox by drawing a polygon on the map
 -  |geobrowser_button_recbox.png| Edit the search bbox by drawing a rectangle on the map
--  |geobrowser_button_dynamicsearch.png| Enable/Disable dynamic search (the search bbox is the current view on the map)
 -  |geobrowser_button_fullscreen.png| Put the map in full screen
 -  |geobrowser_button_wkt.png| Allow to enter a WKT to be displayed on the map as bounding box
 -  |geobrowser_button_meter.png| Measure an area
