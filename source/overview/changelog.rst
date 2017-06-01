@@ -18,5 +18,16 @@ Change Log
 +---------+------------+--------------------------------------------------------------------------------------------------+
 |         |            | Add accounting                                                                                   |
 +---------+------------+--------------------------------------------------------------------------------------------------+
-| 1.4     | 01/06/2017 | Updates for AR closeout                                                                          |
+| 1.4     | 22/05/2017 | Updates for AR closeout                                                                          |
++---------+------------+--------------------------------------------------------------------------------------------------+
+|         |            | Update description of predefined apps with Urban TEP product portfolio, GUF subsetting, TimeScan |
+|         |            | on-demand, and their parameterisation, including aggregation parameters (issue #85)              |
++---------+------------+--------------------------------------------------------------------------------------------------+
+|         |            | Add description of input data types, explain how inputs are selected by input dataset, region,   |
+|         |            | and time period. (RID AC-03)                                                                     |
++---------+------------+--------------------------------------------------------------------------------------------------+
+|         |            | Update description of operational procedures with reduced manual steps for processor upload due  |
+|         |            | to the higher degree of automation. (RID AR-35)                                                  |
++---------+------------+--------------------------------------------------------------------------------------------------+
+|         |            | Update user profile views and description as well as geobrowser images                           |
 +---------+------------+--------------------------------------------------------------------------------------------------+
