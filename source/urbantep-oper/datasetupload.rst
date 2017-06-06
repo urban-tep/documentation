@@ -6,6 +6,6 @@ An expert user may have a dataset that either this user wants to use on the plat
 * The help desk operator is automatically informed about the new ticket.
 * If necessary, the operator informs the Service Manager or the Management Board about the request and waits for a decision.
 * The help desk operator informs the processing centre operator(s) and if necessary also the portal operator and the visualisation and analysis tool operator.
-* The processing centre operator communicates with the user if necessary. The operator ingests the data e.g. by harvesting from a remote location, or by offering an FTP drop-down point to the expert user. The operator either makes it available as dataset to only this user, or prepares it for presentation in the WMS etc.
+* The processing centre operator communicates with the user if necessary. The operator ingests the data e.g. by harvesting from a remote location, or by offering an FTP drop-down point to the expert user. The operator either makes it available as dataset for processing to only this user, or prepares it for presentation in the WMS.
 * In case of a public dataset the portal operator and the visualisation and analysis tool operator configure the new data source as new layer and optionally as application.
 * The help desk operator informs the user about the finalisation of the configuration.

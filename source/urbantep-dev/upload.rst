@@ -48,3 +48,6 @@ Succesful upload automatically creates a new ticket in the U-TEP ticketing syste
 	:align: center
 	:scale: 50%
 	:figclass: img-container-border
+	
+**Processor update**
+Simple processor content update is performed automatically via upload-it4i.sh tool. If the user wants to make some changes in the scripts that are part of the processor package but these changes does not require the deployment of the new processor (processor is using the same dataset, contains the same parameters, etc.), user can simply package the same processor with an updated content and upload it under the same name and version. Upload script will automatically detect the existing processor and update its content. Note that uploading the same processor with the different version number is considered as a deployment of a new processor that requires manual setup on the IT4I's side.
