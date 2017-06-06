@@ -44,3 +44,7 @@ Each ticket in the Redmine system is represented by an Issue. Standard user is a
 	:show:
 
 	This section describes how the user can access issues tracking from the geobrowser.
+	
+Issue escalation route
+----------------------
+See :doc:`Operational procedure for observation handing <../urbantep-oper/observationhandling>`.

@@ -29,7 +29,6 @@ Some buttons maybe used to interact with the map:
 -  |geobrowser_button_query.png| Open query search tab
 -  |geobrowser_button_polygon.png| Edit the search bbox by drawing a polygon on the map
 -  |geobrowser_button_recbox.png| Edit the search bbox by drawing a rectangle on the map
--  |geobrowser_button_dynamicsearch.png| Enable/Disable dynamic search (the search bbox is the current view on the map)
 -  |geobrowser_button_fullscreen.png| Put the map in full screen
 -  |geobrowser_button_wkt.png| Allow to enter a WKT to be displayed on the map as bounding box
 -  |geobrowser_button_meter.png| Measure an area
@@ -45,7 +44,7 @@ Some parameters are just free text, others can be chosen from a list, and some p
 .. figure:: ../../includes/geobrowser_timebar.png
 	:figclass: img-border img-max-width
 
-- the geographical area which can be filled either from the bbox drawn on the map using |geobrowser_button_polygon.png|, |geobrowser_button_recbox.png| or |geobrowser_button_wkt.png|, either by uploading a shapefile or a geojson file, using the import button.
+- the geographical area which can be filled either from the bbox drawn on the map using |geobrowser_button_polygon.png|, |geobrowser_button_recbox.png|, |geobrowser_button_placemark.png| or by uploading a shapefile or a kml file, using the import button |geobrowser_button_wkt.png|.
 
 .. req:: TS-FUN-280
 	:show:
@@ -69,6 +68,31 @@ Display the results (orange polygons) of the current search or context.
 
 .. figure:: ../../includes/geobrowser_results_layer.png
 	:figclass: img-border
+
+Area of interest
+*****************
+
+.. figure:: ../../includes/aoi.png
+	:align: center
+	:figclass: img-container-border
+	:scale: 80%
+
+
+Area of interest may be defined by the user using the tools to draw a polygon or a rectangle on the map (see `Map`_). Once set, the search will be automatically updated with data corresponding to this AOI.
+
+Area of interest external definition
+````````````````````````````````````
+
+Complex Area of interest can be defined by uploading or referencing a vector based file:
+
+- shapefile (limited to 1MB)
+- kml (limited to 1MB)
+
+Area of Interest according to processing service
+````````````````````````````````````````````````
+
+Area of Interest may be directly used to fill bounding box parameters exposed by Processing services.
+For that, you can use the |get_param_from_map_button.png| button, displayed along the parameter input field. Clicking on it will allow directly to fill the input with the value of the current search bounding box.
 
 Contexts
 ~~~~~~~~
@@ -144,12 +168,16 @@ Details on jobs can be accessed by clicking on the title of the job.
 .. |geobrowser_button_query.png| image:: ../../includes/geobrowser_button_query.png
 .. |geobrowser_button_plus.png| image:: ../../includes/geobrowser_button_plus.png
 .. |geobrowser_button_minus.png| image:: ../../includes/geobrowser_button_minus.png
+.. |geobrowser_button_search_area.png| image:: ../../includes/geobrowser_button_search_area.png
 .. |geobrowser_button_search.png| image:: ../../includes/geobrowser_button_search.png
 .. |geobrowser_button_polygon.png| image:: ../../includes/geobrowser_button_polygon.png
 .. |geobrowser_button_recbox.png| image:: ../../includes/geobrowser_button_recbox.png
-.. |geobrowser_button_dynamicsearch.png| image:: ../../includes/geobrowser_button_dynamicsearch.png
+.. |geobrowser_button_placemark.png| image:: ../../includes/geobrowser_button_placemark.png
+.. |geobrowser_button_meter.png| image:: ../../includes/geobrowser_button_meter.png
+.. |geobrowser_button_wkt.png| image:: ../../includes/geobrowser_button_wkt.png
 .. |geobrowser_button_fullscreen.png| image:: ../../includes/geobrowser_button_fullscreen.png
 .. |geobrowser_button_layers.png| image:: ../../includes/geobrowser_button_layers.png
 .. |geobrowser_disaster_big_group.png| image:: ../../includes/geobrowser_disaster_big_group.png
 .. |geobrowser_disaster_small_group.png| image:: ../../includes/geobrowser_disaster_small_group.png
 .. |geobrowser_disaster_event.png| image:: ../../includes/geobrowser_disaster_event.png
+.. |get_param_from_map_button.png| image:: ../../includes/get_param_from_map_button.png

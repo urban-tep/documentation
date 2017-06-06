@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Building your own processor package &mdash; Urban Thematic Exploitation Platform 0.2 documentation</title>
+    <title>Building your own processor package &#8212; Urban Thematic Exploitation Platform 1.4 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -17,10 +17,11 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.2',
+        VERSION:     '1.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
@@ -30,8 +31,8 @@
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Urban Thematic Exploitation Platform 0.2 documentation" href="../index.html" />
-    <link rel="up" title="Urban TEP Processor Development Environment" href="index.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Urban TEP Operational Procedures" href="../urbantep-oper/index.html" />
     <link rel="prev" title="Packaging and upload" href="upload.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
@@ -70,7 +71,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>0.2</b><b class="caret"></b>
+        <b>1.4</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -119,7 +120,7 @@
               
                 
   <li>
-    <a href="upload.html" title="Previous Chapter: Packaging and upload"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Packaging and...</span>
+    <a href="upload.html" title="Previous Chapter: Packaging and upload"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Packaging and upload</span>
     </a>
   </li>
   <li>
@@ -199,7 +200,14 @@
 <li>Write a Dockerfile and test your processor using docker build and docker run.</li>
 <li>Write a descriptor.xml file.</li>
 </ul>
-<p>Processor parameters that users can select shall be described in the descriptor.xml file. This allows the portal to generate a form for users to specify values for these processor parameters. At runtime, the key-value pairs of the parameters filled by the user (submitter of the request) are provided to the processor in an additional parameter file. The processor will get called with the path to the product input as first command line argument and to a processor parameter file as second command line argument. This processor parameters file contains lines with key-value pairs separated by &#8216;=&#8217;. It can be source&#8217;d in the script to convert the parameters into environment variables, or forwarded to a Java application as property file.</p>
+<p>Input datasets available in the processing centres comprise at least Sentinel-2 Africa+selected urban areas, Landsat, and MERIS Level 1. Other datasets available in the processing centres can be provided for processing on request. In the descriptor.xml file you refer to an input product type your processor is able to process. The product types that correspond to the datasets are:</p>
+<ul class="simple">
+<li>S2_L1C</li>
+<li>Landsat8_L1</li>
+<li>MERIS_L1B</li>
+</ul>
+<p>For processing users select subsets of one of the input datasets by space and time, i.e. by a region and a time period. All products of the dataset that overlap the with the region and which are within the time period are processed. Depending on the workflow and another optional parameter the result can be aggregated spatially (mosaic) and temporally (temporal composite). Compared to the processing of single images this may require that the processor uses filter criteria to select the parts of the images to process, i.e. to apply a cloud filter or to pre-process with a cloud filter algorithm and use the output as input for another processing request.</p>
+<p>Other processor parameters that users can select shall be described in the descriptor.xml file. This allows the portal to generate a form for users to specify values for these processor parameters. At runtime, the key-value pairs of the parameters filled by the user (submitter of the request) are provided to the processor in an additional parameter file. The processor will get called with the path to the product input as first command line argument and to a processor parameter file as second command line argument. This processor parameters file contains lines with key-value pairs separated by &#8216;=&#8217;. It can be source&#8217;d in the script to convert the parameters into environment variables, or forwarded to a Java application as property file.</p>
 <p>The parameter file may look like the following:</p>
 <div class="code highlight-default"><div class="highlight"><pre><span></span><span class="n">threshold</span><span class="o">=</span><span class="mf">0.2</span>
 <span class="n">someotherparameter</span><span class="o">=</span><span class="n">A</span>

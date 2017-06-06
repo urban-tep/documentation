@@ -49,10 +49,11 @@ Access my jobs
 To access my jobs:
 
 1. Open the Processing Services tab by clicking on **Processing Services** on the right of the geobrowser's map.
-2. Click on **My Jobs** on top of the Processing Services tab.
+2. Click on **Jobs** on top of the Processing Services tab.
 3. The list of existing jobs (failed or success) is displayed.
-4. Click on the job title.
-5. You can now see details about the job.
+4. Filter jobs using the dropdown list and selecting "show only mine".
+5. Click on the job title.
+6. You can now see details about the job.
 
 Delete my jobs
 --------------
@@ -60,11 +61,12 @@ Delete my jobs
 To delete my jobs:
 
 1. Open the Processing Services tab by clicking on **Processing Services** on the right of the geobrowser's map.
-2. Click on **My Jobs** on top of the Processing Services tab.
+2. Click on **Jobs** on top of the Processing Services tab.
 3. The list of existing jobs (failed or success) is displayed.
-4. Put your mouse over the job, a small "x" appears on the right.
-5. Click on the "x".
-6. The job is deleted
+4. Filter your jobs using the dropdown list and selecting "show only mine" (you can delete only your jobs).
+5. Put your mouse over the job, a small "x" appears on the right.
+6. Click on the "x".
+7. The job is deleted
 
 Make my jobs public
 -------------------
@@ -78,13 +80,14 @@ To make my jobs public:
 
 .. |public_jobs| image:: ../includes/public_jobs.png
 
-Access community jobs
----------------------
+Access public jobs
+------------------
 
-To access community jobs:
+To access public jobs:
 
 1. Open the Processing Services tab by clicking on **Processing Services** on the right of the geobrowser's map.
-2. Click on **Community Jobs** on top of the Processing Services tab.
-3. The list of existing jobs publicly available from the community (failed or success) is displayed.
-4. Click on the job title.
-5. You can now see details about the job.
+2. Click on **Jobs** on top of the Processing Services tab.
+3. The list of existing jobs (failed or success) is displayed.
+4. Filter jobs using the dropdown list and selecting "show only public".
+5. Click on the job title.
+6. You can now see details about the job.

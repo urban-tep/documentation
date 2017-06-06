@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>GeoBrowser area for data and Cloud processing services &mdash; Urban Thematic Exploitation Platform 0.2 documentation</title>
+    <title>GeoBrowser area for data and Cloud processing services &#8212; Urban Thematic Exploitation Platform 1.4 documentation</title>
     
     <link rel="stylesheet" href="../../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../../_static/pygments.css" type="text/css" />
@@ -17,10 +17,11 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../../',
-        VERSION:     '0.2',
+        VERSION:     '1.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="../../_static/jquery.js"></script>
@@ -30,8 +31,8 @@
     <script type="text/javascript" src="../../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Urban Thematic Exploitation Platform 0.2 documentation" href="../../index.html" />
-    <link rel="up" title="Getting Started Guide" href="index.html" />
+    <link rel="index" title="Index" href="../../genindex.html" />
+    <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="Thematic applications area" href="thematic.html" />
     <link rel="prev" title="Information areas (Blog, News, ...)" href="information-areas.html" />
     <link rel="stylesheet" href="../../_static/terradue.css" type="text/css" />
@@ -70,7 +71,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>0.2</b><b class="caret"></b>
+        <b>1.4</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -114,6 +115,11 @@
 <li><a class="reference internal" href="#map">Map</a><ul>
 <li><a class="reference internal" href="#search-area">Search area</a></li>
 <li><a class="reference internal" href="#data-results-layer">Data Results layer</a></li>
+<li><a class="reference internal" href="#area-of-interest">Area of interest</a><ul>
+<li><a class="reference internal" href="#area-of-interest-external-definition">Area of interest external definition</a></li>
+<li><a class="reference internal" href="#area-of-interest-according-to-processing-service">Area of Interest according to processing service</a></li>
+</ul>
+</li>
 </ul>
 </li>
 <li><a class="reference internal" href="#contexts">Contexts</a></li>
@@ -245,10 +251,9 @@
 <li><img alt="geobrowser_button_query.png" src="../../_images/geobrowser_button_query1.png" /> Open query search tab</li>
 <li><img alt="geobrowser_button_polygon.png" src="../../_images/geobrowser_button_polygon.png" /> Edit the search bbox by drawing a polygon on the map</li>
 <li><img alt="geobrowser_button_recbox.png" src="../../_images/geobrowser_button_recbox.png" /> Edit the search bbox by drawing a rectangle on the map</li>
-<li><img alt="geobrowser_button_dynamicsearch.png" src="../../_images/geobrowser_button_dynamicsearch.png" /> Enable/Disable dynamic search (the search bbox is the current view on the map)</li>
 <li><img alt="geobrowser_button_fullscreen.png" src="../../_images/geobrowser_button_fullscreen.png" /> Put the map in full screen</li>
-<li><a href="#id1"><span class="problematic" id="id2">|geobrowser_button_wkt.png|</span></a> Allow to enter a WKT to be displayed on the map as bounding box</li>
-<li><a href="#id3"><span class="problematic" id="id4">|geobrowser_button_meter.png|</span></a> Measure an area</li>
+<li><img alt="geobrowser_button_wkt.png" src="../../_images/geobrowser_button_wkt.png" /> Allow to enter a WKT to be displayed on the map as bounding box</li>
+<li><img alt="geobrowser_button_meter.png" src="../../_images/geobrowser_button_meter.png" /> Measure an area</li>
 <li><img alt="geobrowser_button_layers.png" src="../../_images/geobrowser_button_layers.png" /> Change the background of the map | Select layers to be displayed.</li>
 </ul>
 <div class="section" id="search-area">
@@ -262,7 +267,7 @@ Some parameters are just free text, others can be chosen from a list, and some p
 <img alt="../../_images/geobrowser_timebar.png" src="../../_images/geobrowser_timebar.png" />
 </div>
 <ul class="simple">
-<li>the geographical area which can be filled either from the bbox drawn on the map using <img alt="geobrowser_button_polygon.png" src="../../_images/geobrowser_button_polygon.png" />, <img alt="geobrowser_button_recbox.png" src="../../_images/geobrowser_button_recbox.png" /> or <a href="#id5"><span class="problematic" id="id6">|geobrowser_button_wkt.png|</span></a>, either by uploading a shapefile or a geojson file, using the import button.</li>
+<li>the geographical area which can be filled either from the bbox drawn on the map using <img alt="geobrowser_button_polygon.png" src="../../_images/geobrowser_button_polygon.png" />, <img alt="geobrowser_button_recbox.png" src="../../_images/geobrowser_button_recbox.png" />, <img alt="geobrowser_button_placemark.png" src="../../_images/geobrowser_button_placemark.png" /> or by uploading a shapefile or a kml file, using the import button <img alt="geobrowser_button_wkt.png" src="../../_images/geobrowser_button_wkt.png" />.</li>
 </ul>
 <div class="admonition-requirement-coverage admonition" id="req-0">
 <p class="first admonition-title">Requirement coverage</p>
@@ -280,6 +285,26 @@ TS-FUN-280, TS-FUN-300</p>
 <p>Display the results (orange polygons) of the current search or context.</p>
 <div class="img-border figure">
 <img alt="../../_images/geobrowser_results_layer.png" src="../../_images/geobrowser_results_layer.png" />
+</div>
+</div>
+<div class="section" id="area-of-interest">
+<h4>Area of interest<a class="headerlink" href="#area-of-interest" title="Permalink to this headline">¶</a></h4>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="community-guide/platform/../../includes/aoi.png"><img alt="community-guide/platform/../../includes/aoi.png" src="community-guide/platform/../../includes/aoi.png" /></a>
+</div>
+<p>Area of interest may be defined by the user using the tools to draw a polygon or a rectangle on the map (see <a class="reference internal" href="#map">Map</a>). Once set, the search will be automatically updated with data corresponding to this AOI.</p>
+<div class="section" id="area-of-interest-external-definition">
+<h5>Area of interest external definition<a class="headerlink" href="#area-of-interest-external-definition" title="Permalink to this headline">¶</a></h5>
+<p>Complex Area of interest can be defined by uploading or referencing a vector based file:</p>
+<ul class="simple">
+<li>shapefile (limited to 1MB)</li>
+<li>kml (limited to 1MB)</li>
+</ul>
+</div>
+<div class="section" id="area-of-interest-according-to-processing-service">
+<h5>Area of Interest according to processing service<a class="headerlink" href="#area-of-interest-according-to-processing-service" title="Permalink to this headline">¶</a></h5>
+<p>Area of Interest may be directly used to fill bounding box parameters exposed by Processing services.
+For that, you can use the <img alt="get_param_from_map_button.png" src="../../_images/get_param_from_map_button.png" /> button, displayed along the parameter input field. Clicking on it will allow directly to fill the input with the value of the current search bounding box.</p>
 </div>
 </div>
 </div>

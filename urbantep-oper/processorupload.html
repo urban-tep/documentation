@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Operational procedure for processor registration after upload &mdash; Urban Thematic Exploitation Platform 0.2 documentation</title>
+    <title>Operational procedure for processor registration after upload &#8212; Urban Thematic Exploitation Platform 1.4 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -17,10 +17,11 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.2',
+        VERSION:     '1.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
@@ -30,8 +31,8 @@
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Urban Thematic Exploitation Platform 0.2 documentation" href="../index.html" />
-    <link rel="up" title="Urban TEP Operational Procedures" href="index.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Operational procedure for dataset upload" href="datasetupload.html" />
     <link rel="prev" title="Operational procedure for expert registration" href="expertregistration.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
@@ -70,7 +71,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>0.2</b><b class="caret"></b>
+        <b>1.4</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -188,12 +189,11 @@
       
   <div class="section" id="operational-procedure-for-processor-registration-after-upload">
 <h1>Operational procedure for processor registration after upload<a class="headerlink" href="#operational-procedure-for-processor-registration-after-upload" title="Permalink to this headline">¶</a></h1>
-<p>An expert user can upload a new processor to one of the processing centres using an automated upload script. Behind the scenes the actions are slightly different, and not fully automated. The upload script to the IT4I processing centre creates a ticket in behalf of the user. This ticket is necessary for the manual steps of WPS configuration and portal configuration. For the BC processing system the deployment of processors is fully automated, but the registration in the portal requires manual portal configuration the first time a (versioned) processor is deployed.</p>
+<p>An expert user can upload a new processor to one of the processing centres using an automated upload script. Behind the scenes the actions are slightly different in both processing centres, and may be not fully automated. The upload script to the IT4I processing centre creates a ticket in behalf of the user. This ticket is necessary for the manual steps of the initial WPS configuration. Later updates of the same processor are automated in the IT4I processing centre as well. The deployment of processors in the BC processing centre is fully automated. If the user has not been entitled for the Test My Processor application and the trigger to insert new processors automatically has been set up with the expert user registration this has to be done once. Initially, the processor is only accessible by the user.</p>
 <ul class="simple">
-<li>The help desk operator is automatically informed about the new ticket. The operator forwards the ticket to the IT4I processing system operator and to the portal operator.</li>
+<li>The help desk operator is automatically informed about the new ticket. The operator forwards the ticket to the IT4I processing system operator, and to the portal operator if this is the first time the user requests upload of a processor.</li>
 <li>The IT4I processing centre operator configures the new processor into the WPS configuration to make it available to the portal.</li>
-<li>For processors to be uploaded to the BC processing centre the portal configuration may already be initiated during the expert user registration if the processor is known at that time already.</li>
-<li>The Portal operator (see next operational procedure) configures a new processor into an existing application for the user, or it creates a new application. Initially, the processor is only accessible by the user.</li>
+<li>The Portal operator verifies that the user is entitled to use the Test My Processor application and that the trigger to automatically register new processors in the portal is configured.</li>
 <li>The help desk operator informs the user about the finalisation of the configuration.</li>
 </ul>
 </div>

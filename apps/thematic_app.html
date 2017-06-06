@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Thematic Apps &mdash; Urban Thematic Exploitation Platform 0.2 documentation</title>
+    <title>Thematic Apps &#8212; Urban Thematic Exploitation Platform 1.4 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -17,10 +17,11 @@
     <script type="text/javascript">
       var DOCUMENTATION_OPTIONS = {
         URL_ROOT:    '../',
-        VERSION:     '0.2',
+        VERSION:     '1.4',
         COLLAPSE_INDEX: false,
         FILE_SUFFIX: '.html',
-        HAS_SOURCE:  true
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
       };
     </script>
     <script type="text/javascript" src="../_static/jquery.js"></script>
@@ -30,8 +31,8 @@
     <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
-    <link rel="top" title="Urban Thematic Exploitation Platform 0.2 documentation" href="../index.html" />
-    <link rel="up" title="Overview" href="index.html" />
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
     <link rel="next" title="Management App" href="management_app.html" />
     <link rel="prev" title="Overview" href="index.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
@@ -70,7 +71,7 @@
             <li class="divider-vertical"></li>
 <!--             <li class="dropdown">
     <a href="#" class="dropdown-toggle" data-toggle="dropdown">
-        <b>0.2</b><b class="caret"></b>
+        <b>1.4</b><b class="caret"></b>
     </a>
     <ul class="dropdown-menu globaltoc">
         <li><a href="/devel">1.2 (Devel)</a></li>
@@ -111,8 +112,9 @@
       aria-labelledby="dLabelLocalToc"><ul>
 <li><a class="reference internal" href="#">Thematic Apps</a><ul>
 <li><a class="reference internal" href="#pre-defined-apps">Pre-defined apps</a><ul>
-<li><a class="reference internal" href="#urban-global-thematic-application">Urban global thematic application</a></li>
-<li><a class="reference internal" href="#global-urban-footprint">Global Urban Footprint</a></li>
+<li><a class="reference internal" href="#u-tep-product-portfolio">U-TEP product portfolio</a></li>
+<li><a class="reference internal" href="#global-urban-footprint-data-subsetting">Global Urban Footprint data subsetting</a></li>
+<li><a class="reference internal" href="#timescan-on-demand">TimeScan on demand</a></li>
 </ul>
 </li>
 <li><a class="reference internal" href="#user-s-apps">User&#8217;s apps</a></li>
@@ -169,8 +171,9 @@
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Thematic Applications</a><ul class="current">
 <li class="toctree-l2 current"><a class="current reference internal" href="#">Thematic applications</a><ul>
 <li class="toctree-l3"><a class="reference internal" href="#pre-defined-apps">Pre-defined apps</a><ul>
-<li class="toctree-l4"><a class="reference internal" href="#urban-global-thematic-application">Urban global thematic application</a></li>
-<li class="toctree-l4"><a class="reference internal" href="#global-urban-footprint">Global Urban Footprint</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#u-tep-product-portfolio">U-TEP product portfolio</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#global-urban-footprint-data-subsetting">Global Urban Footprint data subsetting</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#timescan-on-demand">TimeScan on demand</a></li>
 </ul>
 </li>
 <li class="toctree-l3"><a class="reference internal" href="#user-s-apps">User&#8217;s apps</a></li>
@@ -204,36 +207,62 @@
 <h2>Pre-defined apps<a class="headerlink" href="#pre-defined-apps" title="Permalink to this headline">¶</a></h2>
 <p>A <em>Thematic App</em> is a specific version of the geobrowser, in which specific parameters are pre-defined, in order to serve a specific thematic.
 A list of pre-defined thematic apps can be accessed from the <em>Thematics</em> page.</p>
-<div class="img-border img-max-width figure">
-<a class="reference internal image-reference" href="../_images/thematic_apps.png"><img alt="../_images/thematic_apps.png" src="../_images/thematic_apps.png" style="width: 767.2px; height: 381.6px;" /></a>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/predefined_thematic_apps.png"><img alt="../_images/predefined_thematic_apps.png" src="../_images/predefined_thematic_apps.png" style="width: 384.6px; height: 387.0px;" /></a>
 </div>
-<p>The pre-defined thematics are:</p>
+<p>Among the pre-defined thematic applications are:</p>
 <blockquote>
 <div><ul class="simple">
-<li>Urban global thematic application</li>
-<li>Global Urban Footprint</li>
+<li>U-TEP product portfolio</li>
+<li>Global Urban Footprint data subsetting</li>
+<li>TimeScan on demand</li>
+<li>Visualisation and Analytics Toolbox</li>
 </ul>
 </div></blockquote>
-<div class="section" id="urban-global-thematic-application">
-<h3>Urban global thematic application<a class="headerlink" href="#urban-global-thematic-application" title="Permalink to this headline">¶</a></h3>
-<div class="img-border img-max-width figure">
-<a class="reference internal image-reference" href="../_images/thematic_apps_global.png"><img alt="../_images/thematic_apps_global.png" src="../_images/thematic_apps_global.png" style="width: 1534.4px; height: 751.2px;" /></a>
+<div class="section" id="u-tep-product-portfolio">
+<h3>U-TEP product portfolio<a class="headerlink" href="#u-tep-product-portfolio" title="Permalink to this headline">¶</a></h3>
+<p>This application shows the different pre-processed Urban TEP products like Global Urban Footprint and TimeScan on the geo-browser. You can zoom into the data from global scale down to the native resolution of the products. Some of the products are available globally. Others are available for selected urban areas.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/thematic_apps_portfolio2.png"><img alt="../_images/thematic_apps_portfolio2.png" src="../_images/thematic_apps_portfolio2.png" style="width: 741.6px; height: 376.8px;" /></a>
 </div>
-<p>This is the general Urban thematic application for demonstration purpose, containing all main functionalities of the geobrowser.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/utep_product_portfolio.png"><img alt="../_images/utep_product_portfolio.png" src="../_images/utep_product_portfolio.png" style="width: 742.2px; height: 430.8px;" /></a>
 </div>
-<div class="section" id="global-urban-footprint">
-<h3>Global Urban Footprint<a class="headerlink" href="#global-urban-footprint" title="Permalink to this headline">¶</a></h3>
-<p>The Global Urban Footprint application allows subsetting of a GUF dataset and the subsequent combination of this GUF subset in an analysis, e.g. for statistics.</p>
-<div class="img-border img-max-width figure">
-<a class="reference internal image-reference" href="../_images/thematic_apps_guf.png"><img alt="../_images/thematic_apps_guf.png" src="../_images/thematic_apps_guf.png" style="width: 1533.6px; height: 752.0px;" /></a>
+<p>Use the drop-down boxes on the upper right menu to select the product. You may choos the background map from the layers symbol on the upper right of the map. In case of a time series like GUF evo you can hover over the product list on the lower right to move in time on the map.</p>
 </div>
-<p>First select &#8220;Urban TEP subsetting&#8221;. This will lead to the form to generate the desired subset in an Urban TEP processing centre. Parameters you can choose for this step are:</p>
+<div class="section" id="global-urban-footprint-data-subsetting">
+<h3>Global Urban Footprint data subsetting<a class="headerlink" href="#global-urban-footprint-data-subsetting" title="Permalink to this headline">¶</a></h3>
+<p>The Global Urban Footprint data subsetting application allows subsetting of a GUF dataset and the subsequent combination of this GUF subset in an analysis, e.g. for statistics.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/thematic_apps_guf.png"><img alt="../_images/thematic_apps_guf.png" src="../_images/thematic_apps_guf.png" style="width: 714.6px; height: 437.4px;" /></a>
+</div>
+<p>In the application choose Processing Service on the right. Then, select &#8220;Urban TEP subsetting&#8221;. This will lead to the form to generate the desired subset in an Urban TEP processing centre. Parameters you can choose for this step are:</p>
 <ul class="simple">
-<li>The GUF input, either a 12m GUF of Europe (tiled), provided by DLR, or a 300m GUF with global coverage (tiled or not), derived from ESA Land Cover CCI</li>
-<li>The bounding box of the region: Use the map to draw the region</li>
+<li>A name for the production, e.g. the name of the urban area to be subsetted</li>
+<li>The input dataset, in particular the 75m and 12m GUF 2012, the GUF of selected cities between 1990 and 2015, and Buildup Density 2012, provided by DLR.</li>
+<li>The bounding box of the region. Use the map to draw the region, and transfer to the field with the helper left of the field. Do not select areas covering more than one urban area. Due to the high resolution else the files may get too big.</li>
+<li>Optionally parameters for aggregation: Default is no aggregation (delivery in tiles). You can specify the resolution of the mosaic (e.g. 75 for 75 meters) in the aggregation field (deleting the detailed XML parameter) to get one result file with the spatial mosaic in lat-lon projection. Or you can specify all parameters of the XML expression for resolution, spatial aggregation rule, temporal aggregation rule, band list, and filter criterion.</li>
 </ul>
-<p>Note that in case of tiled input you may get several tile subsets as result in case your region intersects tile boundaries.</p>
-<p>Second, select &#8220;Analyse in PUMA&#8221;.</p>
+<p>The parameters for Date from and to can be left empty for subsetting the GUF as you select the time with the input dataset.
+Note that in case of tiled input and no mosaicing you may get several tile subsets as result in case your region intersects tile boundaries.</p>
+<p>Processing may take some minutes. The result can be used for an analysis in the visualisation toolbox. Go back one step (arrow on top left of the processing form) and select &#8220;Analyse in Visualisation Tool&#8221;.</p>
+</div>
+<div class="section" id="timescan-on-demand">
+<h3>TimeScan on demand<a class="headerlink" href="#timescan-on-demand" title="Permalink to this headline">¶</a></h3>
+<p>The TimeScan on demand application processes timescan products for a selected region from Landsat data globally or from Sentinel 2 data (Africa) on request. While the geo-browser in the U-TEP Product Portfolio application shows just an image of the TimeScan product composed of 3 bands, various statistics and bands are included in the result product of this service. The service generates the product from the time series of the respective Level 1 input data.</p>
+<div class="img-border figure">
+<a class="reference internal image-reference" href="../_images/thematic_apps_timescan.png"><img alt="../_images/thematic_apps_timescan.png" src="../_images/thematic_apps_timescan.png" style="width: 717.6px; height: 423.6px;" /></a>
+</div>
+<p>In the application either choose S2 processing or Landsat processing, then fill the parameters:</p>
+<ul class="simple">
+<li>A name for the production</li>
+<li>The input dataset</li>
+<li>The time period with date from and date to</li>
+<li>The region bounding box</li>
+<li>Optionally, you may select different index definitions instead of NDBI, NDVI and MNDWI for processing of S2</li>
+</ul>
+<p>From the input dataset all products that overlap with the region and that fall into the time period are processed. There is no selection of individual scenes to process. Rather, the complete mission is considered as one continuous acquisition where we use a subset of. In case of Landsat, even different missions can be combined as an extended input dataset.</p>
+<p>Processing may take some minutes to hours. The result can be downloaded for local analysis.</p>
 </div>
 </div>
 <div class="section" id="user-s-apps">
