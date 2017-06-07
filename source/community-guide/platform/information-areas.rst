@@ -14,7 +14,7 @@ Directly on the homepage, the user can find:
 .. figure:: ../../includes/news_tweets.png
 	:figclass: img-border
 
-- a list of the most recent posts from the tep urban `Tumblr blog <http://urban-tep.tumblr.com>`_.
+- a list of the most recent posts from the tep urban `discuss blog <https://discuss.terradue.com/c/utep-blog>`_.
 
 .. figure:: ../../includes/news_tumblr.png
 	:figclass: img-border
