@@ -18,3 +18,4 @@ Urban thematic exploitation platform administrator guide
    Logs <logs>
    Authorization <authorization>
    Accounting <accounting>
+   On Boarding <onboarding>
