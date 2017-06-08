@@ -3,7 +3,7 @@ Support
 
 The support to users is done through a ticketing system, external to the platform.
 
-Ticketing system is located at https://utepredmine.it4i.cz:6802/redmine.
+Ticketing system is located at https://utepredmine.it4i.cz.
 
 .. figure:: ../includes/redmine_login.png
 	:align: center
