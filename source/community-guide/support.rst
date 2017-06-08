@@ -3,11 +3,11 @@ Support
 
 The support to users is done through a ticketing system, external to the platform.
 
-Ticketing system is located at https://utepredmine.it4i.cz:6802/redmine.
+Ticketing system is located at https://utepredmine.it4i.cz.
 
 .. figure:: ../includes/redmine_login.png
 	:align: center
-	:scale: 50%
+	:scale: 25%
 	:figclass: img-container-border
 
 Obtaining login credentials
@@ -23,7 +23,7 @@ If the user is not yet registered within the ticketing system, each method will 
 
 .. figure:: ../includes/redmine_email.png
 	:align: center
-	:scale: 50%
+	:scale: 25%
 	:figclass: img-container-border
 
 Issues
@@ -32,12 +32,12 @@ Each ticket in the Redmine system is represented by an Issue. Standard user is a
 
 .. figure:: ../includes/redmine_issues.png
 	:align: center
-	:scale: 50%
+	:scale: 25%
 	:figclass: img-container-border
 
 .. figure:: ../includes/redmine_detail.png
 	:align: center
-	:scale: 50%
+	:scale: 25%
 	:figclass: img-container-border
 
 .. req:: TS-ICD-140

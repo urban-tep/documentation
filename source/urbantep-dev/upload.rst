@@ -45,9 +45,16 @@ This package is uploaded with the upload-it4i.sh tool. This requires user name a
 Succesful upload automatically creates a new ticket in the U-TEP ticketing system with a request to set up new processor in the form of WPS service.
 
 .. figure:: ../includes/redmine_detail.png
-	:align: center
-	:scale: 50%
-	:figclass: img-container-border
+   :scale: 25
+   :align: center
 	
-**Processor update**
+The operational procedure for setting up the new processor is very simmilar to the :doc:`Operational procedure for observation handing <../urbantep-oper/observationhandling>`.
+
+* The help desk operator is automatically informed about the new ticket.
+* The help desk operator forwards the ticket to a IT4I processing system operator (second level support).
+* New WPS service with the processor will be deployed.
+* The IT4I processing system operator informs the help desk operator that the new service is deployed.
+* The help desk operator informs the user about the availability of the new processor.
+	
+**Processor content update**
 Simple processor content update is performed automatically via upload-it4i.sh tool. If the user wants to make some changes in the scripts that are part of the processor package but these changes does not require the deployment of the new processor (processor is using the same dataset, contains the same parameters, etc.), user can simply package the same processor with an updated content and upload it under the same name and version. Upload script will automatically detect the existing processor and update its content. Note that uploading the same processor with the different version number is considered as a deployment of a new processor that requires manual setup on the IT4I's side.
