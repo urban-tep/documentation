@@ -18,7 +18,7 @@ Change Log
 +---------+------------+--------------------------------------------------------------------------------------------------+
 |         |            | Add accounting                                                                                   |
 +---------+------------+--------------------------------------------------------------------------------------------------+
-| 1.4     | 22/05/2017 | Updates for AR closeout                                                                          |
+| 1.4     | 29/06/2017 | Updates for AR closeout                                                                          |
 +---------+------------+--------------------------------------------------------------------------------------------------+
 |         |            | Update description of predefined apps with Urban TEP product portfolio, GUF subsetting, TimeScan |
 |         |            | on-demand, and their parameterisation, including aggregation parameters (issue #85)              |
@@ -31,7 +31,10 @@ Change Log
 +---------+------------+--------------------------------------------------------------------------------------------------+
 |         |            | Update user profile views and description as well as geobrowser images                           |
 +---------+------------+--------------------------------------------------------------------------------------------------+
-|         | 28/06/2017 | Update user profile to describe features that are for specific users (RID AR-28)                 |
+|         |            | Update user profile to describe features that are for specific users (RID AR-28)                 |
 +---------+------------+--------------------------------------------------------------------------------------------------+
-|         | 28/06/2017 | Update the description of procedures for help desk (RID AR-33)                                   |
+|         |            | Update the description of procedures for help desk (RID AR-33)                                   |
++---------+------------+--------------------------------------------------------------------------------------------------+
+|         |            | Processor parameter handing for user processors was already described in version 1.3 and earlier |
+|         |            | in section 5.8 Building your own processor. No updates necessary for (RIS SP-13).                |
 +---------+------------+--------------------------------------------------------------------------------------------------+
