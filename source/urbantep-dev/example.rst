@@ -126,8 +126,7 @@ The elements of this descriptor.xml file content are:
 - executable is the script to be started to run the processor
 - title and description are explanatory information for users of the processor
 - inputTypes is a comma-separated list of product types, one or several of Landsat8, S2, MERIS
-- the parameter structure with name, type, description and default declares parameters of the processor. The threshold parameter is provided here for illustration purposes. It is not an actual externally accessible parameter of Fmask. Always use string for all types of parameters for the moment.
-
+- the parameter structure with name, type, description and default declares parameters of the processor. The threshold parameter is provided here for illustration purposes. It is not an actual externally accessible parameter of Fmask. More on parameter passing to a processor executable can be found in subsection :ref:`user_processor`. You will find there the syntax of a parameter file and the way it may be accessed in a processor script. Always use string for all types of parameters for the moment.
 - packaging name and version are the identifying information for the software package that contains the processor
 - Docker for the moment is the package type supported by all processing centres. Other types (SNAP, BEAM) may be supported by particular processing centres.
 - dependencies shall list the software packages that shall be mounted into the Docker container. The packages are those are made available in the development VM locally in /urbantep/software/<package>-<version>/ . Later versions of the development VM may come with additional packages. The same packages are available in the processing centres and will be made available to the Docker container at runtime. 

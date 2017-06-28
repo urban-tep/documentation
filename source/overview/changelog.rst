@@ -36,5 +36,6 @@ Change Log
 |         |            | Update the description of procedures for help desk (RID AR-33)                                   |
 +---------+------------+--------------------------------------------------------------------------------------------------+
 |         |            | Processor parameter handing for user processors was already described in version 1.3 and earlier |
-|         |            | in section 5.8 Building your own processor. No updates necessary for (RIS SP-13).                |
+|         |            | in section 5.8 Building your own processor. Reference to 5.8 added to section 5.5 for parameter  |
+|         |            | passing in a processor (RID SP-13).                                                              |
 +---------+------------+--------------------------------------------------------------------------------------------------+
