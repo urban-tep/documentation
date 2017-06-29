@@ -1,28 +1,11 @@
-Management App
-==============
+Test my processor
+=================
 
-Each user has a personal management app in which he can manage items he owns such as:
+Each expert user has a personal app in which he can access:
 
-- data collections,
-- data series,
+- his private catalog index,
+- his private storage,
 - data packages,
-- processing services
+- his private processing services
+- a service to publish data results as atom feeds to the catalogue
 
-For each item, the user can:
-
-- edit the item (name, description, ...),
-- share it with other users or groups (see :doc:`../community_guide/sharing`)
-- transfer the ownership to another user
-
-.. req:: TS-ICD-050
-	:show:
-
-	This section describes how the user can share series, data package, services and jobs.
-
-.. figure:: ../includes/user_edit_collection.png
-	:figclass: img-border img-max-width
-	:scale: 80%
-
-.. figure:: ../includes/user_edit_datapackage.png
-	:figclass: img-border img-max-width
-	:scale: 80%

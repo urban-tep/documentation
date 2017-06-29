@@ -21,7 +21,8 @@ Change Log
 | 1.4     | 29/06/2017 | Updates for AR closeout                                                                          |
 +---------+------------+--------------------------------------------------------------------------------------------------+
 |         |            | Update description of predefined apps with Urban TEP product portfolio, GUF subsetting, TimeScan |
-|         |            | on-demand, and their parameterisation, including aggregation parameters (issue #85)              |
+|         |            | on-demand, Test my processor and their parameterisation, including aggregation parameters (issue |
+|         |            | #85)                                                                                             |
 +---------+------------+--------------------------------------------------------------------------------------------------+
 |         |            | Add description of input data types, explain how inputs are selected by input dataset, region,   |
 |         |            | and time period. (RID AC-03)                                                                     |
