@@ -223,10 +223,18 @@ The package is created with the package-it4i.sh tool. It generates a zip file fo
 <p><strong>Uploading</strong>
 This package is uploaded with the upload-it4i.sh tool. This requires user name and password of a well-known user of the IT4I processing centre.
 Succesful upload automatically creates a new ticket in the U-TEP ticketing system with a request to set up new processor in the form of WPS service.</p>
-<div class="img-container-border figure align-center">
-<a class="reference internal image-reference" href="../_images/redmine_detail1.png"><img alt="../_images/redmine_detail1.png" src="../_images/redmine_detail1.png" style="width: 1455.5px; height: 747.5px;" /></a>
+<div class="figure align-center">
+<a class="reference internal image-reference" href="../_images/redmine_detail1.png"><img alt="../_images/redmine_detail1.png" src="../_images/redmine_detail1.png" style="width: 727.75px; height: 373.75px;" /></a>
 </div>
-<p><strong>Processor update</strong>
+<p>The operational procedure for setting up the new processor is very simmilar to the <a class="reference internal" href="../urbantep-oper/observationhandling.html"><span class="doc">Operational procedure for observation handing</span></a>.</p>
+<ul class="simple">
+<li>The help desk operator is automatically informed about the new ticket.</li>
+<li>The help desk operator forwards the ticket to a IT4I processing system operator (second level support).</li>
+<li>New WPS service with the processor will be deployed.</li>
+<li>The IT4I processing system operator informs the help desk operator that the new service is deployed.</li>
+<li>The help desk operator informs the user about the availability of the new processor.</li>
+</ul>
+<p><strong>Processor content update</strong>
 Simple processor content update is performed automatically via upload-it4i.sh tool. If the user wants to make some changes in the scripts that are part of the processor package but these changes does not require the deployment of the new processor (processor is using the same dataset, contains the same parameters, etc.), user can simply package the same processor with an updated content and upload it under the same name and version. Upload script will automatically detect the existing processor and update its content. Note that uploading the same processor with the different version number is considered as a deployment of a new processor that requires manual setup on the IT4I&#8217;s side.</p>
 </div>
 </div>

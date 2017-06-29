@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Operational procedure for expert registration &#8212; Urban Thematic Exploitation Platform 1.4 documentation</title>
+    <title>Operational procedure for integrating new WMS into Visualisation and Analysis tool &#8212; Urban Thematic Exploitation Platform 1.4 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -33,8 +33,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Operational procedure for processor registration after upload" href="processorupload.html" />
-    <link rel="prev" title="Urban TEP Operational Procedures" href="index.html" />
+    <link rel="next" title="Operational procedure for Help Desk and the Escalation of problems" href="helpdeskescalation.html" />
+    <link rel="prev" title="Operational procedure for observation handing" href="observationhandling.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
   
@@ -110,7 +110,7 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Operational procedure for expert registration</a></li>
+<li><a class="reference internal" href="#">Operational procedure for integrating new WMS into Visualisation and Analysis tool</a></li>
 </ul>
 </ul>
 </li>
@@ -120,11 +120,11 @@
               
                 
   <li>
-    <a href="index.html" title="Previous Chapter: Urban TEP Operational Procedures"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Urban TEP Ope...</span>
+    <a href="observationhandling.html" title="Previous Chapter: Operational procedure for observation handing"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Operational p...</span>
     </a>
   </li>
   <li>
-    <a href="processorupload.html" title="Next Chapter: Operational procedure for processor registration after upload"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Operational p... &raquo;</span>
+    <a href="helpdeskescalation.html" title="Next Chapter: Operational procedure for Help Desk and the Escalation of problems"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Operational p... &raquo;</span>
     </a>
   </li>
               
@@ -133,7 +133,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-oper/expertregistration.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-oper/wmsinclusionvisualizationanalysis.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -162,20 +162,20 @@
 <li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../urbantep-dev/index.html">Processor Development Environment</a></li>
 <li class="toctree-l1 current"><a class="reference internal" href="index.html">Operational Procedures</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Expert user registration</a></li>
+<li class="toctree-l2"><a class="reference internal" href="expertregistration.html">Expert user registration</a></li>
 <li class="toctree-l2"><a class="reference internal" href="processorupload.html">Making available an uploaded processor in the portal</a></li>
 <li class="toctree-l2"><a class="reference internal" href="datasetupload.html">Upload of a dataset to a processing centre</a></li>
 <li class="toctree-l2"><a class="reference internal" href="datasetpublication.html">Publication of a dataset</a></li>
 <li class="toctree-l2"><a class="reference internal" href="processorpublication.html">Publication of a processor</a></li>
 <li class="toctree-l2"><a class="reference internal" href="observationhandling.html">Observation handling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wmsinclusionvisualizationanalysis.html">Inclusion of WMS to Visualization and Analysis tool</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Inclusion of WMS to Visualization and Analysis tool</a></li>
 <li class="toctree-l2"><a class="reference internal" href="helpdeskescalation.html">Help desk procedure and escalation</a></li>
 </ul>
 </li>
 <li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-oper/expertregistration.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-oper/wmsinclusionvisualizationanalysis.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../search.html" method="get">
  <div class="form-group">
@@ -189,18 +189,19 @@
 
     <div class="col-md-9">
       
-  <div class="section" id="operational-procedure-for-expert-registration">
-<h1>Operational procedure for expert registration<a class="headerlink" href="#operational-procedure-for-expert-registration" title="Permalink to this headline">¶</a></h1>
-<p>Only well-known users are entitled to upload processors to one of the Urban TEP processing centres and to provide datasets to other users on the platform. During pre-operations users of selected organisations are entitled to register as well-known expert users.</p>
-<p>Users applying to become expert users are assumed to be registered with ESA EO SSO. They use the corresponding form in &#8220;Develop and offer content&#8221; of the portal. Submitting the form creates a ticket in the ticket handling system.</p>
+  <div class="section" id="operational-procedure-for-integrating-new-wms-into-visualisation-and-analysis-tool">
+<h1>Operational procedure for integrating new WMS into Visualisation and Analysis tool<a class="headerlink" href="#operational-procedure-for-integrating-new-wms-into-visualisation-and-analysis-tool" title="Permalink to this headline">¶</a></h1>
+<p>Any user can add new WMS layer to the Visualisation and analysis tool. By default this layer will be available to himself only. Among the tools there is possibility</p>
 <ul class="simple">
-<li>The help desk operator is automatically informed about the new issue. If necessary to obtain missing information the operator communicates with the user.</li>
-<li>If necessary, the operator informs the Service Manager or the Management Board about the request and waits for a decision.</li>
-<li>The help desk operator informs the portal operator and the processing centre operator(s) to configure group (community) and access rights for the new user.</li>
-<li>The portal operator associates the user with the (closed) community. If requested, the portal operator further entitles the user to use the Test My Processors application and to automatically trigger the registration of new processors of that user deployed in one of the processing centres.</li>
-<li>The processing centre operator(s) communicate with the user if necessary (e.g. to agree the rules for using the processing centre) and configures the group and user, and grants access rights to datasets and processor upload interface. Corresponding credentials are exchanged with the user.</li>
-<li>The help desk operator informs the user about the finalisation of the configuration.</li>
+<li>First the user on the initial screen must decide which combination of Scope, Theme and Place he wants to enrich</li>
+<li>After this selection he chooses Add Layer tool and set the URL for WMS service, Layer name in the service and layer name to be displayed in this tool</li>
 </ul>
+<div class="figure">
+<img alt="../_images/addWmsDialog1.png" src="../_images/addWmsDialog1.png" />
+</div>
+<div class="figure">
+<img alt="../_images/addWmsDialog2.png" src="../_images/addWmsDialog2.png" />
+</div>
 </div>
 
 

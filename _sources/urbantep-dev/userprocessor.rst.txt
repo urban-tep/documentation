@@ -1,3 +1,5 @@
+.. _user_processor:
+
 Building your own processor package
 -----------------------------------
 

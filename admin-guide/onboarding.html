@@ -6,7 +6,7 @@
   <head>
     <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
     
-    <title>Operational procedure for expert registration &#8212; Urban Thematic Exploitation Platform 1.4 documentation</title>
+    <title>On-boarding &#8212; Urban Thematic Exploitation Platform 1.4 documentation</title>
     
     <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
     <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
@@ -33,8 +33,8 @@
     <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
-    <link rel="next" title="Operational procedure for processor registration after upload" href="processorupload.html" />
-    <link rel="prev" title="Urban TEP Operational Procedures" href="index.html" />
+    <link rel="next" title="Overview" href="../apps/index.html" />
+    <link rel="prev" title="Accounting" href="accounting.html" />
     <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
     <script src="../_static/affixTrick.js"></script>
   
@@ -92,10 +92,10 @@
       aria-labelledby="dLabelGlobalToc"><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Community Portal Administrator Guide</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../urbantep-dev/index.html">Processor Development Environment</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Operational Procedures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../urbantep-oper/index.html">Operational Procedures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 </ul>
@@ -110,7 +110,13 @@
   <ul class="dropdown-menu localtoc"
       role="menu"
       aria-labelledby="dLabelLocalToc"><ul>
-<li><a class="reference internal" href="#">Operational procedure for expert registration</a></li>
+<li><a class="reference internal" href="#">On-boarding</a><ul>
+<li><a class="reference internal" href="#expert-users">Expert users</a><ul>
+<li><a class="reference internal" href="#test-my-processor-app">Test my processor app</a></li>
+</ul>
+</li>
+</ul>
+</li>
 </ul>
 </ul>
 </li>
@@ -120,11 +126,11 @@
               
                 
   <li>
-    <a href="index.html" title="Previous Chapter: Urban TEP Operational Procedures"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Urban TEP Ope...</span>
+    <a href="accounting.html" title="Previous Chapter: Accounting"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Accounting</span>
     </a>
   </li>
   <li>
-    <a href="processorupload.html" title="Next Chapter: Operational procedure for processor registration after upload"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Operational p... &raquo;</span>
+    <a href="../apps/index.html" title="Next Chapter: Overview"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Overview &raquo;</span>
     </a>
   </li>
               
@@ -133,7 +139,7 @@
             
             
               <li><div id="sourcelink">
-  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-oper/expertregistration.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/admin-guide/onboarding.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div></li>
             
           </ul>
@@ -158,24 +164,37 @@
         <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
 <li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
-<li class="toctree-l1"><a class="reference internal" href="../urbantep-dev/index.html">Processor Development Environment</a></li>
-<li class="toctree-l1 current"><a class="reference internal" href="index.html">Operational Procedures</a><ul class="current">
-<li class="toctree-l2 current"><a class="current reference internal" href="#">Expert user registration</a></li>
-<li class="toctree-l2"><a class="reference internal" href="processorupload.html">Making available an uploaded processor in the portal</a></li>
-<li class="toctree-l2"><a class="reference internal" href="datasetupload.html">Upload of a dataset to a processing centre</a></li>
-<li class="toctree-l2"><a class="reference internal" href="datasetpublication.html">Publication of a dataset</a></li>
-<li class="toctree-l2"><a class="reference internal" href="processorpublication.html">Publication of a processor</a></li>
-<li class="toctree-l2"><a class="reference internal" href="observationhandling.html">Observation handling</a></li>
-<li class="toctree-l2"><a class="reference internal" href="wmsinclusionvisualizationanalysis.html">Inclusion of WMS to Visualization and Analysis tool</a></li>
-<li class="toctree-l2"><a class="reference internal" href="helpdeskescalation.html">Help desk procedure and escalation</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Community Portal Administrator Guide</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="control_panel.html">Control Panel</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data.html">Data Collection management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wps_provider.html">Wps Providers management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wps_service.html">Wps Services management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="wps_job.html">Wps Jobs management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="data_package.html">Data Packages management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="group.html">Groups management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="user.html">Users management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="news.html">News management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="feature.html">Web stories banners management</a></li>
+<li class="toctree-l2"><a class="reference internal" href="report.html">Reporting</a></li>
+<li class="toctree-l2"><a class="reference internal" href="logs.html">Logs</a></li>
+<li class="toctree-l2"><a class="reference internal" href="authorization.html">Authorization</a></li>
+<li class="toctree-l2"><a class="reference internal" href="accounting.html">Accounting</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">On Boarding</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#expert-users">Expert users</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#test-my-processor-app">Test my processor app</a></li>
 </ul>
 </li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../urbantep-dev/index.html">Processor Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../urbantep-oper/index.html">Operational Procedures</a></li>
 <li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
 </ul>
 <div id="sourcelink">
-  <a href="https://github.com/urban-tep/documentation/blob/develop/source/urbantep-oper/expertregistration.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/admin-guide/onboarding.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
 </div>
 <form action="../search.html" method="get">
  <div class="form-group">
@@ -189,18 +208,38 @@
 
     <div class="col-md-9">
       
-  <div class="section" id="operational-procedure-for-expert-registration">
-<h1>Operational procedure for expert registration<a class="headerlink" href="#operational-procedure-for-expert-registration" title="Permalink to this headline">¶</a></h1>
-<p>Only well-known users are entitled to upload processors to one of the Urban TEP processing centres and to provide datasets to other users on the platform. During pre-operations users of selected organisations are entitled to register as well-known expert users.</p>
-<p>Users applying to become expert users are assumed to be registered with ESA EO SSO. They use the corresponding form in &#8220;Develop and offer content&#8221; of the portal. Submitting the form creates a ticket in the ticket handling system.</p>
-<ul class="simple">
-<li>The help desk operator is automatically informed about the new issue. If necessary to obtain missing information the operator communicates with the user.</li>
-<li>If necessary, the operator informs the Service Manager or the Management Board about the request and waits for a decision.</li>
-<li>The help desk operator informs the portal operator and the processing centre operator(s) to configure group (community) and access rights for the new user.</li>
-<li>The portal operator associates the user with the (closed) community. If requested, the portal operator further entitles the user to use the Test My Processors application and to automatically trigger the registration of new processors of that user deployed in one of the processing centres.</li>
-<li>The processing centre operator(s) communicate with the user if necessary (e.g. to agree the rules for using the processing centre) and configures the group and user, and grants access rights to datasets and processor upload interface. Corresponding credentials are exchanged with the user.</li>
-<li>The help desk operator informs the user about the finalisation of the configuration.</li>
+  <div class="section" id="on-boarding">
+<h1>On-boarding<a class="headerlink" href="#on-boarding" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="expert-users">
+<h2>Expert users<a class="headerlink" href="#expert-users" title="Permalink to this headline">¶</a></h2>
+<p>As soon as a new expert user is registered, the following procedures must be followed.</p>
+<div class="section" id="test-my-processor-app">
+<h3>Test my processor app<a class="headerlink" href="#test-my-processor-app" title="Permalink to this headline">¶</a></h3>
+<p>To allow the expert user to access the services under the Thematic Application <strong>Test my processor</strong>, the following actions must be performed:</p>
+<ul>
+<li><p class="first">as admin user, on the control panel (wps provider view), create a new wps provider (where the user services are hosted) with the following settings:</p>
+<blockquote>
+<div><ul class="simple">
+<li>identifier = &lt;wpsidentifier&gt;_&lt;username&gt; (e.g &#8216;brockmann_eboissier&#8217;)</li>
+<li>name = &lt;wpsidentifier&gt; &lt;username&gt; (e.g &#8216;brockmann eboissier&#8217;)</li>
+<li>url = url of the wps provider</li>
+<li>use proxy = true</li>
+<li>auto sync = true</li>
+<li>domain = user private domain</li>
 </ul>
+</div></blockquote>
+</li>
+<li><p class="first">the creation of the wps provider automatically add existing services with property <em>available</em> set to false, go to the control panel / wps services view and update availability of services linked to this new wps provider if necessary (as a sanity check, see that they have as domain the user private domain)</p>
+</li>
+<li><p class="first">if the wps services implements the quotation mode, update the accounting rates defined at the <strong>wps provider</strong> level</p>
+</li>
+<li><p class="first">when a new service is added on the wps provider, the agent running on the server will detect it and make it available for the user (available is automatically set to true)</p>
+</li>
+<li><p class="first">the user will then be able to see the service(s) in the Thematic Application <strong>Test my processor</strong></p>
+</li>
+</ul>
+</div>
+</div>
 </div>
 
 
