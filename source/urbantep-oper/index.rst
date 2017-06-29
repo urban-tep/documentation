@@ -13,4 +13,5 @@ The Urban TEP operational procedures are instructions for the operators of the s
    Publication of a processor <processorpublication>
    Observation handling <observationhandling>
    Inclusion of WMS to Visualization and Analysis tool <wmsinclusionvisualizationanalysis>
+   Help desk procedure and escalation <helpdeskescalation>
 

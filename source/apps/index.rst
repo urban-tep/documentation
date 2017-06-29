@@ -11,5 +11,5 @@ Overview
    :maxdepth: 2
    
    Thematic applications <thematic_app>
-   Management application <management_app>
+   Test my processor application <management_app>
    
