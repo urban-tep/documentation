@@ -5,10 +5,10 @@ The menu bar is always visible, apart from the geobrowser page. It contains the 
 
 - `Background`_,
 - `Use Scenarios`_,
+- `Quick Start`_,
 - `Data & Services`_,
 - `Activities`_,
-- `Community`_
-- `Enter Platform`_
+- `Partners`_
 
 .. figure:: ../../includes/home_menubar.png
 	:figclass: img-border img-max-width
@@ -28,6 +28,11 @@ Use Scenarios
 
 Some example of uses scenarios of the Tep Urban platform.
 
+Quick Start
+-----------
+
+Quick start manuals available for the Tep Urban platform.
+
 Data & Services
 ---------------
 
@@ -38,7 +43,7 @@ Activities
 
 Passed and incoming activities around the Urban community.
 
-Community
----------
+Partners
+--------
 
 Description of partners and actors of the Urban community.
