@@ -18,7 +18,7 @@ Join a Community
 
 1. Access the U-TEP Community Portal. Click on View Communities in the U-TEP Community Portal to access an overview of existing and available communities as shown in Figure 1. Please consult :doc:`Quick Start Manual 2 <qsm2>` if you cannot access the U-TEP Communities webpage.
 
-.. figure:: includes/qsm4-f1.png
+.. figure:: includes/qsm3-f1.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 
@@ -38,7 +38,7 @@ An Overview of Features within a Community
 
 3. Here you can go back to an overview of all existing communities, or you can leave the current community as a member.
 
-.. figure:: includes/qsm4-f2.png
+.. figure:: includes/qsm3-f2.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 
@@ -65,7 +65,7 @@ An Overview of Features within a Community
 
 10.	Within the Geobrowser, a user is able to filter data packages, job results and other community specific activities for a specific community.  This is indicated by the red circles in Figure 3.
 
-.. figure:: includes/qsm4-f3.png
+.. figure:: includes/qsm3-f3.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 
@@ -79,7 +79,7 @@ As mentioned in Section 2.3.1.2 and indicated by number 9 in Figure 2, on the ma
 
 1. Click on Go to discuss. 
  
-.. figure:: includes/qsm4-f4.png
+.. figure:: includes/qsm3-f4.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 
@@ -88,7 +88,7 @@ As mentioned in Section 2.3.1.2 and indicated by number 9 in Figure 2, on the ma
 
 2. You are directed to Terradue’s discuss page with top discussions in your community, see Figure 5.
  
-.. figure:: includes/qsm4-f5.png
+.. figure:: includes/qsm3-f5.png
 	:align: center
 	:width: 80%
 	:figclass: img-container-border	 

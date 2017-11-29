@@ -55,7 +55,7 @@ Discover Thematic Applications
 
 2. Currently only a limited number of thematic applications is available. Once the number of thematic application has increased, this search field can be used to easily find your application of interest.
 
-3. An overview of existing thematic applications, including information about each application. Select your application of interest (e.g. Small Water Bodies for Red River) and click on Open App to access your application of interest. A new window will appear, called the Geobrowser. More info about the features within the Geobrowser can be found in :doc:`Quick Start Manual 3 <qsm3>`.
+3. An overview of existing thematic applications, including information about each application. Select your application of interest (e.g. Small Water Bodies for Red River) and click on Open App to access your application of interest. A new window will appear, called the Geobrowser.
 
 Join Communities
 ~~~~~~~~~~~~~~~~
@@ -69,7 +69,7 @@ Join Communities
 
 	Figure 3: List of existing U-TEP Communities
 
-2. You can become member of a community by clicking on Join. Once you have joined a community you can access your community by clicking on Enter. More info about the features within a community follows in :doc:`Quick Start Manual 4 <qsm4>`. 
+2. You can become member of a community by clicking on Join. Once you have joined a community you can access your community by clicking on Enter. More info about the features within a community follows in :doc:`Quick Start Manual 3 <qsm3>`. 
 
 3. The search field can be used to find your community of interest. 
 
