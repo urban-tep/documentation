@@ -1,6 +1,51 @@
-.. _QSM5:
+.. _QSM6:
 
 Contact the U-TEP team
 ----------------------
 
-To be updated
+Ticketing system
+================
+
+The main point of the contact with the U-TEP team is the ticketing system at the address: https://utepredmine.it4i.cz/redmine/projects/u-tep-early-adopters When you are logged in the platform it is also available via the question mark on the top toolbar as seen at the Fig. 1
+
+.. figure:: includes/topToolbar.png
+	:align: center
+	:width: 80%
+    :figclass: img-container-border
+
+    Figure 1: Location of the support icon in the Portal itself.
+
+When you log into the support system. You will get to the page similar to the one on the Fig. 2. The UI of the ticketing system has three main parts. Top toolbar which allows you to choose the right project and get help with the ticketing system itself. Menu in the middle which gives you access to the activity in the relevant project and see the information about the raised issues and the overview part, where you see who has access to given project and how many open tickets of different categories are there in the system at the moment. To see the exact state of your tickets it is possible to go directly to the page: https://utepredmine.it4i.cz/redmine/projects/u-tep-early-adopters/issues
+
+.. figure:: includes/redmineGeneral.png
+	:align: center
+	:width: 80%
+    :figclass: img-container-border
+
+    Figure 2: General overview of the ticketing system interface.
+
+Add new ticket
+~~~~~~~~~~~~~~
+
+.. figure:: includes/redmineNewIssue.png
+	:align: center
+	:width: 80%
+    :figclass: img-container-border
+
+    Figure 3: The example of adding new issue to the system.
+
+1. You have found that some part of the system behaves differently to what was explained to you or doesn't work for you. In this case you create a ticket with Tracker Bug.
+
+2. You want us to help you with something regarding the platform. For example Integration of new data, Implementation of Custom processor, Supporting specific Use Case. In all these cases the proper Tracker is the Support one.
+
+3. You want us to change something about the platform. For example the way you explore the data or get to the analytical toolbox. In this case the Feedback is the right type of the tracker.
+
+Once you create the ticket, the next day the ticket should be assigned to the proper person and this person should contact you with request for further information if necessary or change the status of the ticket to In Progress, which signalizes that the ticket is being worked on.
+
+Email
+=====
+
+It is also possible to contact us directly via email: urban-tep@esa.int
+
+The email is appropriate choice if you don't have access to the system and the ticketing system or if you have some difficulties with the issues added to the ticketing system.
+
