@@ -11,18 +11,19 @@ The main point of the contact with the U-TEP team is the ticketing system at the
 .. figure:: includes/topToolbar.png
 	:align: center
 	:width: 80%
-    :figclass: img-container-border
+	:figclass: img-container-border
 
-    Figure 1: Location of the support icon in the Portal itself.
+	Figure 1: Location of the support icon in the Portal itself.
 
 When you log into the support system. You will get to the page similar to the one on the Fig. 2. The UI of the ticketing system has three main parts. Top toolbar which allows you to choose the right project and get help with the ticketing system itself. Menu in the middle which gives you access to the activity in the relevant project and see the information about the raised issues and the overview part, where you see who has access to given project and how many open tickets of different categories are there in the system at the moment. To see the exact state of your tickets it is possible to go directly to the page: https://utepredmine.it4i.cz/redmine/projects/u-tep-early-adopters/issues
+
 
 .. figure:: includes/redmineGeneral.png
 	:align: center
 	:width: 80%
-    :figclass: img-container-border
+	:figclass: img-container-border
 
-    Figure 2: General overview of the ticketing system interface.
+	Figure 2: General overview of the ticketing system interface.
 
 Add new ticket
 ~~~~~~~~~~~~~~
@@ -30,9 +31,9 @@ Add new ticket
 .. figure:: includes/redmineNewIssue.png
 	:align: center
 	:width: 80%
-    :figclass: img-container-border
+	:figclass: img-container-border
 
-    Figure 3: The example of adding new issue to the system.
+	Figure 3: The example of adding new issue to the system.
 
 1. You have found that some part of the system behaves differently to what was explained to you or doesn't work for you. In this case you create a ticket with Tracker Bug.
 
