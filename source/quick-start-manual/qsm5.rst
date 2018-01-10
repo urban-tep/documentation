@@ -115,6 +115,7 @@ The Urban TEP processor development VM comes with a few Earth observation produc
 The development environment contains one processor example as a template how local test, packaging and upload to a processing centre can be performed. You can copy this example into your home directory of the VM with **/urbantep/software/urbantep-dev/bin/setup-example.sh**.
 
 The result is a directory called example with the following content:
+
 * Fmask is the executable - It requires Matlab runtime
 * run_fmask.sh is the wrapper script that comes with Fmask
 * merge-graph.xml is the SNAP GPT graph that merges the output of Fmask as one band into the Landsat product
@@ -183,12 +184,14 @@ After the successful local test the processor can be **packaged** and **uploaded
 
 **Upload tool requires user name and password of a well-known user of the respective processing centre.**
 
-Brockmann Consult processing center 
+Brockmann Consult processing center
+
 * use **package-bc.sh** to package the content of the processor to a .zip file
 * use **upload-bc.sh** to upload the packed processor to a Brockmann Consult processing center
 * use **describeProcess-bc.sh** to verify the deployed processor within the processing center
 
-IT4Innovations processing center 
+IT4Innovations processing center
+
 * use **package-it4i.sh** to package the content of the processor to a .zip file
 * use **upload-it4i.sh** to upload the packed processor to a IT4Innovations processing center
 * use **describeProcess-it4i.sh** to verify the deployed processor within the processing center
@@ -206,3 +209,6 @@ All uploaded processors are listed in the "Services" tab in "Test my processor" 
 	:align: center
 	:width: 80%
 	:figclass: img-container-border
+	
+	
+Request publication of your processor
