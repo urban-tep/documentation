@@ -3,6 +3,20 @@
 Upload Your Own Data and Tools
 ------------------------------
 
+These options are available only to the registered users after sign-on using your EO-SSO ID. This service is open to well-known, registered users of the U-TEP portal and to become one, you have to register with one of the U-TEP processing centres. The registration form is located on the "Develop and offer content" page.
+
+.. figure:: includes/qsm5-f1.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border
+
+.. figure:: includes/qsm5-f5.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border
+	
+The submission of the registration form generates the ticket within the platform's ticketing system. The helpdesk operator is automatically informed about the new ticket and the following use case specific communitation is performed via this ticketing system.
+	
 Upload your data
 ================
 
@@ -13,14 +27,7 @@ You have the following options regarding your own dataset which you want to use 
 * request upload of your dataset on the platform and make it available just for your processing (using existing processors or custom processors)
 * request publication of the dataset you have generated on the platform as a new product for all users or selected community 
 
-These options are available only to the registered users after sign-on using your EO-SSO ID. When you log into the platform you can find the appropriate request forms on the "Develop and offer content" page.
-
-.. figure:: includes/qsm5-f1.png
-	:align: center
-	:width: 80%
-	:figclass: img-container-border
-
-To view the request forms use "Managing your own datasets" link.
+When you log into the platform you can find the appropriate request forms on the "Develop and offer content" page. To view the request forms use "Managing your own datasets" link.
 
 .. figure:: includes/qsm5-f2.png
 	:align: center
@@ -28,7 +35,7 @@ To view the request forms use "Managing your own datasets" link.
 	:figclass: img-container-border
 	
 ..NOTE:: 
-	There are only two request forms regarding the uploading or publishing of a dataset. These forms are the entry point for the whole process as they generate new request ticket within the platform's helpdesk system. The helpdesk operator is automatically informed about the new ticket and the following dataset/request specific communitation is performed using this ticketing system.
+	There are only two request forms regarding the uploading or publishing of a dataset. The specified use case should be described within the form or later on through the created ticket in the helpdesk system.
 
 Request upload of a dataset
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -56,5 +63,7 @@ This form creates a new ticket within the helpdesk system of the platform. When 
 
 Upload your tool
 ================
+
+To upload your own tool you have to use the development environment package available on the "Develop and offer content" page.
 
 ... in preparation
