@@ -93,4 +93,4 @@ As mentioned in Section 2.3.1.2 and indicated by number 9 in Figure 2, on the ma
 	:width: 80%
 	:figclass: img-container-border	 
  
-	Figure 5: Terredue Discuss: Red River Community Top Discussions
+	Figure 5: Terredue Discuss: UTEP Community Top Discussions
