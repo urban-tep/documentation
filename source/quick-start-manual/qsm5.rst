@@ -212,3 +212,21 @@ All uploaded processors are listed in the "Services" tab in "Test my processor" 
 	
 	
 Request publication of your processor
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you want to publish your processor for all users or just selected community, you can do it via the request form on the "Develop and offer content" page. This form will initiate new ticket in the helpdesk system. The help desk operator informs you about the finalisation of your request.
+
+.. figure:: includes/qsm5-f12.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border
+
+Propose your processor for systematic processing
+~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+
+If you want your custom processor to systematically generate the data, you need to submit an appropriate request form on the "Develop and offer content" page. This form will initiate new ticket in the helpdesk system. The help desk operator informs you about the finalisation of your request.
+
+.. figure:: includes/qsm5-f13.png
+	:align: center
+	:width: 80%
+	:figclass: img-container-border
