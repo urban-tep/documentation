@@ -12,7 +12,7 @@
 	<artifactId>doc-tep-urban</artifactId>
 	<packaging>rpm</packaging>
 	<description>Urban Thematic Exploitation Platform guide</description>
-	<version>1.4.2</version>
+	<version>1.4.3</version>
 	
 <!--	<dependencies>
 		<dependency>
