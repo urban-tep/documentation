@@ -1,0 +1,419 @@
+
+<!DOCTYPE html>
+
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+  <head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    
+    <title>Upload Your Own Data and Tools &#8212; Urban Thematic Exploitation Platform 1.4 documentation</title>
+    
+    <link rel="stylesheet" href="../_static/basic.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/pygments.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-3.3.4/css/bootstrap-theme.min.css" type="text/css" />
+    <link rel="stylesheet" href="../_static/bootstrap-sphinx.css" type="text/css" />
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../',
+        VERSION:     '1.4',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true,
+        SOURCELINK_SUFFIX: '.txt'
+      };
+    </script>
+    <script type="text/javascript" src="../_static/jquery.js"></script>
+    <script type="text/javascript" src="../_static/underscore.js"></script>
+    <script type="text/javascript" src="../_static/doctools.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-1.11.0.min.js"></script>
+    <script type="text/javascript" src="../_static/js/jquery-fix.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-3.3.4/js/bootstrap.min.js"></script>
+    <script type="text/javascript" src="../_static/bootstrap-sphinx.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="Contact the U-TEP team" href="qsm6.html" />
+    <link rel="prev" title="Become Member of a Community" href="qsm3.html" />
+    <link rel="stylesheet" href="../_static/terradue.css" type="text/css" />
+    <script src="../_static/affixTrick.js"></script>
+  
+<meta charset='utf-8'>
+<meta http-equiv='X-UA-Compatible' content='IE=edge,chrome=1'>
+<meta name='viewport' content='width=device-width, initial-scale=1.0, maximum-scale=1'>
+<meta name="apple-mobile-web-app-capable" content="yes">
+
+
+  </head>
+  <body role="document">
+
+<!-- <header>
+	<div class="container">
+		<a href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+		<div id="t2-random-slogan">digital earth scalers</div>
+	</div>
+</header> -->
+<div id="navbar" class="navbar navbar-default navbar-fixed-top"><!-- navbar-fixed-top-->
+    <div class="container">
+      <div class="navbar-header pull-right">
+        <!-- .btn-navbar is used as the toggle for collapsed navbar content -->
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".nav-collapse">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/t2Logo.png"></a>
+      </div>
+
+        <div class="collapse navbar-collapse nav-collapse">
+          <ul class="nav navbar-nav">
+	    <a class="navbar-brand" href="http://www.terradue.com" target="_blank"><img id="logo" src="../_static/TEP_urban_logo.png"></a>
+            <li class="divider-vertical"></li>
+<!--             <li class="dropdown">
+    <a href="#" class="dropdown-toggle" data-toggle="dropdown">
+        <b>1.4</b><b class="caret"></b>
+    </a>
+    <ul class="dropdown-menu globaltoc">
+        <li><a href="/devel">1.2 (Devel)</a></li>
+        <li><a href="/stable">1.1 (Stable)</a></li>
+    </ul>
+</li> -->
+
+            
+            
+              <li class="dropdown globaltoc-container">
+  <a role="button"
+     id="dLabelGlobalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="../index.html">Site <b class="caret"></b></a>
+  <ul class="dropdown-menu globaltoc"
+      role="menu"
+      aria-labelledby="dLabelGlobalToc"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Quick Start Manual</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../urbantep-dev/index.html">Processor Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../urbantep-oper/index.html">Operational Procedures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+</ul>
+</li>
+              
+                <li class="dropdown">
+  <a role="button"
+     id="dLabelLocalToc"
+     data-toggle="dropdown"
+     data-target="#"
+     href="#">Page <b class="caret"></b></a>
+  <ul class="dropdown-menu localtoc"
+      role="menu"
+      aria-labelledby="dLabelLocalToc"><ul>
+<li><a class="reference internal" href="#">Upload Your Own Data and Tools</a><ul>
+<li><a class="reference internal" href="#upload-your-data">Upload your data</a><ul>
+<li><a class="reference internal" href="#request-upload-of-a-dataset">Request upload of a dataset</a></li>
+<li><a class="reference internal" href="#request-publication-of-a-dataset">Request publication of a dataset</a></li>
+</ul>
+</li>
+<li><a class="reference internal" href="#upload-your-tool">Upload your tool</a><ul>
+<li><a class="reference internal" href="#processor-development-environment">Processor Development Environment</a></li>
+<li><a class="reference internal" href="#develop-test-package-and-upload-your-processor">Develop, test, package and upload your processor</a></li>
+<li><a class="reference internal" href="#request-publication-of-your-processor">Request publication of your processor</a></li>
+<li><a class="reference internal" href="#propose-your-processor-for-systematic-processing">Propose your processor for systematic processing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+</ul>
+</ul>
+</li>
+              
+            
+            
+              
+                
+  <li>
+    <a href="qsm3.html" title="Previous Chapter: Become Member of a Community"><span class="glyphicon glyphicon-chevron-left visible-sm"></span><span class="hidden-sm hidden-tablet">&laquo; Become Member...</span>
+    </a>
+  </li>
+  <li>
+    <a href="qsm6.html" title="Next Chapter: Contact the U-TEP team"><span class="glyphicon glyphicon-chevron-right visible-sm"></span><span class="hidden-sm hidden-tablet">Contact the U... &raquo;</span>
+    </a>
+  </li>
+              
+            
+            
+            
+            
+              <li><div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/quick-start-manual/qsm5.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div></li>
+            
+          </ul>
+        </div>
+    </div>
+</div>
+<div id="navbarSpacer"></div>
+
+<div class="container">
+  <div class="row">
+<!--<div class="alert alert-danger alert-error alert-dismissable" style="margin-left: 15px; margin-right: 15px;">
+	<button type="button" class="close" data-dismiss="alert" aria-hidden="true">&times;</button>
+    <p class="first admonition-title">
+        Warning
+    </p>
+    <p class="last">
+        This guide is under development. The material on this page needs to be reviewed for completeness and accuracy. This guide may have not been updated yet from the last release.
+    </p>
+</div>-->
+
+      <div class="col-md-3">
+        <div id="sidebar" class="bs-sidenavNew" role="complementary"><ul class="current">
+<li class="toctree-l1"><a class="reference internal" href="../overview/index.html">Overview</a></li>
+<li class="toctree-l1 current"><a class="reference internal" href="index.html">Quick Start Manual</a><ul class="current">
+<li class="toctree-l2"><a class="reference internal" href="qsm1.html">How to become a member of U-TEP</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm2.html">Browse your way through the U-TEP Portal</a></li>
+<li class="toctree-l2"><a class="reference internal" href="qsm3.html">Become Member of a Community</a></li>
+<li class="toctree-l2 current"><a class="current reference internal" href="#">Upload Your Own Data and Tools</a><ul>
+<li class="toctree-l3"><a class="reference internal" href="#upload-your-data">Upload your data</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#request-upload-of-a-dataset">Request upload of a dataset</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#request-publication-of-a-dataset">Request publication of a dataset</a></li>
+</ul>
+</li>
+<li class="toctree-l3"><a class="reference internal" href="#upload-your-tool">Upload your tool</a><ul>
+<li class="toctree-l4"><a class="reference internal" href="#processor-development-environment">Processor Development Environment</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#develop-test-package-and-upload-your-processor">Develop, test, package and upload your processor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#request-publication-of-your-processor">Request publication of your processor</a></li>
+<li class="toctree-l4"><a class="reference internal" href="#propose-your-processor-for-systematic-processing">Propose your processor for systematic processing</a></li>
+</ul>
+</li>
+</ul>
+</li>
+<li class="toctree-l2"><a class="reference internal" href="qsm6.html">Contact the U-TEP team</a></li>
+</ul>
+</li>
+<li class="toctree-l1"><a class="reference internal" href="../community-guide/index.html">Community Portal User Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../admin-guide/index.html">Community Portal Administrator Guide</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../apps/index.html">Thematic Applications</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../urbantep-dev/index.html">Processor Development Environment</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../urbantep-oper/index.html">Operational Procedures</a></li>
+<li class="toctree-l1"><a class="reference internal" href="../requirement/index.html">Requirement Traceability</a></li>
+</ul>
+<div id="sourcelink">
+  <a href="https://github.com/urban-tep/documentation/blob/develop/source/quick-start-manual/qsm5.rst" rel="nofollow" target="_blank"><span class='githubLogo'></span>Source</a>
+</div>
+<form action="../search.html" method="get">
+ <div class="form-group">
+  <input type="text" name="q" class="form-control" placeholder="Search" />
+ </div>
+  <input type="hidden" name="check_keywords" value="yes" />
+  <input type="hidden" name="area" value="default" />
+</form>
+        </div>
+      </div>
+
+    <div class="col-md-9">
+      
+  <div class="section" id="upload-your-own-data-and-tools">
+<span id="qsm5"></span><h1>Upload Your Own Data and Tools<a class="headerlink" href="#upload-your-own-data-and-tools" title="Permalink to this headline">¶</a></h1>
+<p>These options are available only to the registered users after sign-on using your EO-SSO ID. This service is open to well-known, registered users of the U-TEP portal and to become one, you have to register with one of the U-TEP processing centres. The registration form is located on the &#8220;Develop and offer content&#8221; page.</p>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f1.png"><img alt="../_images/qsm5-f1.png" src="../_images/qsm5-f1.png" style="width: 80%;" /></a>
+</div>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f5.png"><img alt="../_images/qsm5-f5.png" src="../_images/qsm5-f5.png" style="width: 80%;" /></a>
+</div>
+<p>The submission of the registration form generates the ticket within the platform&#8217;s ticketing system. The helpdesk operator is automatically informed about the new ticket and the following use case specific communitation is performed via this ticketing system.</p>
+<div class="section" id="upload-your-data">
+<h2>Upload your data<a class="headerlink" href="#upload-your-data" title="Permalink to this headline">¶</a></h2>
+<p>You have the following options regarding your own dataset which you want to use on the platform:</p>
+<ul class="simple">
+<li>request upload of your dataset on the platform and make it available for all users or selected community as a new product</li>
+<li>request upload of your dataset on the platform and make it available for all users or selected community as a new dataset for processing (using existing processors or custom processors)</li>
+<li>request upload of your dataset on the platform and make it available just for your processing (using existing processors or custom processors)</li>
+<li>request publication of the dataset you have generated on the platform as a new product for all users or selected community</li>
+</ul>
+<p>When you log into the platform you can find the appropriate request forms on the &#8220;Develop and offer content&#8221; page. To view the request forms use &#8220;Managing your own datasets&#8221; link.</p>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f2.png"><img alt="../_images/qsm5-f2.png" src="../_images/qsm5-f2.png" style="width: 80%;" /></a>
+</div>
+<dl class="docutils">
+<dt>..NOTE::</dt>
+<dd>There are only two request forms regarding the uploading or publishing of a dataset. The specified use case should be described within the form or later on through the created ticket in the helpdesk system.</dd>
+</dl>
+<div class="section" id="request-upload-of-a-dataset">
+<h3>Request upload of a dataset<a class="headerlink" href="#request-upload-of-a-dataset" title="Permalink to this headline">¶</a></h3>
+<p>Fill the &#8220;Requesting upload of a user-provided dataset&#8221; form to upload your dataset for the publication as a product or as a dataset for processing.</p>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f3.png"><img alt="../_images/qsm5-f3.png" src="../_images/qsm5-f3.png" style="width: 80%;" /></a>
+</div>
+<p>You will be contacted by a selected processing center operator via the helpdesk system about the method of the dataset upload. The processing center operator ingests the data e.g. by harvesting it from a remote location, or by offering you an FTP drop-down point for the processing center. In the end, the help desk operator informs you about the finalisation of your request.</p>
+</div>
+<div class="section" id="request-publication-of-a-dataset">
+<h3>Request publication of a dataset<a class="headerlink" href="#request-publication-of-a-dataset" title="Permalink to this headline">¶</a></h3>
+<p>Fill the &#8220;Requesting publication of a dataset&#8221; form to publish the dataset you have generated on the platform as a new product.</p>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f4.png"><img alt="../_images/qsm5-f4.png" src="../_images/qsm5-f4.png" style="width: 80%;" /></a>
+</div>
+<p>This form creates a new ticket within the helpdesk system of the platform. When the necesarry configuration is done, the help desk operator informs you via this ticket about the finalisation of your request.</p>
+</div>
+</div>
+<div class="section" id="upload-your-tool">
+<h2>Upload your tool<a class="headerlink" href="#upload-your-tool" title="Permalink to this headline">¶</a></h2>
+<p>To upload your own tool you have to use the processor development environment package available on the &#8220;Develop and offer content&#8221; page.</p>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f6.png"><img alt="../_images/qsm5-f6.png" src="../_images/qsm5-f6.png" style="width: 80%;" /></a>
+</div>
+<p>The whole proces of creating, uploading and publishing your own processor (tool) is described in detail in the user manual&#8217;s &#8220;Processor Development Environment&#8221; tab. This process could be summarized in the following steps:</p>
+<ol class="arabic simple">
+<li>Download U-TEP&#8217;s Virtual Machine for processor development and deployment</li>
+<li>Develop, test, package and upload your processor to a processing center</li>
+<li>(OPTIONAL) Request publication of your processor for use by other users</li>
+<li>(OPTIONAL) Propose your processor for systematic processing</li>
+</ol>
+<div class="section" id="processor-development-environment">
+<h3>Processor Development Environment<a class="headerlink" href="#processor-development-environment" title="Permalink to this headline">¶</a></h3>
+<p>Donwload the VM image from the following link. It is a linux VM that comes with the a graphical user interface providing you the tools to create your own processor, test it locally within the VM and upload it to a selected processing center to make it available on the platform just for you or also for other users.</p>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f7.png"><img alt="../_images/qsm5-f7.png" src="../_images/qsm5-f7.png" style="width: 80%;" /></a>
+</div>
+<p>Copy the content of the virtual machine image directory to a local directory on your machine. Unless done, install Oracle Virtual Box on your machine. Start the VM and log-in using the &#8220;<strong>urbanuser</strong>&#8221; password for the default username.</p>
+</div>
+<div class="section" id="develop-test-package-and-upload-your-processor">
+<h3>Develop, test, package and upload your processor<a class="headerlink" href="#develop-test-package-and-upload-your-processor" title="Permalink to this headline">¶</a></h3>
+<p>The desktop of the Urban-TEP VM shows some icons of pre-installed applications:</p>
+<ul class="simple">
+<li>Terminal, used for local processor tests, packaging, upload</li>
+<li>Web browser</li>
+<li>Sentinel Toolbox SNAP</li>
+<li><strong>urban-dev.readme</strong> with tutorial instructions for an example processor</li>
+</ul>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f8.png"><img alt="../_images/qsm5-f8.png" src="../_images/qsm5-f8.png" style="width: 80%;" /></a>
+</div>
+<p>The Urban TEP processor development VM comes with a few Earth observation products from different missions and sensors. The test data is located in directory <strong>/urbantep/eodata/&lt;type&gt;</strong> in the virtual machine:</p>
+<ul class="simple">
+<li>Sentinel 2 L1C subset</li>
+<li>Landsat 8 OLI+TIRS</li>
+<li>ENVISAT MERIS</li>
+</ul>
+<p>The development environment contains one processor example as a template how local test, packaging and upload to a processing centre can be performed. You can copy this example into your home directory of the VM with <strong>/urbantep/software/urbantep-dev/bin/setup-example.sh</strong>.</p>
+<p>The result is a directory called example with the following content:</p>
+<ul class="simple">
+<li>Fmask is the executable - It requires Matlab runtime</li>
+<li>run_fmask.sh is the wrapper script that comes with Fmask</li>
+<li>merge-graph.xml is the SNAP GPT graph that merges the output of Fmask as one band into the Landsat product</li>
+<li>fmask-and-merge.sh is the wrapper script that calls Fmask and SNAP in sequence</li>
+<li>Dockerfile declares Linux package dependencies of the processor</li>
+<li>descriptor.xml declares environment and parameterisation of the processor for deployment</li>
+</ul>
+<p>Processors are usually packaged with <strong>Docker</strong> to allow for a constant environment of the processor even in different processing centres. The <strong>descriptor XML</strong> is a declaration that is independent of the target processing centre. It declares names and versions, the processor script to be started to run the processor, formal parameters, and dependencies.</p>
+<div class="code xml highlight-default"><div class="highlight"><pre><span></span>urbanuser@urbandev:~ $ cat /urbantep/software/urbantep-dev/example/descriptor.xml
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;utf-8&quot;?&gt;
+&lt;utep:descriptor xmlns:xsi=&quot;http://www.w3.org/2001/XMLSchema-instance&quot;
+                 xmlns:utep=&quot;http://urban-tep.eo.esa.int/schema/urban-tep-schema.xsd&quot;
+                 xsi:schemaLocation=&quot;http://urban-tep.eo.esa.int/schema/urban-tep-schema.xsd urban-tep-schema.xsd&quot;&gt;
+  &lt;utep:processor&gt;
+    &lt;utep:name&gt;Fmask8&lt;/utep:name&gt;
+    &lt;utep:executable&gt;fmask-and-merge.sh&lt;/utep:executable&gt;
+    &lt;utep:title&gt;Urban TEP Fmask for Landsat 8&lt;/utep:title&gt;
+    &lt;utep:description&gt;&lt;p&gt;Performs cloud detection for Landsat 8 L1 products.&lt;/p&gt;&lt;/utep:description&gt;
+    &lt;utep:inputTypes&gt;Landsat8&lt;/utep:inputTypes&gt;
+    &lt;utep:parameters&gt;
+      &lt;utep:parameter&gt;
+        &lt;utep:name&gt;threshold&lt;/utep:name&gt;
+        &lt;utep:type&gt;string&lt;/utep:type&gt;
+        &lt;utep:description&gt;cloud probability threshold&lt;/utep:description&gt;
+        &lt;utep:default&gt;0.2&lt;/utep:default&gt;
+      &lt;/utep:parameter&gt;
+    &lt;/utep:parameters&gt;
+    &lt;utep:packaging&gt;
+      &lt;utep:name&gt;fmask&lt;/utep:name&gt;
+      &lt;utep:version&gt;3.2&lt;/utep:version&gt;
+      &lt;utep:type&gt;Docker&lt;/utep:type&gt;
+      &lt;utep:dependencies&gt;
+        &lt;utep:dependency&gt;
+          &lt;utep:name&gt;snap&lt;/utep:name&gt;
+        &lt;/utep:dependency&gt;
+        &lt;utep:dependency&gt;
+          &lt;utep:name&gt;mcr_root&lt;/utep:name&gt;
+          &lt;utep:version&gt;v81&lt;/utep:version&gt;
+        &lt;/utep:dependency&gt;
+      &lt;/utep:dependencies&gt;
+      &lt;utep:resources&gt;
+        &lt;utep:resource&gt;
+          &lt;utep:name&gt;memory&lt;/utep:name&gt;
+          &lt;utep:value&gt;7000&lt;/utep:value&gt;
+        &lt;/utep:resource&gt;
+        &lt;utep:resource&gt;
+          &lt;utep:name&gt;timelimit&lt;/utep:name&gt;
+          &lt;utep:value&gt;3600&lt;/utep:value&gt;
+        &lt;/utep:resource&gt;
+      &lt;/utep:resources&gt;
+    &lt;/utep:packaging&gt;
+  &lt;/utep:processor&gt;
+&lt;/utep:descriptor&gt;
+</pre></div>
+</div>
+<p>The example processor can be tested locally with or without the docker container. There is a <strong>README</strong> file in the urbanuser’s home directory with all steps to be performed. The result can also be inspected using the installed SNAP by opening the result NetCDF product in the working directory of the example processor.</p>
+<blockquote>
+<div><div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f9.png"><img alt="../_images/qsm5-f9.png" src="../_images/qsm5-f9.png" style="width: 80%;" /></a>
+</div>
+</div></blockquote>
+<p>After the successful local test the processor can be <strong>packaged</strong> and <strong>uploaded</strong> to a processing centre for deployment and later application to larger datasets. The same way an updated processor can be installed to supersede a previously installed processor version (with explicit versioning, you are responsible for version numbers yourself).</p>
+<p><strong>Upload tool requires user name and password of a well-known user of the respective processing centre.</strong></p>
+<p>Brockmann Consult processing center</p>
+<ul class="simple">
+<li>use <strong>package-bc.sh</strong> to package the content of the processor to a .zip file</li>
+<li>use <strong>upload-bc.sh</strong> to upload the packed processor to a Brockmann Consult processing center</li>
+<li>use <strong>describeProcess-bc.sh</strong> to verify the deployed processor within the processing center</li>
+</ul>
+<p>IT4Innovations processing center</p>
+<ul class="simple">
+<li>use <strong>package-it4i.sh</strong> to package the content of the processor to a .zip file</li>
+<li>use <strong>upload-it4i.sh</strong> to upload the packed processor to a IT4Innovations processing center</li>
+<li>use <strong>describeProcess-it4i.sh</strong> to verify the deployed processor within the processing center</li>
+</ul>
+<p>After the successful upload, the processor should be available directly on the platform in the &#8220;<strong>Test my processor</strong>&#8221; thematic application.</p>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f10.png"><img alt="../_images/qsm5-f10.png" src="../_images/qsm5-f10.png" style="width: 80%;" /></a>
+</div>
+<p>All uploaded processors are listed in the &#8220;Services&#8221; tab in &#8220;Test my processor&#8221; thematic application.</p>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f11.png"><img alt="../_images/qsm5-f11.png" src="../_images/qsm5-f11.png" style="width: 80%;" /></a>
+</div>
+</div>
+<div class="section" id="request-publication-of-your-processor">
+<h3>Request publication of your processor<a class="headerlink" href="#request-publication-of-your-processor" title="Permalink to this headline">¶</a></h3>
+<p>If you want to publish your processor for all users or just selected community, you can do it via the request form on the &#8220;Develop and offer content&#8221; page. This form will initiate new ticket in the helpdesk system. The help desk operator informs you about the finalisation of your request.</p>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f12.png"><img alt="../_images/qsm5-f12.png" src="../_images/qsm5-f12.png" style="width: 80%;" /></a>
+</div>
+</div>
+<div class="section" id="propose-your-processor-for-systematic-processing">
+<h3>Propose your processor for systematic processing<a class="headerlink" href="#propose-your-processor-for-systematic-processing" title="Permalink to this headline">¶</a></h3>
+<p>If you want your custom processor to systematically generate the data, you need to submit an appropriate request form on the &#8220;Develop and offer content&#8221; page. This form will initiate new ticket in the helpdesk system. The help desk operator informs you about the finalisation of your request.</p>
+<div class="img-container-border figure align-center">
+<a class="reference internal image-reference" href="../_images/qsm5-f13.png"><img alt="../_images/qsm5-f13.png" src="../_images/qsm5-f13.png" style="width: 80%;" /></a>
+</div>
+</div>
+</div>
+</div>
+
+
+    </div>
+      
+  </div>
+</div>
+<footer class="footer">
+	<div class="container">
+		<img src="../_static/t2LogoLittleWhite.png">
+		&nbsp;&nbsp;&nbsp;Copyright 2006-2014 &copy; Terradue. All Rights Reserved. Please send comments to <a href="mailto:info [at] terradue [dot] com">info</a>. <p class="pull-right">This site is hosted by <a href="http://www.terradue.com">Terradue</a>.</p>
+	</div>
+</footer>
+
+  </body>
+</html>

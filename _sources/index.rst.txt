@@ -10,6 +10,7 @@ Welcome to Urban Thematic Exploitation Platform's documentation!
    :maxdepth: 2
 
    Overview <overview/index>
+   Quick Start Manual <quick-start-manual/index>
    Community Portal User Guide <community-guide/index>
    Community Portal Administrator Guide <admin-guide/index>
    Thematic Applications <apps/index>
