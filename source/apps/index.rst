@@ -1,5 +1,5 @@
-Overview
-========
+Thematic Applications
+=====================
 
 .. req:: TS-FUN-440
   :show:
