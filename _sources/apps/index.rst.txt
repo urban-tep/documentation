@@ -1,5 +1,5 @@
-Overview
-========
+Thematic Applications
+=====================
 
 .. req:: TS-FUN-440
   :show:
@@ -11,5 +11,6 @@ Overview
    :maxdepth: 2
    
    Thematic applications <thematic_app>
+   Manage my data application <mydata_app>
    Test my processor application <management_app>
    

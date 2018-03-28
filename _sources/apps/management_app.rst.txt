@@ -1,5 +1,15 @@
 Test my processor
-=================
+-----------------
+
+.. figure:: ../includes/apps_testmyproc.png
+	:figclass: img-border
+	:scale: 80%
+
+
+.. figure:: ../includes/apps_testmyproc_view.png
+	:figclass: img-border
+	:scale: 80%
+
 
 Each expert user has a personal app in which he can access:
 
@@ -7,5 +17,3 @@ Each expert user has a personal app in which he can access:
 - his private storage,
 - data packages,
 - his private processing services
-- a service to publish data results as atom feeds to the catalogue
-
