@@ -50,3 +50,31 @@ It is also possible to contact us directly via email: urban-tep@esa.int
 
 The email is appropriate choice if you don't have access to the system and the ticketing system or if you have some difficulties with the issues added to the ticketing system.
 
+Support procedure
+=================
+
+The company responsible for support of the user will provide a L1 Support personnel to handle the requests of the user and escalates the relevant ones to the L2 and L3 support in the companies responsible for certain parts of the system. 
+
+L1 Support role
+~~~~~~~~~~~~~~~
+
+It is a responsibility of the L1 Support to react to each user request within the 24 Hours from the raising of the tickets. Based on the type of the ticket, there are 3 typical responses:
+
+1.	Answer the question and help with the simpler questions
+2.	Assign the ticket to the person responsible for given subsystem
+3.	Escalate the ticket up in the Supporting company for somebody else to handle it
+
+Apart from this daily load, it is also responsibility of the L1 Support to review pending tickets on the monthly basis and if there is no progress on the tickets to push the responsible person to do resolve a ticket or schedule an approximate time for the ticket to be resolved or escalate to the consortium to decide that such ticket won’t be resolved. 
+
+L2 Support role
+~~~~~~~~~~~~~~~
+
+The L2 Support consists of technical personnel responsible for subsystems of the platform. It is requested that within week from raising the ticket, this person will handle the ticket in one of the following ways:
+
+1.	Escalate to the consortium to decide whether it is worth it
+2.	Implement the change and notifies the user of approximate time when the change will be implemented. 
+
+Consortium role 
+~~~~~~~~~~~~~~~
+
+If the ticket was escalated to the consortium, it is necessary to decide strategy to deal with such ticket on our nearest technical telco. This still means that every ticket should be properly handled within one month period longest. 
