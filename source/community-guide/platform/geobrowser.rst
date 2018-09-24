@@ -32,6 +32,7 @@ Some buttons maybe used to interact with the map:
 -  |geobrowser_button_fullscreen.png| Put the map in full screen
 -  |geobrowser_button_wkt.png| Allow to enter a WKT to be displayed on the map as bounding box
 -  |geobrowser_button_meter.png| Measure an area
+-  |geobrowser_button_geocoding.png| Geocoding tool
 -  |geobrowser_button_layers.png| Change the background of the map | Select layers to be displayed.
 
 Search area
@@ -93,6 +94,26 @@ Area of Interest according to processing service
 
 Area of Interest may be directly used to fill bounding box parameters exposed by Processing services.
 For that, you can use the |get_param_from_map_button.png| button, displayed along the parameter input field. Clicking on it will allow directly to fill the input with the value of the current search bounding box.
+
+
+
+Geocoding tool
+**************
+
+.. figure:: ../../includes/geobrowser_geocoding_1.png
+	:align: center
+	:figclass: img-container-border
+	:scale: 80%
+
+Users can use the Geocoding tool to perform a search by a location (like a city, a region, a place, and so on), see the location on the map, and perform a spatial filter on that location. 
+By writing a location, a first search produces a list of possible results in a dropdown list. Users can click on a result, and the relative footprint is shown on the map (or a bounding box if the footprint is not available).
+The popup of the location footprint offers the way to perform a search in the catalog with the location used as a spatial filter. Users can also decide to perform a bounding box spatial filter or a polygon spatial filter (figure 3). Note that, for search performance reasons, the searching polygon is simpler than the original footprint polygon (in matter of polygon points).
+
+.. figure:: ../../includes/geobrowser_geocoding_2.png
+	:align: center
+	:figclass: img-container-border
+	:scale: 80%
+
 
 Contexts
 ~~~~~~~~
@@ -177,6 +198,7 @@ Details on jobs can be accessed by clicking on the title of the job.
 .. |geobrowser_button_wkt.png| image:: ../../includes/geobrowser_button_wkt.png
 .. |geobrowser_button_fullscreen.png| image:: ../../includes/geobrowser_button_fullscreen.png
 .. |geobrowser_button_layers.png| image:: ../../includes/geobrowser_button_layers.png
+.. |geobrowser_button_geocoding.png| image:: ../../includes/geobrowser_button_geocoding.png
 .. |geobrowser_disaster_big_group.png| image:: ../../includes/geobrowser_disaster_big_group.png
 .. |geobrowser_disaster_small_group.png| image:: ../../includes/geobrowser_disaster_small_group.png
 .. |geobrowser_disaster_event.png| image:: ../../includes/geobrowser_disaster_event.png
