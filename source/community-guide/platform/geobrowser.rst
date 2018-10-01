@@ -105,8 +105,10 @@ Geocoding tool
 	:figclass: img-container-border
 	:scale: 80%
 
-Users can use the Geocoding tool to perform a search by a location (like a city, a region, a place, and so on), see the location on the map, and perform a spatial filter on that location. 
+Users can use the Geocoding tool to perform a search by a location (like a city, a region, a place, and so on), see the location on the map, and perform a spatial filter on that location.
+
 By writing a location, a first search produces a list of possible results in a dropdown list. Users can click on a result, and the relative footprint is shown on the map (or a bounding box if the footprint is not available).
+
 The popup of the location footprint offers the way to perform a search in the catalog with the location used as a spatial filter. Users can also decide to perform a bounding box spatial filter or a polygon spatial filter. Note that, for search performance reasons, the searching polygon is simpler than the original footprint polygon (in matter of polygon points).
 
 .. figure:: ../../includes/geobrowser_geocoding_2.png
